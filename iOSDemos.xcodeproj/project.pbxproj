@@ -13,6 +13,8 @@
 		3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3165EE2B14D39E0074538D /* Assets.xcassets */; };
 		3F3165F22B14D39E0074538D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */; };
 		3F3165F52B14D39E0074538D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165F42B14D39E0074538D /* main.m */; };
+		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
+		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,10 @@
 		3F3165F12B14D39E0074538D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3165F32B14D39E0074538D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3165F42B14D39E0074538D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
+		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
+		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
+		68B912742B173AED0049E0FA /* UIStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				68B9126F2B1738220049E0FA /* MMUIKit */,
 				3F3165E22B14D39D0074538D /* AppDelegate.h */,
 				3F3165E32B14D39D0074538D /* AppDelegate.m */,
 				3F3165E52B14D39D0074538D /* SceneDelegate.h */,
@@ -69,8 +76,19 @@
 				3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */,
 				3F3165F32B14D39E0074538D /* Info.plist */,
 				3F3165F42B14D39E0074538D /* main.m */,
+				68B912732B173AED0049E0FA /* UIStackViewController.h */,
+				68B912742B173AED0049E0FA /* UIStackViewController.m */,
 			);
 			path = iOSDemos;
+			sourceTree = "<group>";
+		};
+		68B9126F2B1738220049E0FA /* MMUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				68B912702B17384F0049E0FA /* UITableViewInfo.h */,
+				68B912712B17384F0049E0FA /* UITableViewInfo.m */,
+			);
+			path = MMUIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
+				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
+				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
