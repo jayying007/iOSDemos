@@ -15,6 +15,13 @@
 		3F3165F52B14D39E0074538D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165F42B14D39E0074538D /* main.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
+		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
+		68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB522B17554B005E1C28 /* UIViewController+BCMagicTransition.m */; };
+		68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB552B17557C005E1C28 /* FirstViewController.m */; };
+		68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB582B175599005E1C28 /* SecondViewController.m */; };
+		68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB5B2B1755B4005E1C28 /* ThirdViewController.m */; };
+		68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */; };
+		68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB612B175850005E1C28 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +40,20 @@
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
 		68B912742B173AED0049E0FA /* UIStackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIStackViewController.m; sourceTree = "<group>"; };
+		68C0EB4E2B175529005E1C28 /* BCMagicTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCMagicTransition.h; sourceTree = "<group>"; };
+		68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCMagicTransition.m; sourceTree = "<group>"; };
+		68C0EB512B17554B005E1C28 /* UIViewController+BCMagicTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BCMagicTransition.h"; sourceTree = "<group>"; };
+		68C0EB522B17554B005E1C28 /* UIViewController+BCMagicTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BCMagicTransition.m"; sourceTree = "<group>"; };
+		68C0EB542B17557C005E1C28 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		68C0EB552B17557C005E1C28 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		68C0EB572B175599005E1C28 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		68C0EB582B175599005E1C28 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		68C0EB5A2B1755B4005E1C28 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		68C0EB5B2B1755B4005E1C28 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		68C0EB5D2B1757D4005E1C28 /* MMUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMUIViewController.h; sourceTree = "<group>"; };
+		68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMUIViewController.m; sourceTree = "<group>"; };
+		68C0EB602B175850005E1C28 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		68C0EB612B175850005E1C28 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +86,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				68C0EB4C2B17546E005E1C28 /* Transition */,
 				68B9126F2B1738220049E0FA /* MMUIKit */,
 				3F3165E22B14D39D0074538D /* AppDelegate.h */,
 				3F3165E32B14D39D0074538D /* AppDelegate.m */,
@@ -87,8 +109,37 @@
 			children = (
 				68B912702B17384F0049E0FA /* UITableViewInfo.h */,
 				68B912712B17384F0049E0FA /* UITableViewInfo.m */,
+				68C0EB5D2B1757D4005E1C28 /* MMUIViewController.h */,
+				68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */,
+				68C0EB602B175850005E1C28 /* UIView+Frame.h */,
+				68C0EB612B175850005E1C28 /* UIView+Frame.m */,
 			);
 			path = MMUIKit;
+			sourceTree = "<group>";
+		};
+		68C0EB4C2B17546E005E1C28 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				68C0EB4D2B175500005E1C28 /* BCMagicTransition */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		68C0EB4D2B175500005E1C28 /* BCMagicTransition */ = {
+			isa = PBXGroup;
+			children = (
+				68C0EB4E2B175529005E1C28 /* BCMagicTransition.h */,
+				68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */,
+				68C0EB512B17554B005E1C28 /* UIViewController+BCMagicTransition.h */,
+				68C0EB522B17554B005E1C28 /* UIViewController+BCMagicTransition.m */,
+				68C0EB542B17557C005E1C28 /* FirstViewController.h */,
+				68C0EB552B17557C005E1C28 /* FirstViewController.m */,
+				68C0EB572B175599005E1C28 /* SecondViewController.h */,
+				68C0EB582B175599005E1C28 /* SecondViewController.m */,
+				68C0EB5A2B1755B4005E1C28 /* ThirdViewController.h */,
+				68C0EB5B2B1755B4005E1C28 /* ThirdViewController.m */,
+			);
+			path = BCMagicTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +211,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
+				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
+				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
+				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
+				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
+				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
+				68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */,
 				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

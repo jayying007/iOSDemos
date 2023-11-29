@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "UITableViewInfo.h"
 #import "UIStackViewController.h"
+#import "FirstViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -28,6 +29,16 @@
             rowInfo.title = @"UIStackView";
             rowInfo.handler = ^{
                 UIStackViewController *vc = [[UIStackViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
+        }];
+    }];
+    [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
+        sectionInfo.title = @"转场";
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"BCMagicTransition";
+            rowInfo.handler = ^{
+                FirstViewController *vc = [FirstViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             };
         }];
