@@ -14,7 +14,7 @@
 #endif
 
 #ifndef DEGREES_TO_RADIANS
-#define DEGREES_TO_RADIANS(d) ((d) * M_PI / 180)
+#define DEGREES_TO_RADIANS(d) ((d)*M_PI / 180)
 #endif
 
 @interface YYViewHierarchy3D () {
@@ -28,9 +28,8 @@
 @property (nonatomic, retain) NSMutableArray *holders;
 @end
 
-
 #pragma mark - Top Shortcut
-@interface  YYViewHierarchy3DTop : UIWindow
+@interface YYViewHierarchy3DTop : UIWindow
 + (YYViewHierarchy3DTop *)sharedInstance;
 @end
 
@@ -83,14 +82,6 @@
 
 @end
 
-
-
-
-
-
-
-
-
 @interface UIView (holderFrame)
 @property (nonatomic, readonly) CGRect holderFrame;
 - (CGRect)holderFrameWithDelta:(CGPoint)delta;
@@ -129,11 +120,7 @@
 @synthesize rect = _rect;
 @synthesize view = _view;
 
-
 @end
-
-
-
 
 @implementation YYViewHierarchy3D
 @synthesize holders = _holders;
@@ -169,14 +156,16 @@
         self.hidden = NO;
         self.frame = [UIScreen mainScreen].bounds;
         [self startShow];
-        [UIView animateWithDuration:0.4 animations:^{
-            self.backgroundColor = [UIColor grayColor];
-        }];
+        [UIView animateWithDuration:0.4
+                         animations:^{
+                             self.backgroundColor = [UIColor grayColor];
+                         }];
     } else {
         [self startHide];
-        [UIView animateWithDuration:0.4 animations:^{
-            self.backgroundColor = [UIColor clearColor];
-        }];
+        [UIView animateWithDuration:0.4
+                         animations:^{
+                             self.backgroundColor = [UIColor clearColor];
+                         }];
     }
 }
 
@@ -186,7 +175,7 @@
         oldPan = CGPointMake(rotateY, -rotateX);
     }
     CGPoint change = [gestureRecognizer translationInView:self];
-    rotateY =  oldPan.x + change.x;
+    rotateY = oldPan.x + change.x;
     rotateX = -oldPan.y - change.y;
     [self anime:0.1];
 }
@@ -212,11 +201,13 @@
     trans = CATransform3DConcat(trans, t);
 
     isAnimatimg = YES;
-    [UIView animateWithDuration:time animations:^() {
-        for (ViewImageHolder * holder in self.holders) {
+    [UIView animateWithDuration:time
+    animations:^() {
+        for (ViewImageHolder *holder in self.holders) {
             holder.view.layer.transform = trans;
         }
-    } completion:^(BOOL finished) {
+    }
+    completion:^(BOOL finished) {
         isAnimatimg = NO;
     }];
 }
@@ -236,15 +227,12 @@
 }
 
 - (UIImage *)renderImageFromView:(UIView *)view withRect:(CGRect)frame {
-    UIGraphicsBeginImageContextWithOptions(frame.size, NO, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    if (!context) {
-        return nil;
-    }
-    CGContextTranslateCTM(context, -frame.origin.x, -frame.origin.y);
-    [view.layer renderInContext:context];
-    UIImage *renderedImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+    UIGraphicsImageRenderer *imageRender = [[UIGraphicsImageRenderer alloc] initWithSize:frame.size];
+    UIImage *renderedImage = [imageRender imageWithActions:^(UIGraphicsImageRendererContext *_Nonnull rendererContext) {
+        CGContextRef context = rendererContext.CGContext;
+        CGContextTranslateCTM(context, -frame.origin.x, -frame.origin.y);
+        [view.layer renderInContext:context];
+    }];
     return renderedImage;
 }
 
@@ -253,22 +241,17 @@
 }
 
 - (UIImage *)renderImageForAntialiasing:(UIImage *)image withInsets:(UIEdgeInsets)insets {
-    CGSize imageSizeWithBorder = CGSizeMake([image size].width + insets.left + insets.right,
-                                            [image size].height + insets.top + insets.bottom);
+    CGSize imageSizeWithBorder = CGSizeMake([image size].width + insets.left + insets.right, [image size].height + insets.top + insets.bottom);
 
-    UIGraphicsBeginImageContextWithOptions(imageSizeWithBorder,
-                                           UIEdgeInsetsEqualToEdgeInsets(insets, UIEdgeInsetsZero), 0);
+    UIGraphicsBeginImageContextWithOptions(imageSizeWithBorder, UIEdgeInsetsEqualToEdgeInsets(insets, UIEdgeInsetsZero), 0);
 
-    [image drawInRect:(CGRect) {{ insets.left, insets.top }, [image size] }];
+    [image drawInRect:(CGRect){ { insets.left, insets.top }, [image size] }];
     UIImage *renderedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return renderedImage;
 }
 
-- (void) dumpView:(UIView *)aView
-           atDeep:(float)deep
-    atOriginDelta:(CGPoint)originDelta
-          toArray:(NSMutableArray *)holders {
+- (void)dumpView:(UIView *)aView atDeep:(float)deep atOriginDelta:(CGPoint)originDelta toArray:(NSMutableArray *)holders {
     NSMutableArray *notHiddens = [NSMutableArray arrayWithCapacity:0];
     for (UIView *v in aView.subviews) {
         if (!v.hidden) {
@@ -313,13 +296,8 @@
         if ([UIApplication sharedApplication].windows[i] == [YYViewHierarchy3DTop sharedInstance]) {
             continue;
         }
-        [self    dumpView:[UIApplication sharedApplication].windows[i]
-                   atDeep:i * 5
-            atOriginDelta:CGPointMake(0, 0)
-                  toArray:_holders];
+        [self dumpView:[UIApplication sharedApplication].windows[i] atDeep:i * 5 atOriginDelta:CGPointMake(0, 0) toArray:_holders];
     }
-
-
 
     for (ViewImageHolder *h in _holders) {
         UIImageView *imgV = [[UIImageView alloc] initWithImage:h.image];
@@ -341,20 +319,24 @@
 
 - (void)startHide {
     isAnimatimg = YES;
-    [UIView animateWithDuration:0.3 animations:^() {
-        for (ViewImageHolder * holder in self.holders) {
+    [UIView animateWithDuration:0.3
+    animations:^() {
+        for (ViewImageHolder *holder in self.holders) {
             holder.view.layer.transform = CATransform3DIdentity;
         }
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.2 animations:^() {
-                self.hidden = YES;
-            } completion:^(BOOL finished) {
-                for (ViewImageHolder * holder in self.holders) {
-                    [holder.view removeFromSuperview];
-                }
-                self.holders = nil;
-                isAnimatimg = NO;
-            }];
+    }
+    completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2
+        animations:^() {
+            self.hidden = YES;
+        }
+        completion:^(BOOL finished) {
+            for (ViewImageHolder *holder in self.holders) {
+                [holder.view removeFromSuperview];
+            }
+            self.holders = nil;
+            isAnimatimg = NO;
+        }];
     }];
 }
 
