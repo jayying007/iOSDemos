@@ -11,6 +11,7 @@
 #import "FirstViewController.h"
 #import "UIToolbarViewController.h"
 #import "YYViewHierarchy3D.h"
+#import "iOSDemos-Swift.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -23,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     _tableViewInfo = [[UITableViewInfo alloc] init];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"UI组件";
@@ -39,6 +40,13 @@
             rowInfo.detail = @"可以上下拖动的Toolbar容器";
             rowInfo.handler = ^{
                 UIToolbarViewController *vc = [[UIToolbarViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"UICollectionView";
+            rowInfo.handler = ^{
+                CollectionEntryViewController *vc = [[CollectionEntryViewController alloc] init];
                 [self.navigationController pushViewController:vc animated:YES];
             };
         }];
@@ -62,7 +70,7 @@
             };
         }];
     }];
-    
+
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleInsetGrouped];
     _tableView.dataSource = self;
     _tableView.delegate = self;
@@ -88,7 +96,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewSectionInfo *sectionInfo = _tableViewInfo.sections[indexPath.section];
     UITableViewRowInfo *rowInfo = sectionInfo.rows[indexPath.row];
-    
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
@@ -98,7 +106,7 @@
     cell.detailTextLabel.textColor = UIColor.lightGrayColor;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
+
     return cell;
 }
 

@@ -13,6 +13,25 @@
 		3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3165EE2B14D39E0074538D /* Assets.xcassets */; };
 		3F3165F22B14D39E0074538D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */; };
 		3F3165F52B14D39E0074538D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165F42B14D39E0074538D /* main.m */; };
+		3F3165FF2B18D4C30074538D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165FD2B18D4C30074538D /* BaseViewController.swift */; };
+		3F3166002B18D4C30074538D /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165FE2B18D4C30074538D /* ImageCollectionViewCell.swift */; };
+		3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166022B18D4CB0074538D /* CalendarEvent.swift */; };
+		3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166032B18D4CB0074538D /* CalendarHeaderView.swift */; };
+		3F3166172B18D4CB0074538D /* WeekCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166042B18D4CB0074538D /* WeekCalendarLayout.swift */; };
+		3F3166182B18D4CB0074538D /* CalendarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166052B18D4CB0074538D /* CalendarDataSource.swift */; };
+		3F3166192B18D4CB0074538D /* CalendarEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166062B18D4CB0074538D /* CalendarEventCell.swift */; };
+		3F31661A2B18D4CB0074538D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166072B18D4CB0074538D /* CalendarViewController.swift */; };
+		3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166092B18D4CB0074538D /* LineCircleViewController.swift */; };
+		3F31661C2B18D4CB0074538D /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31660A2B18D4CB0074538D /* CircleLayout.swift */; };
+		3F31661D2B18D4CB0074538D /* LineLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31660B2B18D4CB0074538D /* LineLayout.swift */; };
+		3F31661E2B18D4CB0074538D /* LineCircleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31660C2B18D4CB0074538D /* LineCircleCell.swift */; };
+		3F31661F2B18D4CB0074538D /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31660E2B18D4CB0074538D /* WaterfallCell.swift */; };
+		3F3166202B18D4CB0074538D /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31660F2B18D4CB0074538D /* WaterfallLayout.swift */; };
+		3F3166212B18D4CB0074538D /* WaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166102B18D4CB0074538D /* WaterfallViewController.swift */; };
+		3F3166222B18D4CB0074538D /* PubuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166122B18D4CB0074538D /* PubuLayout.swift */; };
+		3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166132B18D4CB0074538D /* ColorViewCell.swift */; };
+		3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166142B18D4CB0074538D /* CustomViewController.swift */; };
+		3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166282B18D62B0074538D /* CollectionEntryViewController.swift */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -44,6 +63,26 @@
 		3F3165F12B14D39E0074538D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3165F32B14D39E0074538D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3165F42B14D39E0074538D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F3165FD2B18D4C30074538D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3F3165FE2B18D4C30074538D /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F3166022B18D4CB0074538D /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		3F3166032B18D4CB0074538D /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		3F3166042B18D4CB0074538D /* WeekCalendarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCalendarLayout.swift; sourceTree = "<group>"; };
+		3F3166052B18D4CB0074538D /* CalendarDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDataSource.swift; sourceTree = "<group>"; };
+		3F3166062B18D4CB0074538D /* CalendarEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEventCell.swift; sourceTree = "<group>"; };
+		3F3166072B18D4CB0074538D /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		3F3166092B18D4CB0074538D /* LineCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCircleViewController.swift; sourceTree = "<group>"; };
+		3F31660A2B18D4CB0074538D /* CircleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
+		3F31660B2B18D4CB0074538D /* LineLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayout.swift; sourceTree = "<group>"; };
+		3F31660C2B18D4CB0074538D /* LineCircleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineCircleCell.swift; sourceTree = "<group>"; };
+		3F31660E2B18D4CB0074538D /* WaterfallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		3F31660F2B18D4CB0074538D /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		3F3166102B18D4CB0074538D /* WaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallViewController.swift; sourceTree = "<group>"; };
+		3F3166122B18D4CB0074538D /* PubuLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubuLayout.swift; sourceTree = "<group>"; };
+		3F3166132B18D4CB0074538D /* ColorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewCell.swift; sourceTree = "<group>"; };
+		3F3166142B18D4CB0074538D /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		3F3166282B18D62B0074538D /* CollectionEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEntryViewController.swift; sourceTree = "<group>"; };
+		3F31662A2B18D8000074538D /* iOSDemos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSDemos-Bridging-Header.h"; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -136,8 +175,75 @@
 				3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */,
 				3F3165F32B14D39E0074538D /* Info.plist */,
 				3F3165F42B14D39E0074538D /* main.m */,
+				3F31662A2B18D8000074538D /* iOSDemos-Bridging-Header.h */,
 			);
 			path = iOSDemos;
+			sourceTree = "<group>";
+		};
+		3F3165FB2B18D4890074538D /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166112B18D4CB0074538D /* Custom */,
+				3F3166012B18D4CB0074538D /* Calendar */,
+				3F3166082B18D4CB0074538D /* LineCircle */,
+				3F31660D2B18D4CB0074538D /* Waterfall */,
+				3F3165FC2B18D4C30074538D /* Base */,
+				3F3166282B18D62B0074538D /* CollectionEntryViewController.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		3F3165FC2B18D4C30074538D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3F3165FD2B18D4C30074538D /* BaseViewController.swift */,
+				3F3165FE2B18D4C30074538D /* ImageCollectionViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3F3166012B18D4CB0074538D /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166022B18D4CB0074538D /* CalendarEvent.swift */,
+				3F3166032B18D4CB0074538D /* CalendarHeaderView.swift */,
+				3F3166042B18D4CB0074538D /* WeekCalendarLayout.swift */,
+				3F3166052B18D4CB0074538D /* CalendarDataSource.swift */,
+				3F3166062B18D4CB0074538D /* CalendarEventCell.swift */,
+				3F3166072B18D4CB0074538D /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		3F3166082B18D4CB0074538D /* LineCircle */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166092B18D4CB0074538D /* LineCircleViewController.swift */,
+				3F31660A2B18D4CB0074538D /* CircleLayout.swift */,
+				3F31660B2B18D4CB0074538D /* LineLayout.swift */,
+				3F31660C2B18D4CB0074538D /* LineCircleCell.swift */,
+			);
+			path = LineCircle;
+			sourceTree = "<group>";
+		};
+		3F31660D2B18D4CB0074538D /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				3F31660E2B18D4CB0074538D /* WaterfallCell.swift */,
+				3F31660F2B18D4CB0074538D /* WaterfallLayout.swift */,
+				3F3166102B18D4CB0074538D /* WaterfallViewController.swift */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		3F3166112B18D4CB0074538D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166122B18D4CB0074538D /* PubuLayout.swift */,
+				3F3166132B18D4CB0074538D /* ColorViewCell.swift */,
+				3F3166142B18D4CB0074538D /* CustomViewController.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
@@ -181,6 +287,7 @@
 		68C0EB712B184B09005E1C28 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				3F3165FB2B18D4890074538D /* UICollectionView */,
 				68C0EB762B184DAD005E1C28 /* ContainerView */,
 				68B912732B173AED0049E0FA /* UIStackViewController.h */,
 				68B912742B173AED0049E0FA /* UIStackViewController.m */,
@@ -243,6 +350,7 @@
 				3F3165DB2B14D39D0074538D /* Sources */,
 				3F3165DC2B14D39D0074538D /* Frameworks */,
 				3F3165DD2B14D39D0074538D /* Resources */,
+				050A87184BBCC3E9CFE46C5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +406,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		050A87184BBCC3E9CFE46C5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSDemos/Pods-iOSDemos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSDemos/Pods-iOSDemos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSDemos/Pods-iOSDemos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D9A0BDC9C2D9C40C86468AA6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,23 +454,42 @@
 			files = (
 				68C0EB852B185271005E1C28 /* DemoHeaderViews.m in Sources */,
 				68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */,
+				3F3166192B18D4CB0074538D /* CalendarEventCell.swift in Sources */,
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
+				3F3166002B18D4C30074538D /* ImageCollectionViewCell.swift in Sources */,
 				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
+				3F3165FF2B18D4C30074538D /* BaseViewController.swift in Sources */,
+				3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
+				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
+				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
 				68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */,
+				3F3166202B18D4CB0074538D /* WaterfallLayout.swift in Sources */,
 				68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */,
+				3F31661E2B18D4CB0074538D /* LineCircleCell.swift in Sources */,
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
+				3F31661F2B18D4CB0074538D /* WaterfallCell.swift in Sources */,
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
 				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
 				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
+				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
+				3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
+				3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */,
+				3F3166182B18D4CB0074538D /* CalendarDataSource.swift in Sources */,
+				3F31661D2B18D4CB0074538D /* LineLayout.swift in Sources */,
 				68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */,
+				3F31661C2B18D4CB0074538D /* CircleLayout.swift in Sources */,
+				3F3166222B18D4CB0074538D /* PubuLayout.swift in Sources */,
 				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
+				3F31661A2B18D4CB0074538D /* CalendarViewController.swift in Sources */,
+				3F3166212B18D4CB0074538D /* WaterfallViewController.swift in Sources */,
 				68C0EB7F2B184DAD005E1C28 /* ContainerViewController.m in Sources */,
+				3F3166172B18D4CB0074538D /* WeekCalendarLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +632,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86JSFRSCH9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSDemos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,6 +649,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayying.iOSDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT)/iOSDemos-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -517,6 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86JSFRSCH9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSDemos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -533,6 +681,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayying.iOSDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT)/iOSDemos-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

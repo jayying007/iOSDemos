@@ -6,5 +6,7 @@ target 'iOSDemos' do
   use_frameworks!
 
   # Pods for iOSDemos
+  pod 'SnapKit'
+  pod 'MJRefresh'
 
 end
