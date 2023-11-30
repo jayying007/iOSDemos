@@ -10,6 +10,7 @@
 #import "UIStackViewController.h"
 #import "FirstViewController.h"
 #import "UIToolbarViewController.h"
+#import "YYViewHierarchy3D.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -49,6 +50,15 @@
             rowInfo.handler = ^{
                 FirstViewController *vc = [FirstViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
+            };
+        }];
+    }];
+    [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
+        sectionInfo.title = @"其他";
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"打开ViewHierarchy3D";
+            rowInfo.handler = ^{
+                [YYViewHierarchy3D show];
             };
         }];
     }];

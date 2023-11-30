@@ -27,6 +27,7 @@
 		68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB792B184DAD005E1C28 /* ContainerScrollDelegate.m */; };
 		68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB7E2B184DAD005E1C28 /* ContainerView.m */; };
 		68C0EB852B185271005E1C28 /* DemoHeaderViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB832B185271005E1C28 /* DemoHeaderViews.m */; };
+		68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB8B2B186074005E1C28 /* YYViewHierarchy3D.m */; };
 		F648529920B271FD08AC40AF /* Pods_iOSDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EBE63870D2A9FCED416B2D /* Pods_iOSDemos.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		68C0EB7E2B184DAD005E1C28 /* ContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
 		68C0EB832B185271005E1C28 /* DemoHeaderViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHeaderViews.m; sourceTree = "<group>"; };
 		68C0EB842B185271005E1C28 /* DemoHeaderViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHeaderViews.h; sourceTree = "<group>"; };
+		68C0EB8A2B186074005E1C28 /* YYViewHierarchy3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewHierarchy3D.h; sourceTree = "<group>"; };
+		68C0EB8B2B186074005E1C28 /* YYViewHierarchy3D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYViewHierarchy3D.m; sourceTree = "<group>"; };
 		C3EBE63870D2A9FCED416B2D /* Pods_iOSDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F785310190FAF460E26392 /* Pods-iOSDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemos.debug.xcconfig"; path = "Target Support Files/Pods-iOSDemos/Pods-iOSDemos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +122,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				68C0EB892B186068005E1C28 /* Other */,
 				68C0EB712B184B09005E1C28 /* UIComponents */,
 				68C0EB4C2B17546E005E1C28 /* Transition */,
 				68B9126F2B1738220049E0FA /* MMUIKit */,
@@ -209,6 +213,15 @@
 				68C0EB832B185271005E1C28 /* DemoHeaderViews.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		68C0EB892B186068005E1C28 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				68C0EB8A2B186074005E1C28 /* YYViewHierarchy3D.h */,
+				68C0EB8B2B186074005E1C28 /* YYViewHierarchy3D.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		FD96E672B833CA21A4AA34CD /* Frameworks */ = {
@@ -321,6 +334,7 @@
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
+				68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */,
 				68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */,
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
