@@ -30,7 +30,7 @@
 
 - (void)initView {
     [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    
+
     [self test1];
     [self test2];
 }
@@ -40,12 +40,12 @@
     stackView.layer.borderWidth = 1;
     stackView.layer.borderColor = UIColor.redColor.CGColor;
     [self.view addSubview:stackView];
-    
+
     stackView.axis = UILayoutConstraintAxisVertical;
     stackView.spacing = 10;
     stackView.distribution = UIStackViewDistributionFill;
     stackView.alignment = UIStackViewAlignmentTrailing;
-    
+
     [stackView addArrangedSubview:[self viewWithColor:UIColor.greenColor]];
     [stackView addArrangedSubview:[self viewWithColor:UIColor.orangeColor]];
     _middleView = [self viewWithColor:UIColor.redColor];
@@ -54,6 +54,10 @@
     // (降低抗压缩的优先级)空间不足时被压缩
     [_middleView setContentCompressionResistancePriority:UILayoutPriorityFittingSizeLevel forAxis:UILayoutConstraintAxisVertical];
     [stackView addArrangedSubview:_middleView];
+    /*
+    另一种方式是通过AutoLayout，代替抗压缩
+     [stackView addConstraint:[_middleView.heightAnchor constraintGreaterThanOrEqualToConstant:1]];
+     */
     [stackView addArrangedSubview:[self viewWithColor:UIColor.blueColor]];
     [stackView addArrangedSubview:[self viewWithColor:UIColor.grayColor]];
 }
@@ -65,7 +69,7 @@
     stackView.layer.borderWidth = 1;
     stackView.layer.borderColor = UIColor.redColor.CGColor;
     [self.view addSubview:stackView];
-    
+
     UILabel *titleLabel = [self labelWithText:@"开关"];
     UILabel *subtitleLabel = [self subtitleLabelWithText:@"右侧开关用于修改View的高度，观察红色View的变化"];
     UIStackView *vStack = [[UIStackView alloc] init];
@@ -74,7 +78,7 @@
     [vStack setCustomSpacing:8 afterView:titleLabel];
     [vStack addArrangedSubview:subtitleLabel];
     [stackView addArrangedSubview:vStack];
-    
+
     UISwitch *oSwitch = [[UISwitch alloc] init];
     oSwitch.on = _switchValue;
     [oSwitch addTarget:self action:@selector(onSwitch:) forControlEvents:UIControlEventValueChanged];
@@ -90,7 +94,7 @@
     } else {
         viewHeight = 50;
     }
-    
+
     [self initView];
 }
 
