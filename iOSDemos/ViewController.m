@@ -11,6 +11,8 @@
 #import "FirstViewController.h"
 #import "UIToolbarViewController.h"
 #import "YYViewHierarchy3D.h"
+#import "ShakeViewController.h"
+#import "AnimatePanViewController.h"
 #import "iOSDemos-Swift.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -57,6 +59,25 @@
             rowInfo.title = @"BCMagicTransition";
             rowInfo.handler = ^{
                 FirstViewController *vc = [FirstViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
+        }];
+    }];
+    [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
+        sectionInfo.title = @"Core Animation";
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"Shake Animation";
+            rowInfo.detail = @"会震动的密码框";
+            rowInfo.handler = ^{
+                ShakeViewController *vc = [ShakeViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"Animated Pen";
+            rowInfo.detail = @"神笔马良";
+            rowInfo.handler = ^{
+                AnimatePanViewController *vc = [AnimatePanViewController new];
                 [self.navigationController pushViewController:vc animated:YES];
             };
         }];

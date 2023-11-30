@@ -32,6 +32,9 @@
 		3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166132B18D4CB0074538D /* ColorViewCell.swift */; };
 		3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166142B18D4CB0074538D /* CustomViewController.swift */; };
 		3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166282B18D62B0074538D /* CollectionEntryViewController.swift */; };
+		3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31662C2B18DD110074538D /* UIView+Animation.m */; };
+		3F3166332B18DD4A0074538D /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166322B18DD4A0074538D /* ShakeViewController.m */; };
+		3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166352B18DEE50074538D /* AnimatePanViewController.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -83,6 +86,12 @@
 		3F3166142B18D4CB0074538D /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		3F3166282B18D62B0074538D /* CollectionEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEntryViewController.swift; sourceTree = "<group>"; };
 		3F31662A2B18D8000074538D /* iOSDemos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSDemos-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F31662C2B18DD110074538D /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		3F31662D2B18DD110074538D /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		3F3166312B18DD4A0074538D /* ShakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		3F3166322B18DD4A0074538D /* ShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		3F3166342B18DEE50074538D /* AnimatePanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatePanViewController.h; sourceTree = "<group>"; };
+		3F3166352B18DEE50074538D /* AnimatePanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatePanViewController.m; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -161,6 +170,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				3F31662B2B18DCFF0074538D /* CoreAnimation */,
 				68C0EB892B186068005E1C28 /* Other */,
 				68C0EB712B184B09005E1C28 /* UIComponents */,
 				68C0EB4C2B17546E005E1C28 /* Transition */,
@@ -244,6 +254,19 @@
 				3F3166142B18D4CB0074538D /* CustomViewController.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		3F31662B2B18DCFF0074538D /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3F31662D2B18DD110074538D /* UIView+Animation.h */,
+				3F31662C2B18DD110074538D /* UIView+Animation.m */,
+				3F3166312B18DD4A0074538D /* ShakeViewController.h */,
+				3F3166322B18DD4A0074538D /* ShakeViewController.m */,
+				3F3166342B18DEE50074538D /* AnimatePanViewController.h */,
+				3F3166352B18DEE50074538D /* AnimatePanViewController.m */,
+			);
+			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
@@ -456,6 +479,7 @@
 				68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */,
 				3F3166192B18D4CB0074538D /* CalendarEventCell.swift in Sources */,
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
+				3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */,
 				3F3166002B18D4C30074538D /* ImageCollectionViewCell.swift in Sources */,
 				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
@@ -476,6 +500,7 @@
 				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
+				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
@@ -486,6 +511,7 @@
 				3F31661C2B18D4CB0074538D /* CircleLayout.swift in Sources */,
 				3F3166222B18D4CB0074538D /* PubuLayout.swift in Sources */,
 				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
+				3F3166332B18DD4A0074538D /* ShakeViewController.m in Sources */,
 				3F31661A2B18D4CB0074538D /* CalendarViewController.swift in Sources */,
 				3F3166212B18D4CB0074538D /* WaterfallViewController.swift in Sources */,
 				68C0EB7F2B184DAD005E1C28 /* ContainerViewController.m in Sources */,
