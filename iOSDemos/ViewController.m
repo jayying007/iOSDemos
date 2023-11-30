@@ -9,6 +9,7 @@
 #import "UITableViewInfo.h"
 #import "UIStackViewController.h"
 #import "FirstViewController.h"
+#import "UIToolbarViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -32,6 +33,14 @@
                 [self.navigationController pushViewController:vc animated:YES];
             };
         }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"UIToolbar";
+            rowInfo.detail = @"可以上下拖动的Toolbar容器";
+            rowInfo.handler = ^{
+                UIToolbarViewController *vc = [[UIToolbarViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
+        }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"转场";
@@ -47,7 +56,6 @@
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleInsetGrouped];
     _tableView.dataSource = self;
     _tableView.delegate = self;
-    [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:@"cell"];
     [self.view addSubview:_tableView];
 }
 
@@ -72,7 +80,12 @@
     UITableViewRowInfo *rowInfo = sectionInfo.rows[indexPath.row];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    }
     cell.textLabel.text = rowInfo.title;
+    cell.detailTextLabel.text = rowInfo.detail;
+    cell.detailTextLabel.textColor = UIColor.lightGrayColor;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     

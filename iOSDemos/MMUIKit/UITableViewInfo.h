@@ -12,6 +12,7 @@ typedef void(^RowClickHandler)(void);
 @interface UITableViewRowInfo : NSObject
 
 @property (nonatomic) NSString *title;
+@property (nonatomic) NSString *detail;
 @property (nonatomic) RowClickHandler handler;
 
 @end

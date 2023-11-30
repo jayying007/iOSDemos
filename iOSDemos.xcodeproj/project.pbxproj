@@ -22,9 +22,16 @@
 		68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB5B2B1755B4005E1C28 /* ThirdViewController.m */; };
 		68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */; };
 		68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB612B175850005E1C28 /* UIView+Frame.m */; };
+		68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB732B184B3A005E1C28 /* UIToolbarViewController.m */; };
+		68C0EB7F2B184DAD005E1C28 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB772B184DAD005E1C28 /* ContainerViewController.m */; };
+		68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB792B184DAD005E1C28 /* ContainerScrollDelegate.m */; };
+		68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB7E2B184DAD005E1C28 /* ContainerView.m */; };
+		68C0EB852B185271005E1C28 /* DemoHeaderViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB832B185271005E1C28 /* DemoHeaderViews.m */; };
+		F648529920B271FD08AC40AF /* Pods_iOSDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EBE63870D2A9FCED416B2D /* Pods_iOSDemos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DD61D8495355E69B8365EEB /* Pods-iOSDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemos.release.xcconfig"; path = "Target Support Files/Pods-iOSDemos/Pods-iOSDemos.release.xcconfig"; sourceTree = "<group>"; };
 		3F3165DF2B14D39D0074538D /* iOSDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3165E22B14D39D0074538D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F3165E32B14D39D0074538D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +61,20 @@
 		68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMUIViewController.m; sourceTree = "<group>"; };
 		68C0EB602B175850005E1C28 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		68C0EB612B175850005E1C28 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		68C0EB722B184B3A005E1C28 /* UIToolbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIToolbarViewController.h; sourceTree = "<group>"; };
+		68C0EB732B184B3A005E1C28 /* UIToolbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIToolbarViewController.m; sourceTree = "<group>"; };
+		68C0EB772B184DAD005E1C28 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		68C0EB782B184DAD005E1C28 /* ContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
+		68C0EB792B184DAD005E1C28 /* ContainerScrollDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerScrollDelegate.m; sourceTree = "<group>"; };
+		68C0EB7A2B184DAD005E1C28 /* ContainerTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerTypes.h; sourceTree = "<group>"; };
+		68C0EB7B2B184DAD005E1C28 /* ContainerDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerDefines.h; sourceTree = "<group>"; };
+		68C0EB7C2B184DAD005E1C28 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		68C0EB7D2B184DAD005E1C28 /* ContainerScrollDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerScrollDelegate.h; sourceTree = "<group>"; };
+		68C0EB7E2B184DAD005E1C28 /* ContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
+		68C0EB832B185271005E1C28 /* DemoHeaderViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHeaderViews.m; sourceTree = "<group>"; };
+		68C0EB842B185271005E1C28 /* DemoHeaderViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHeaderViews.h; sourceTree = "<group>"; };
+		C3EBE63870D2A9FCED416B2D /* Pods_iOSDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F785310190FAF460E26392 /* Pods-iOSDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemos.debug.xcconfig"; path = "Target Support Files/Pods-iOSDemos/Pods-iOSDemos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +82,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F648529920B271FD08AC40AF /* Pods_iOSDemos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0141DF58D7DC07EEB0A822D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7F785310190FAF460E26392 /* Pods-iOSDemos.debug.xcconfig */,
+				3DD61D8495355E69B8365EEB /* Pods-iOSDemos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3F3165D62B14D39D0074538D = {
 			isa = PBXGroup;
 			children = (
 				3F3165E12B14D39D0074538D /* iOSDemos */,
 				3F3165E02B14D39D0074538D /* Products */,
+				0141DF58D7DC07EEB0A822D0 /* Pods */,
+				FD96E672B833CA21A4AA34CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +119,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				68C0EB712B184B09005E1C28 /* UIComponents */,
 				68C0EB4C2B17546E005E1C28 /* Transition */,
 				68B9126F2B1738220049E0FA /* MMUIKit */,
 				3F3165E22B14D39D0074538D /* AppDelegate.h */,
@@ -98,8 +132,6 @@
 				3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */,
 				3F3165F32B14D39E0074538D /* Info.plist */,
 				3F3165F42B14D39E0074538D /* main.m */,
-				68B912732B173AED0049E0FA /* UIStackViewController.h */,
-				68B912742B173AED0049E0FA /* UIStackViewController.m */,
 			);
 			path = iOSDemos;
 			sourceTree = "<group>";
@@ -142,6 +174,51 @@
 			path = BCMagicTransition;
 			sourceTree = "<group>";
 		};
+		68C0EB712B184B09005E1C28 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				68C0EB762B184DAD005E1C28 /* ContainerView */,
+				68B912732B173AED0049E0FA /* UIStackViewController.h */,
+				68B912742B173AED0049E0FA /* UIStackViewController.m */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		68C0EB762B184DAD005E1C28 /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				68C0EB822B185260005E1C28 /* Demo */,
+				68C0EB7B2B184DAD005E1C28 /* ContainerDefines.h */,
+				68C0EB7A2B184DAD005E1C28 /* ContainerTypes.h */,
+				68C0EB782B184DAD005E1C28 /* ContainerView.h */,
+				68C0EB7E2B184DAD005E1C28 /* ContainerView.m */,
+				68C0EB7C2B184DAD005E1C28 /* ContainerViewController.h */,
+				68C0EB772B184DAD005E1C28 /* ContainerViewController.m */,
+				68C0EB7D2B184DAD005E1C28 /* ContainerScrollDelegate.h */,
+				68C0EB792B184DAD005E1C28 /* ContainerScrollDelegate.m */,
+			);
+			path = ContainerView;
+			sourceTree = "<group>";
+		};
+		68C0EB822B185260005E1C28 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				68C0EB722B184B3A005E1C28 /* UIToolbarViewController.h */,
+				68C0EB732B184B3A005E1C28 /* UIToolbarViewController.m */,
+				68C0EB842B185271005E1C28 /* DemoHeaderViews.h */,
+				68C0EB832B185271005E1C28 /* DemoHeaderViews.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		FD96E672B833CA21A4AA34CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3EBE63870D2A9FCED416B2D /* Pods_iOSDemos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F3165F82B14D39E0074538D /* Build configuration list for PBXNativeTarget "iOSDemos" */;
 			buildPhases = (
+				D9A0BDC9C2D9C40C86468AA6 /* [CP] Check Pods Manifest.lock */,
 				3F3165DB2B14D39D0074538D /* Sources */,
 				3F3165DC2B14D39D0074538D /* Frameworks */,
 				3F3165DD2B14D39D0074538D /* Resources */,
@@ -206,15 +284,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D9A0BDC9C2D9C40C86468AA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSDemos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F3165DB2B14D39D0074538D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C0EB852B185271005E1C28 /* DemoHeaderViews.m in Sources */,
+				68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */,
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
+				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
+				68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */,
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
 				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
@@ -224,6 +331,7 @@
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
 				68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */,
 				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
+				68C0EB7F2B184DAD005E1C28 /* ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -348,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -359,6 +467,7 @@
 		};
 		3F3165F92B14D39E0074538D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F785310190FAF460E26392 /* Pods-iOSDemos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -372,6 +481,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,6 +496,7 @@
 		};
 		3F3165FA2B14D39E0074538D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD61D8495355E69B8365EEB /* Pods-iOSDemos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +510,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
