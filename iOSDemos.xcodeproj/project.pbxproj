@@ -35,6 +35,8 @@
 		3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31662C2B18DD110074538D /* UIView+Animation.m */; };
 		3F3166332B18DD4A0074538D /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166322B18DD4A0074538D /* ShakeViewController.m */; };
 		3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166352B18DEE50074538D /* AnimatePanViewController.m */; };
+		3F31663A2B1A19580074538D /* AnimateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166392B1A19580074538D /* AnimateTableViewController.m */; };
+		3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31663C2B1A19A60074538D /* AnimateTableViewCell.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -92,6 +94,10 @@
 		3F3166322B18DD4A0074538D /* ShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		3F3166342B18DEE50074538D /* AnimatePanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatePanViewController.h; sourceTree = "<group>"; };
 		3F3166352B18DEE50074538D /* AnimatePanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatePanViewController.m; sourceTree = "<group>"; };
+		3F3166382B1A19580074538D /* AnimateTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateTableViewController.h; sourceTree = "<group>"; };
+		3F3166392B1A19580074538D /* AnimateTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateTableViewController.m; sourceTree = "<group>"; };
+		3F31663B2B1A19A60074538D /* AnimateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateTableViewCell.h; sourceTree = "<group>"; };
+		3F31663C2B1A19A60074538D /* AnimateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateTableViewCell.m; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -269,6 +275,17 @@
 			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
+		3F3166372B1A19160074538D /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166382B1A19580074538D /* AnimateTableViewController.h */,
+				3F3166392B1A19580074538D /* AnimateTableViewController.m */,
+				3F31663B2B1A19A60074538D /* AnimateTableViewCell.h */,
+				3F31663C2B1A19A60074538D /* AnimateTableViewCell.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +327,7 @@
 		68C0EB712B184B09005E1C28 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166372B1A19160074538D /* UITableView */,
 				3F3165FB2B18D4890074538D /* UICollectionView */,
 				68C0EB762B184DAD005E1C28 /* ContainerView */,
 				68B912732B173AED0049E0FA /* UIStackViewController.h */,
@@ -476,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68C0EB852B185271005E1C28 /* DemoHeaderViews.m in Sources */,
+				3F31663A2B1A19580074538D /* AnimateTableViewController.m in Sources */,
 				68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */,
 				3F3166192B18D4CB0074538D /* CalendarEventCell.swift in Sources */,
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
@@ -498,6 +517,7 @@
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
 				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
 				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
+				3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
 				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,

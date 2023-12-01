@@ -13,6 +13,7 @@
 #import "YYViewHierarchy3D.h"
 #import "ShakeViewController.h"
 #import "AnimatePanViewController.h"
+#import "AnimateTableViewController.h"
 #import "iOSDemos-Swift.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -49,6 +50,13 @@
             rowInfo.title = @"UICollectionView";
             rowInfo.handler = ^{
                 CollectionEntryViewController *vc = [[CollectionEntryViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"Animate UITableView";
+            rowInfo.handler = ^{
+                AnimateTableViewController *vc = [[AnimateTableViewController alloc] init];
                 [self.navigationController pushViewController:vc animated:YES];
             };
         }];
