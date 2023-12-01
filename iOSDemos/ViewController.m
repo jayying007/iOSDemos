@@ -66,6 +66,13 @@
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
+        sectionInfo.title = @"前端";
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"WebView 同层渲染";
+            rowInfo.className = @"NativeRenderWebViewController";
+        }];
+    }];
+    [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"其他";
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"打开ViewHierarchy3D";

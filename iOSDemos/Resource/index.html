@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        .block {
+            width: 80%;
+            height: 300pt;
+            margin-top: 50pt;
+            background-color: red;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+        }
+        .toast {
+            position: fixed;
+            width: 250pt;
+            height: 100pt;
+            background-color: gray;
+            line-height: 100pt;
+            text-align: center;
+            color: white;
+            top: 50%;
+            left: 50%;
+            font-size: 50pt;
+            transform: translate(-50%,-50%);
+        }
+        .native {
+            width: 80%;
+            height: 350pt;
+            margin-top: 50pt;
+            background-color: blue;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标题 -->
+    <h1 class="title">H5页面Demo</h1>
+    <!-- 内容 -->
+    <button onclick="changeColor();">点我啊</button>
+    <div class="content">
+        <div class="block"></div>
+        <div class="block"></div>
+        <!-- 特殊组件 -->
+        <div class="native" id="jayying">
+            <div style="width: 101%; height: 101%">
+            </div>
+        </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+    <!-- 弹框 -->
+    <div class="toast show">弹窗提示</div>
+</body>
+</html>
+
+<script>
+    function changeColor() {
+        var ct = document.getElementsByClassName("block")[0];
+        ct.style.backgroundColor = "green";
+    }
+    function insertNativeComponents() {
+        var ct = document.getElementsByClassName("native")[0];
+        var id = ct.getAttribute("id");
+        var frame = ct.getBoundingClientRect();
+        var args = {
+            "frame": {
+                "y": frame.top,
+                "x": frame.left,
+                "width": frame.width,
+                "height": frame.height
+            },
+            "id": id
+        };
+        return args
+    }
+    setTimeout(()=>{
+        window.webkit.messageHandlers.nativeViewHandler.postMessage({
+            "command": "nativeViewInsert",
+            "args": insertNativeComponents()
+        });
+    }, 1000);
+</script>

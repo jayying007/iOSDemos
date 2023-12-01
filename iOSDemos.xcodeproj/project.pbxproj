@@ -37,6 +37,9 @@
 		3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166352B18DEE50074538D /* AnimatePanViewController.m */; };
 		3F31663A2B1A19580074538D /* AnimateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166392B1A19580074538D /* AnimateTableViewController.m */; };
 		3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31663C2B1A19A60074538D /* AnimateTableViewCell.m */; };
+		3F3166432B1A238E0074538D /* NativeRenderWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166422B1A238E0074538D /* NativeRenderWebViewController.m */; };
+		3F3166462B1A24130074538D /* NativeRenderContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166452B1A24130074538D /* NativeRenderContainerView.m */; };
+		3F3166492B1A24440074538D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166482B1A24440074538D /* index.html */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -99,6 +102,11 @@
 		3F31663B2B1A19A60074538D /* AnimateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateTableViewCell.h; sourceTree = "<group>"; };
 		3F31663C2B1A19A60074538D /* AnimateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateTableViewCell.m; sourceTree = "<group>"; };
 		3F31663E2B1A1C210074538D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3F3166412B1A238E0074538D /* NativeRenderWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeRenderWebViewController.h; sourceTree = "<group>"; };
+		3F3166422B1A238E0074538D /* NativeRenderWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeRenderWebViewController.m; sourceTree = "<group>"; };
+		3F3166442B1A24130074538D /* NativeRenderContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeRenderContainerView.h; sourceTree = "<group>"; };
+		3F3166452B1A24130074538D /* NativeRenderContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeRenderContainerView.m; sourceTree = "<group>"; };
+		3F3166482B1A24440074538D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -177,12 +185,14 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166472B1A24440074538D /* Resource */,
+				3F3166402B1A23660074538D /* Web */,
 				3F31663F2B1A1C3E0074538D /* Supporting Files */,
+				68B9126F2B1738220049E0FA /* MMUIKit */,
 				3F31662B2B18DCFF0074538D /* CoreAnimation */,
 				68C0EB892B186068005E1C28 /* Other */,
 				68C0EB712B184B09005E1C28 /* UIComponents */,
 				68C0EB4C2B17546E005E1C28 /* Transition */,
-				68B9126F2B1738220049E0FA /* MMUIKit */,
 				3F3165E82B14D39D0074538D /* ViewController.h */,
 				3F3165E92B14D39D0074538D /* ViewController.m */,
 				3F3165EE2B14D39E0074538D /* Assets.xcassets */,
@@ -294,6 +304,25 @@
 				3F3165F32B14D39E0074538D /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F3166402B1A23660074538D /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166412B1A238E0074538D /* NativeRenderWebViewController.h */,
+				3F3166422B1A238E0074538D /* NativeRenderWebViewController.m */,
+				3F3166442B1A24130074538D /* NativeRenderContainerView.h */,
+				3F3166452B1A24130074538D /* NativeRenderContainerView.m */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		3F3166472B1A24440074538D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166482B1A24440074538D /* index.html */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
@@ -449,6 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3166492B1A24440074538D /* index.html in Resources */,
 				3F3165F22B14D39E0074538D /* LaunchScreen.storyboard in Resources */,
 				3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */,
 			);
@@ -510,6 +540,7 @@
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
 				3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */,
 				3F3166002B18D4C30074538D /* ImageCollectionViewCell.swift in Sources */,
+				3F3166462B1A24130074538D /* NativeRenderContainerView.m in Sources */,
 				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
 				3F3165FF2B18D4C30074538D /* BaseViewController.swift in Sources */,
@@ -537,6 +568,7 @@
 				3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */,
 				3F3166182B18D4CB0074538D /* CalendarDataSource.swift in Sources */,
 				3F31661D2B18D4CB0074538D /* LineLayout.swift in Sources */,
+				3F3166432B1A238E0074538D /* NativeRenderWebViewController.m in Sources */,
 				68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */,
 				3F31661C2B18D4CB0074538D /* CircleLayout.swift in Sources */,
 				3F3166222B18D4CB0074538D /* PubuLayout.swift in Sources */,
