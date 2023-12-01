@@ -7,14 +7,7 @@
 
 #import "ViewController.h"
 #import "UITableViewInfo.h"
-#import "UIStackViewController.h"
-#import "FirstViewController.h"
-#import "UIToolbarViewController.h"
 #import "YYViewHierarchy3D.h"
-#import "ShakeViewController.h"
-#import "AnimatePanViewController.h"
-#import "AnimateTableViewController.h"
-#import "iOSDemos-Swift.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -33,18 +26,12 @@
         sectionInfo.title = @"UI组件";
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"UIStackView";
-            rowInfo.handler = ^{
-                UIStackViewController *vc = [[UIStackViewController alloc] init];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
+            rowInfo.className = @"UIStackViewController";
         }];
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"UIToolbar";
             rowInfo.detail = @"可以上下拖动的Toolbar容器";
-            rowInfo.handler = ^{
-                UIToolbarViewController *vc = [[UIToolbarViewController alloc] init];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
+            rowInfo.className = @"UIToolbarViewController";
         }];
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"UICollectionView";
@@ -55,20 +42,14 @@
         }];
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"Animate UITableView";
-            rowInfo.handler = ^{
-                AnimateTableViewController *vc = [[AnimateTableViewController alloc] init];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
+            rowInfo.className = @"AnimateTableViewController";
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"转场";
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"BCMagicTransition";
-            rowInfo.handler = ^{
-                FirstViewController *vc = [FirstViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
+            rowInfo.className = @"FirstViewController";
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
@@ -76,18 +57,12 @@
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"Shake Animation";
             rowInfo.detail = @"会震动的密码框";
-            rowInfo.handler = ^{
-                ShakeViewController *vc = [ShakeViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
+            rowInfo.className = @"ShakeViewController";
         }];
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"Animated Pen";
             rowInfo.detail = @"神笔马良";
-            rowInfo.handler = ^{
-                AnimatePanViewController *vc = [AnimatePanViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
+            rowInfo.className = @"AnimatePanViewController";
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
@@ -142,7 +117,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewSectionInfo *sectionInfo = _tableViewInfo.sections[indexPath.section];
     UITableViewRowInfo *rowInfo = sectionInfo.rows[indexPath.row];
-    rowInfo.handler();
+    if (rowInfo.className.length > 0) {
+        UIViewController *vc = [[NSClassFromString(rowInfo.className) alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (rowInfo.handler) {
+        rowInfo.handler();
+    }
 }
 
 @end

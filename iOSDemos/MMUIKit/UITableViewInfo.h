@@ -7,12 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^RowClickHandler)(void);
+typedef void (^RowClickHandler)(void);
 
 @interface UITableViewRowInfo : NSObject
 
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSString *detail;
+
+/// 跳转的VC
+@property (nonatomic) NSString *className;
 @property (nonatomic) RowClickHandler handler;
 
 @end
@@ -22,7 +25,7 @@ typedef void(^RowClickHandler)(void);
 @property (nonatomic) NSString *title;
 @property (nonatomic) NSMutableArray *rows;
 
-- (void)addRowInfo:(void(^)(UITableViewRowInfo *rowInfo))rowBuilder;
+- (void)addRowInfo:(void (^)(UITableViewRowInfo *rowInfo))rowBuilder;
 
 @end
 
@@ -30,7 +33,6 @@ typedef void(^RowClickHandler)(void);
 
 @property (nonatomic) NSMutableArray *sections;
 
-- (void)addSectionInfo:(void(^)(UITableViewSectionInfo *sectionInfo))sectionBuilder;
+- (void)addSectionInfo:(void (^)(UITableViewSectionInfo *sectionInfo))sectionBuilder;
 
 @end
-

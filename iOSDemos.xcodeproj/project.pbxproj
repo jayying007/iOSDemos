@@ -98,6 +98,7 @@
 		3F3166392B1A19580074538D /* AnimateTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateTableViewController.m; sourceTree = "<group>"; };
 		3F31663B2B1A19A60074538D /* AnimateTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateTableViewCell.h; sourceTree = "<group>"; };
 		3F31663C2B1A19A60074538D /* AnimateTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateTableViewCell.m; sourceTree = "<group>"; };
+		3F31663E2B1A1C210074538D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -176,22 +177,17 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				3F31663F2B1A1C3E0074538D /* Supporting Files */,
 				3F31662B2B18DCFF0074538D /* CoreAnimation */,
 				68C0EB892B186068005E1C28 /* Other */,
 				68C0EB712B184B09005E1C28 /* UIComponents */,
 				68C0EB4C2B17546E005E1C28 /* Transition */,
 				68B9126F2B1738220049E0FA /* MMUIKit */,
-				3F3165E22B14D39D0074538D /* AppDelegate.h */,
-				3F3165E32B14D39D0074538D /* AppDelegate.m */,
-				3F3165E52B14D39D0074538D /* SceneDelegate.h */,
-				3F3165E62B14D39D0074538D /* SceneDelegate.m */,
 				3F3165E82B14D39D0074538D /* ViewController.h */,
 				3F3165E92B14D39D0074538D /* ViewController.m */,
 				3F3165EE2B14D39E0074538D /* Assets.xcassets */,
-				3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */,
-				3F3165F32B14D39E0074538D /* Info.plist */,
-				3F3165F42B14D39E0074538D /* main.m */,
 				3F31662A2B18D8000074538D /* iOSDemos-Bridging-Header.h */,
+				3F31663E2B1A1C210074538D /* PrefixHeader.pch */,
 			);
 			path = iOSDemos;
 			sourceTree = "<group>";
@@ -284,6 +280,20 @@
 				3F31663C2B1A19A60074538D /* AnimateTableViewCell.m */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		3F31663F2B1A1C3E0074538D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F3165E22B14D39D0074538D /* AppDelegate.h */,
+				3F3165E32B14D39D0074538D /* AppDelegate.m */,
+				3F3165E52B14D39D0074538D /* SceneDelegate.h */,
+				3F3165E62B14D39D0074538D /* SceneDelegate.m */,
+				3F3165F42B14D39E0074538D /* main.m */,
+				3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */,
+				3F3165F32B14D39E0074538D /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
@@ -679,8 +689,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86JSFRSCH9;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = iOSDemos/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSDemos/Info.plist;
+				INFOPLIST_FILE = "iOSDemos/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -711,8 +722,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86JSFRSCH9;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = iOSDemos/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOSDemos/Info.plist;
+				INFOPLIST_FILE = "iOSDemos/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
