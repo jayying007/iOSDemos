@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "RootViewController.h"
 #import "MMUINavigationController.h"
 
 @interface SceneDelegate ()
@@ -20,7 +20,7 @@
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     _window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
-    ViewController *vc = [ViewController new];
+    RootViewController *vc = [RootViewController new];
     MMUINavigationController *nav = [[MMUINavigationController alloc] initWithRootViewController:vc];
     _window.rootViewController = nav;
     [_window makeKeyAndVisible];

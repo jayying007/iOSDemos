@@ -6,6 +6,7 @@
 //
 
 #import "MMUINavigationController.h"
+#import "TransitionController.h"
 
 @interface MMUINavigationController () <UINavigationControllerDelegate>
 
@@ -39,15 +40,30 @@
                                   animationControllerForOperation:(UINavigationControllerOperation)operation
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC {
-    SEL transitionSelector = @selector(navigationController:animationControllerForOperation:fromViewController:toViewController:);
+    SEL transitionSelector = @selector(mmNavigationController:animationControllerForOperation:fromViewController:toViewController:);
 
-    if ([fromVC respondsToSelector:transitionSelector]) {
-        return [(id<UINavigationControllerDelegate>)fromVC navigationController:navigationController
-                                                animationControllerForOperation:operation
-                                                             fromViewController:fromVC
-                                                               toViewController:toVC];
+    if ([fromVC respondsToSelector:transitionSelector] && operation == UINavigationControllerOperationPush) {
+        return [(id<MMUINavigationControllerDelegate>)fromVC mmNavigationController:navigationController
+                                                    animationControllerForOperation:operation
+                                                                 fromViewController:fromVC
+                                                                   toViewController:toVC];
     }
 
+    if ([toVC respondsToSelector:transitionSelector] && operation == UINavigationControllerOperationPop) {
+        return [(id<MMUINavigationControllerDelegate>)toVC mmNavigationController:navigationController
+                                                  animationControllerForOperation:operation
+                                                               fromViewController:fromVC
+                                                                 toViewController:toVC];
+    }
+
+    return nil;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                         interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    if ([animationController isKindOfClass:TransitionController.class]) {
+        return animationController;
+    }
     return nil;
 }
 

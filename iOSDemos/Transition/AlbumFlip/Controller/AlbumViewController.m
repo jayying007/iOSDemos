@@ -6,9 +6,16 @@
 //
 
 #import "AlbumViewController.h"
+#import "ImgFullScreenViewController.h"
+#import "AssetTransitioning.h"
+#import "TransitionController.h"
+#import "MMUINavigationController.h"
 
-@interface AlbumViewController ()
+@interface AlbumViewController () <MMUINavigationControllerDelegate, FullScreenTransitioning>
 @property (nonatomic) NSArray *imageNames;
+
+@property (nonatomic) NSIndexPath *selectedIndexPath;
+@property (nonatomic) TransitionController *transitionController;
 
 @end
 
@@ -52,6 +59,15 @@ static NSString *const reuseIdentifier = @"Cell";
 
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedIndexPath = indexPath;
+
+    ImgFullScreenViewController *vc = [[ImgFullScreenViewController alloc] initWithImage:self.imageNames[indexPath.row]];
+    vc.indexPath = indexPath;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark -
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout *)collectionViewLayout
@@ -69,6 +85,58 @@ static NSString *const reuseIdentifier = @"Cell";
         return CGSizeMake(160, 160);
     }
     return CGSizeMake(80, 80);
+}
+
+#pragma mark - MMUINavigationControllerDelegate
+
+- (id<UIViewControllerAnimatedTransitioning>)mmNavigationController:(UINavigationController *)navigationController
+                                    animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                 fromViewController:(UIViewController *)fromVC
+                                                   toViewController:(UIViewController *)toVC {
+    if (_transitionController == nil) {
+        _transitionController = [[TransitionController alloc] initWithNavController:navigationController];
+    }
+    _transitionController.operation = operation;
+
+    return _transitionController;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                         interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    if (_transitionController == nil) {
+        _transitionController = [[TransitionController alloc] initWithNavController:navigationController];
+    }
+
+    return _transitionController;
+}
+
+#pragma mark - AssetTransitioning
+
+- (NSArray<FullScreenTransitionItem *> *)itemsForTransition:(id<UIViewControllerContextTransitioning>)context {
+    UICollectionViewCell *cell = [self collectionView:self.collectionView cellForItemAtIndexPath:self.selectedIndexPath];
+
+    FullScreenTransitionItem *item = [[FullScreenTransitionItem alloc] init];
+    item.indexPath = self.selectedIndexPath;
+    item.image = [UIImage imageNamed:self.imageNames[self.selectedIndexPath.row]];
+
+    item.initialFrame = [cell convertRect:cell.bounds toView:WINDOW];
+    item.initialFrame = CGRectMake(item.initialFrame.origin.x,
+                                   item.initialFrame.origin.y + self.collectionView.adjustedContentInset.top,
+                                   item.initialFrame.size.width,
+                                   item.initialFrame.size.height);
+
+    return @[ item ];
+}
+
+- (CGRect)targetFrameForItem:(FullScreenTransitionItem *)item {
+    UICollectionViewCell *cell = [self collectionView:self.collectionView cellForItemAtIndexPath:item.indexPath];
+    CGRect rect = [cell convertRect:cell.bounds toView:WINDOW];
+
+    return (CGRect){ .size = rect.size,
+                     .origin = {
+                     .x = rect.origin.x,
+                     .y = rect.origin.y - self.collectionView.contentOffset.y //为啥需要加这个偏移量？而且和上面的还不一样
+                     } };
 }
 
 @end

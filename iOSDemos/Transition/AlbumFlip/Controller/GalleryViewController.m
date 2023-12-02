@@ -9,8 +9,9 @@
 #import "AlbumViewController.h"
 #import "TransitionMgr.h"
 #import "FlipPushAnimationController.h"
+#import "MMUINavigationController.h"
 
-@interface GalleryViewController () <UINavigationControllerDelegate>
+@interface GalleryViewController () <MMUINavigationControllerDelegate>
 @property (nonatomic) NSArray *coverNames;
 
 @property (nonatomic) FlipPushAnimationController *pushAnimator;
@@ -73,13 +74,13 @@ static NSString *const reuseIdentifier = @"Cell";
     Service(TransitionMgr).originFrame = rect;
 }
 
-#pragma mark - UINavigationControllerDelegate
+#pragma mark - MMUINavigationControllerDelegate
 
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                  animationControllerForOperation:(UINavigationControllerOperation)operation
-                                               fromViewController:(UIViewController *)fromVC
-                                                 toViewController:(UIViewController *)toVC {
-    if (operation == UINavigationControllerOperationPush) {
+- (id<UIViewControllerAnimatedTransitioning>)mmNavigationController:(UINavigationController *)navigationController
+                                    animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                 fromViewController:(UIViewController *)fromVC
+                                                   toViewController:(UIViewController *)toVC {
+    if (fromVC == self && operation == UINavigationControllerOperationPush) {
         self.pushAnimator = [[FlipPushAnimationController alloc] init];
         return self.pushAnimator;
     }

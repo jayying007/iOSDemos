@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165E32B14D39D0074538D /* AppDelegate.m */; };
 		3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165E62B14D39D0074538D /* SceneDelegate.m */; };
-		3F3165EA2B14D39D0074538D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165E92B14D39D0074538D /* ViewController.m */; };
+		3F3165EA2B14D39D0074538D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165E92B14D39D0074538D /* RootViewController.m */; };
 		3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3165EE2B14D39E0074538D /* Assets.xcassets */; };
 		3F3165F22B14D39E0074538D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3165F02B14D39E0074538D /* LaunchScreen.storyboard */; };
 		3F3165F52B14D39E0074538D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165F42B14D39E0074538D /* main.m */; };
@@ -77,6 +77,16 @@
 		3F3166A72B1B881E0074538D /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A12B1B881E0074538D /* GalleryViewController.m */; };
 		3F3166A82B1B881E0074538D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A22B1B881E0074538D /* AlbumViewController.m */; };
 		3F3166AB2B1B8A4F0074538D /* MMUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */; };
+		3F3166B42B1B8EFE0074538D /* AssetTransitionDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166AE2B1B8EFD0074538D /* AssetTransitionDriver.m */; };
+		3F3166B52B1B8EFE0074538D /* FullScreenTransitionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166AF2B1B8EFE0074538D /* FullScreenTransitionItem.m */; };
+		3F3166B62B1B8EFE0074538D /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166B12B1B8EFE0074538D /* TransitionController.m */; };
+		3F3166B92B1B8F0D0074538D /* ImgFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166B72B1B8F0D0074538D /* ImgFullScreenViewController.m */; };
+		3F3166CA2B1B972C0074538D /* AssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166BC2B1B972C0074538D /* AssetCollectionViewCell.m */; };
+		3F3166CB2B1B972C0074538D /* GridImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166BD2B1B972C0074538D /* GridImageView.m */; };
+		3F3166CC2B1B972C0074538D /* AssetTransitionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166C12B1B972C0074538D /* AssetTransitionItem.m */; };
+		3F3166CD2B1B972C0074538D /* AssetAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166C22B1B972C0074538D /* AssetAnimationController.m */; };
+		3F3166CE2B1B972C0074538D /* AssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166C62B1B972C0074538D /* AssetViewController.m */; };
+		3F3166CF2B1B972C0074538D /* AssetAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166C72B1B972C0074538D /* AssetAlbumViewController.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -102,8 +112,8 @@
 		3F3165E32B14D39D0074538D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F3165E52B14D39D0074538D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		3F3165E62B14D39D0074538D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		3F3165E82B14D39D0074538D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3F3165E92B14D39D0074538D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F3165E82B14D39D0074538D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		3F3165E92B14D39D0074538D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		3F3165EE2B14D39E0074538D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3165F12B14D39E0074538D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3165F32B14D39E0074538D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,6 +202,27 @@
 		3F3166A42B1B881E0074538D /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
 		3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUINavigationController.m; sourceTree = "<group>"; };
 		3F3166AA2B1B8A4F0074538D /* MMUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUINavigationController.h; sourceTree = "<group>"; };
+		3F3166AD2B1B8EFD0074538D /* AssetTransitionDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTransitionDriver.h; sourceTree = "<group>"; };
+		3F3166AE2B1B8EFD0074538D /* AssetTransitionDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetTransitionDriver.m; sourceTree = "<group>"; };
+		3F3166AF2B1B8EFE0074538D /* FullScreenTransitionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenTransitionItem.m; sourceTree = "<group>"; };
+		3F3166B02B1B8EFE0074538D /* FullScreenTransitionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenTransitionItem.h; sourceTree = "<group>"; };
+		3F3166B12B1B8EFE0074538D /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
+		3F3166B22B1B8EFE0074538D /* AssetTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTransitioning.h; sourceTree = "<group>"; };
+		3F3166B32B1B8EFE0074538D /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		3F3166B72B1B8F0D0074538D /* ImgFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgFullScreenViewController.m; sourceTree = "<group>"; };
+		3F3166B82B1B8F0D0074538D /* ImgFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgFullScreenViewController.h; sourceTree = "<group>"; };
+		3F3166BC2B1B972C0074538D /* AssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetCollectionViewCell.m; sourceTree = "<group>"; };
+		3F3166BD2B1B972C0074538D /* GridImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridImageView.m; sourceTree = "<group>"; };
+		3F3166BE2B1B972C0074538D /* AssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetCollectionViewCell.h; sourceTree = "<group>"; };
+		3F3166BF2B1B972C0074538D /* GridImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridImageView.h; sourceTree = "<group>"; };
+		3F3166C12B1B972C0074538D /* AssetTransitionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetTransitionItem.m; sourceTree = "<group>"; };
+		3F3166C22B1B972C0074538D /* AssetAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetAnimationController.m; sourceTree = "<group>"; };
+		3F3166C32B1B972C0074538D /* AssetTransitionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTransitionItem.h; sourceTree = "<group>"; };
+		3F3166C42B1B972C0074538D /* AssetAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetAnimationController.h; sourceTree = "<group>"; };
+		3F3166C62B1B972C0074538D /* AssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetViewController.m; sourceTree = "<group>"; };
+		3F3166C72B1B972C0074538D /* AssetAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetAlbumViewController.m; sourceTree = "<group>"; };
+		3F3166C82B1B972C0074538D /* AssetAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetAlbumViewController.h; sourceTree = "<group>"; };
+		3F3166C92B1B972C0074538D /* AssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetViewController.h; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -280,8 +311,8 @@
 				68C0EB712B184B09005E1C28 /* UIComponents */,
 				68C0EB4C2B17546E005E1C28 /* Transition */,
 				68C0EB892B186068005E1C28 /* Other */,
-				3F3165E82B14D39D0074538D /* ViewController.h */,
-				3F3165E92B14D39D0074538D /* ViewController.m */,
+				3F3165E82B14D39D0074538D /* RootViewController.h */,
+				3F3165E92B14D39D0074538D /* RootViewController.m */,
 				3F3165EE2B14D39E0074538D /* Assets.xcassets */,
 				3F31662A2B18D8000074538D /* iOSDemos-Bridging-Header.h */,
 				3F31663E2B1A1C210074538D /* PrefixHeader.pch */,
@@ -483,6 +514,7 @@
 		3F31669B2B1B881E0074538D /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166AC2B1B8EF00074538D /* FullScreen */,
 				3F31669C2B1B881E0074538D /* FlipPushAnimationController.h */,
 				3F31669E2B1B881E0074538D /* FlipPushAnimationController.m */,
 				3F31669D2B1B881E0074538D /* TransitionMgr.h */,
@@ -498,6 +530,65 @@
 				3F3166A12B1B881E0074538D /* GalleryViewController.m */,
 				3F3166A42B1B881E0074538D /* AlbumViewController.h */,
 				3F3166A22B1B881E0074538D /* AlbumViewController.m */,
+				3F3166B82B1B8F0D0074538D /* ImgFullScreenViewController.h */,
+				3F3166B72B1B8F0D0074538D /* ImgFullScreenViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F3166AC2B1B8EF00074538D /* FullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166AD2B1B8EFD0074538D /* AssetTransitionDriver.h */,
+				3F3166AE2B1B8EFD0074538D /* AssetTransitionDriver.m */,
+				3F3166B22B1B8EFE0074538D /* AssetTransitioning.h */,
+				3F3166B02B1B8EFE0074538D /* FullScreenTransitionItem.h */,
+				3F3166AF2B1B8EFE0074538D /* FullScreenTransitionItem.m */,
+				3F3166B32B1B8EFE0074538D /* TransitionController.h */,
+				3F3166B12B1B8EFE0074538D /* TransitionController.m */,
+			);
+			path = FullScreen;
+			sourceTree = "<group>";
+		};
+		3F3166BA2B1B96F30074538D /* AblumAsset */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166C52B1B972C0074538D /* Controller */,
+				3F3166C02B1B972C0074538D /* Transition */,
+				3F3166BB2B1B972C0074538D /* View */,
+			);
+			path = AblumAsset;
+			sourceTree = "<group>";
+		};
+		3F3166BB2B1B972C0074538D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166BE2B1B972C0074538D /* AssetCollectionViewCell.h */,
+				3F3166BC2B1B972C0074538D /* AssetCollectionViewCell.m */,
+				3F3166BF2B1B972C0074538D /* GridImageView.h */,
+				3F3166BD2B1B972C0074538D /* GridImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F3166C02B1B972C0074538D /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166C32B1B972C0074538D /* AssetTransitionItem.h */,
+				3F3166C12B1B972C0074538D /* AssetTransitionItem.m */,
+				3F3166C42B1B972C0074538D /* AssetAnimationController.h */,
+				3F3166C22B1B972C0074538D /* AssetAnimationController.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		3F3166C52B1B972C0074538D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166C92B1B972C0074538D /* AssetViewController.h */,
+				3F3166C62B1B972C0074538D /* AssetViewController.m */,
+				3F3166C82B1B972C0074538D /* AssetAlbumViewController.h */,
+				3F3166C72B1B972C0074538D /* AssetAlbumViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -520,6 +611,7 @@
 		68C0EB4C2B17546E005E1C28 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166BA2B1B96F30074538D /* AblumAsset */,
 				3F31669A2B1B87FC0074538D /* AlbumFlip */,
 				68C0EB4D2B175500005E1C28 /* BCMagicTransition */,
 			);
@@ -722,6 +814,7 @@
 				3F31663A2B1A19580074538D /* AnimateTableViewController.m in Sources */,
 				68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */,
 				3F3166192B18D4CB0074538D /* CalendarEventCell.swift in Sources */,
+				3F3166CA2B1B972C0074538D /* AssetCollectionViewCell.m in Sources */,
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
 				3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */,
 				3F3166912B1B1FFF0074538D /* QuartzDashView.swift in Sources */,
@@ -739,13 +832,16 @@
 				3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */,
-				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
+				3F3165EA2B14D39D0074538D /* RootViewController.m in Sources */,
 				3F3166A52B1B881E0074538D /* FlipPushAnimationController.m in Sources */,
 				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
 				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
 				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
+				3F3166B52B1B8EFE0074538D /* FullScreenTransitionItem.m in Sources */,
 				3F3166832B1B1FFF0074538D /* QuartzGradientView.swift in Sources */,
 				3F31668F2B1B1FFF0074538D /* QuartzGradientViewController.swift in Sources */,
+				3F3166CE2B1B972C0074538D /* AssetViewController.m in Sources */,
+				3F3166B42B1B8EFE0074538D /* AssetTransitionDriver.m in Sources */,
 				3F31668C2B1B1FFF0074538D /* QuartzRectView.swift in Sources */,
 				68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */,
 				3F3166202B18D4CB0074538D /* WaterfallLayout.swift in Sources */,
@@ -773,9 +869,12 @@
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3166862B1B1FFF0074538D /* QuartzEllipseArcView.swift in Sources */,
 				3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */,
+				3F3166B92B1B8F0D0074538D /* ImgFullScreenViewController.m in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
 				3F3166822B1B1FFF0074538D /* QuartzBezierView.swift in Sources */,
+				3F3166CC2B1B972C0074538D /* AssetTransitionItem.m in Sources */,
 				3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */,
+				3F3166CF2B1B972C0074538D /* AssetAlbumViewController.m in Sources */,
 				3F3166182B18D4CB0074538D /* CalendarDataSource.swift in Sources */,
 				3F31665E2B1B15190074538D /* ActivitySummaryViewController.m in Sources */,
 				3F31661D2B18D4CB0074538D /* LineLayout.swift in Sources */,
@@ -788,9 +887,12 @@
 				3F31668A2B1B1FFF0074538D /* QuartzImageView.swift in Sources */,
 				3F3166222B18D4CB0074538D /* PubuLayout.swift in Sources */,
 				3F3166812B1B1FFF0074538D /* QuartzCapJointWidthViewController.swift in Sources */,
+				3F3166CD2B1B972C0074538D /* AssetAnimationController.m in Sources */,
 				3F3166802B1B1FFF0074538D /* QuartzPatternView.swift in Sources */,
+				3F3166B62B1B8EFE0074538D /* TransitionController.m in Sources */,
 				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
 				3F3166842B1B1FFF0074538D /* QuartzPolyViewController.swift in Sources */,
+				3F3166CB2B1B972C0074538D /* GridImageView.m in Sources */,
 				3F3166332B18DD4A0074538D /* ShakeViewController.m in Sources */,
 				3F31661A2B18D4CB0074538D /* CalendarViewController.swift in Sources */,
 				3F3166212B18D4CB0074538D /* WaterfallViewController.swift in Sources */,
