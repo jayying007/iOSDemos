@@ -7,8 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define Service(CLASS) [CLASS sharedInstance]
-
 @interface TransitionMgr : NSObject
 + (instancetype)sharedInstance;
 

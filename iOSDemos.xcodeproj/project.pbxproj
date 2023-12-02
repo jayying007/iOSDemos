@@ -87,6 +87,15 @@
 		3F3166CD2B1B972C0074538D /* AssetAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166C22B1B972C0074538D /* AssetAnimationController.m */; };
 		3F3166CE2B1B972C0074538D /* AssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166C62B1B972C0074538D /* AssetViewController.m */; };
 		3F3166CF2B1B972C0074538D /* AssetAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166C72B1B972C0074538D /* AssetAlbumViewController.m */; };
+		3F3166E62B1B9B920074538D /* FloatDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166D22B1B9B920074538D /* FloatDetailViewController.m */; };
+		3F3166E72B1B9B920074538D /* FloatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166D32B1B9B920074538D /* FloatViewController.m */; };
+		3F3166E82B1B9B920074538D /* PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166D72B1B9B920074538D /* PopAnimation.m */; };
+		3F3166E92B1B9B920074538D /* FloatTransitionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166D82B1B9B920074538D /* FloatTransitionMgr.m */; };
+		3F3166EA2B1B9B920074538D /* PopInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166D92B1B9B920074538D /* PopInteraction.m */; };
+		3F3166EB2B1B9B920074538D /* FloatWindowMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166E02B1B9B920074538D /* FloatWindowMgr.m */; };
+		3F3166EC2B1B9B920074538D /* UIViewController+Minimize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166E12B1B9B920074538D /* UIViewController+Minimize.m */; };
+		3F3166ED2B1B9B920074538D /* FloatFan.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166E32B1B9B920074538D /* FloatFan.m */; };
+		3F3166EE2B1B9B920074538D /* FloatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166E42B1B9B920074538D /* FloatButton.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -223,6 +232,24 @@
 		3F3166C72B1B972C0074538D /* AssetAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetAlbumViewController.m; sourceTree = "<group>"; };
 		3F3166C82B1B972C0074538D /* AssetAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetAlbumViewController.h; sourceTree = "<group>"; };
 		3F3166C92B1B972C0074538D /* AssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetViewController.h; sourceTree = "<group>"; };
+		3F3166D22B1B9B920074538D /* FloatDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatDetailViewController.m; sourceTree = "<group>"; };
+		3F3166D32B1B9B920074538D /* FloatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatViewController.m; sourceTree = "<group>"; };
+		3F3166D42B1B9B920074538D /* FloatDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatDetailViewController.h; sourceTree = "<group>"; };
+		3F3166D52B1B9B920074538D /* FloatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatViewController.h; sourceTree = "<group>"; };
+		3F3166D72B1B9B920074538D /* PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimation.m; sourceTree = "<group>"; };
+		3F3166D82B1B9B920074538D /* FloatTransitionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatTransitionMgr.m; sourceTree = "<group>"; };
+		3F3166D92B1B9B920074538D /* PopInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopInteraction.m; sourceTree = "<group>"; };
+		3F3166DA2B1B9B920074538D /* FloatTransitionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatTransitionMgr.h; sourceTree = "<group>"; };
+		3F3166DB2B1B9B920074538D /* PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimation.h; sourceTree = "<group>"; };
+		3F3166DC2B1B9B920074538D /* PopInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopInteraction.h; sourceTree = "<group>"; };
+		3F3166DE2B1B9B920074538D /* FloatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatButton.h; sourceTree = "<group>"; };
+		3F3166DF2B1B9B920074538D /* FloatFan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatFan.h; sourceTree = "<group>"; };
+		3F3166E02B1B9B920074538D /* FloatWindowMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatWindowMgr.m; sourceTree = "<group>"; };
+		3F3166E12B1B9B920074538D /* UIViewController+Minimize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Minimize.m"; sourceTree = "<group>"; };
+		3F3166E22B1B9B920074538D /* FloatWindowMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatWindowMgr.h; sourceTree = "<group>"; };
+		3F3166E32B1B9B920074538D /* FloatFan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatFan.m; sourceTree = "<group>"; };
+		3F3166E42B1B9B920074538D /* FloatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatButton.m; sourceTree = "<group>"; };
+		3F3166E52B1B9B920074538D /* UIViewController+Minimize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Minimize.h"; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -593,6 +620,55 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		3F3166D02B1B9B800074538D /* FloatWindow */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166D12B1B9B920074538D /* Controller */,
+				3F3166DD2B1B9B920074538D /* Float */,
+				3F3166D62B1B9B920074538D /* Transition */,
+			);
+			path = FloatWindow;
+			sourceTree = "<group>";
+		};
+		3F3166D12B1B9B920074538D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166D42B1B9B920074538D /* FloatDetailViewController.h */,
+				3F3166D22B1B9B920074538D /* FloatDetailViewController.m */,
+				3F3166D52B1B9B920074538D /* FloatViewController.h */,
+				3F3166D32B1B9B920074538D /* FloatViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F3166D62B1B9B920074538D /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166DC2B1B9B920074538D /* PopInteraction.h */,
+				3F3166D92B1B9B920074538D /* PopInteraction.m */,
+				3F3166DB2B1B9B920074538D /* PopAnimation.h */,
+				3F3166D72B1B9B920074538D /* PopAnimation.m */,
+				3F3166DA2B1B9B920074538D /* FloatTransitionMgr.h */,
+				3F3166D82B1B9B920074538D /* FloatTransitionMgr.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		3F3166DD2B1B9B920074538D /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166DE2B1B9B920074538D /* FloatButton.h */,
+				3F3166E42B1B9B920074538D /* FloatButton.m */,
+				3F3166DF2B1B9B920074538D /* FloatFan.h */,
+				3F3166E32B1B9B920074538D /* FloatFan.m */,
+				3F3166E22B1B9B920074538D /* FloatWindowMgr.h */,
+				3F3166E02B1B9B920074538D /* FloatWindowMgr.m */,
+				3F3166E52B1B9B920074538D /* UIViewController+Minimize.h */,
+				3F3166E12B1B9B920074538D /* UIViewController+Minimize.m */,
+			);
+			path = Float;
+			sourceTree = "<group>";
+		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -611,6 +687,7 @@
 		68C0EB4C2B17546E005E1C28 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166D02B1B9B800074538D /* FloatWindow */,
 				3F3166BA2B1B96F30074538D /* AblumAsset */,
 				3F31669A2B1B87FC0074538D /* AlbumFlip */,
 				68C0EB4D2B175500005E1C28 /* BCMagicTransition */,
@@ -834,6 +911,7 @@
 				3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */,
 				3F3165EA2B14D39D0074538D /* RootViewController.m in Sources */,
 				3F3166A52B1B881E0074538D /* FlipPushAnimationController.m in Sources */,
+				3F3166EE2B1B9B920074538D /* FloatButton.m in Sources */,
 				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
 				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
 				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
@@ -856,19 +934,24 @@
 				3F31661F2B18D4CB0074538D /* WaterfallCell.swift in Sources */,
 				3F31667D2B1B1FFF0074538D /* QuartzTextView.swift in Sources */,
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
+				3F3166E82B1B9B920074538D /* PopAnimation.m in Sources */,
 				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
+				3F3166ED2B1B9B920074538D /* FloatFan.m in Sources */,
 				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
 				3F3166902B1B1FFF0074538D /* QuartzPolygonView.swift in Sources */,
 				3F3166872B1B1FFF0074538D /* QuartzBlendingViewController.swift in Sources */,
 				3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
+				3F3166EB2B1B9B920074538D /* FloatWindowMgr.m in Sources */,
 				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
 				3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */,
+				3F3166E72B1B9B920074538D /* FloatViewController.m in Sources */,
 				3F3166A62B1B881E0074538D /* TransitionMgr.m in Sources */,
 				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3166862B1B1FFF0074538D /* QuartzEllipseArcView.swift in Sources */,
 				3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */,
+				3F3166E62B1B9B920074538D /* FloatDetailViewController.m in Sources */,
 				3F3166B92B1B8F0D0074538D /* ImgFullScreenViewController.m in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
 				3F3166822B1B1FFF0074538D /* QuartzBezierView.swift in Sources */,
@@ -895,8 +978,11 @@
 				3F3166CB2B1B972C0074538D /* GridImageView.m in Sources */,
 				3F3166332B18DD4A0074538D /* ShakeViewController.m in Sources */,
 				3F31661A2B18D4CB0074538D /* CalendarViewController.swift in Sources */,
+				3F3166EC2B1B9B920074538D /* UIViewController+Minimize.m in Sources */,
 				3F3166212B18D4CB0074538D /* WaterfallViewController.swift in Sources */,
 				68C0EB7F2B184DAD005E1C28 /* ContainerViewController.m in Sources */,
+				3F3166EA2B1B9B920074538D /* PopInteraction.m in Sources */,
+				3F3166E92B1B9B920074538D /* FloatTransitionMgr.m in Sources */,
 				3F3166172B18D4CB0074538D /* WeekCalendarLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

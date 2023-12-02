@@ -7,6 +7,8 @@
 
 #import "MMUINavigationController.h"
 #import "TransitionController.h"
+#import "FloatTransitionMgr.h"
+#import "PopAnimation.h"
 
 @interface MMUINavigationController () <UINavigationControllerDelegate>
 
@@ -63,6 +65,10 @@
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
     if ([animationController isKindOfClass:TransitionController.class]) {
         return animationController;
+    }
+    if ([animationController isKindOfClass:PopAnimation.class]) {
+        return [(id<UINavigationControllerDelegate>)Service(FloatTransitionMgr) navigationController:navigationController
+                                                         interactionControllerForAnimationController:animationController];
     }
     return nil;
 }

@@ -14,4 +14,14 @@
 #import "ContainerDefines.h"
 #import "iOSDemos-Swift.h"
 
+#define Service(CLASS) [CLASS sharedInstance]
+
+#define weakify(VAR) __weak typeof(VAR) _weak_ = VAR;
+#define strongify(VAR) __strong typeof(VAR) VAR = _weak_;
+
+static NSString * const kGestureChangePercent = @"kGestureChangePercent";
+static NSString * const kGestureChangeTouchPoint = @"kGestureChangeTouchPoint";
+static NSString * const kFinishInteraction = @"kFinishInteraction";
+static NSString * const kGestureEnd = @"kGestureEnd";
+
 #endif /* PrefixHeader_pch */

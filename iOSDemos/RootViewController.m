@@ -23,6 +23,7 @@
     [super viewDidLoad];
     self.title = @"iOS Demos";
 
+    weakify(self);
     _tableViewInfo = [[UITableViewInfo alloc] init];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"UI组件";
@@ -38,6 +39,7 @@
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"UICollectionView";
             rowInfo.handler = ^{
+                strongify(self);
                 CollectionEntryViewController *vc = [[CollectionEntryViewController alloc] init];
                 [self.navigationController pushViewController:vc animated:YES];
             };
@@ -52,6 +54,7 @@
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"苹果官方QuartzDemo";
             rowInfo.handler = ^{
+                strongify(self);
                 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Quartz" bundle:nil];
                 MasterViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"Master"];
                 [self.navigationController pushViewController:vc animated:YES];
@@ -80,6 +83,7 @@
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"相册翻转";
             rowInfo.handler = ^{
+                strongify(self);
                 UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
                 flowLayout.itemSize = CGSizeMake(150, 150);
                 flowLayout.minimumLineSpacing = 40;
@@ -90,6 +94,10 @@
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"相册合集";
             rowInfo.className = @"AssetViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"浮窗";
+            rowInfo.className = @"FloatViewController";
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
