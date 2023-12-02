@@ -99,6 +99,10 @@
             rowInfo.title = @"浮窗";
             rowInfo.className = @"FloatViewController";
         }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"Mask遮罩";
+            rowInfo.className = @"MaskViewController";
+        }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"前端";

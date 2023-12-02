@@ -96,6 +96,9 @@
 		3F3166EC2B1B9B920074538D /* UIViewController+Minimize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166E12B1B9B920074538D /* UIViewController+Minimize.m */; };
 		3F3166ED2B1B9B920074538D /* FloatFan.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166E32B1B9B920074538D /* FloatFan.m */; };
 		3F3166EE2B1B9B920074538D /* FloatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166E42B1B9B920074538D /* FloatButton.m */; };
+		3F3166F62B1BA0190074538D /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166F02B1BA0180074538D /* MaskViewController.m */; };
+		3F3166F72B1BA0190074538D /* MaskAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166F12B1BA0180074538D /* MaskAnimationController.m */; };
+		3F3166F82B1BA0190074538D /* MaskSecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166F42B1BA0190074538D /* MaskSecViewController.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -250,6 +253,12 @@
 		3F3166E32B1B9B920074538D /* FloatFan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatFan.m; sourceTree = "<group>"; };
 		3F3166E42B1B9B920074538D /* FloatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatButton.m; sourceTree = "<group>"; };
 		3F3166E52B1B9B920074538D /* UIViewController+Minimize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Minimize.h"; sourceTree = "<group>"; };
+		3F3166F02B1BA0180074538D /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
+		3F3166F12B1BA0180074538D /* MaskAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskAnimationController.m; sourceTree = "<group>"; };
+		3F3166F22B1BA0180074538D /* MaskSecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskSecViewController.h; sourceTree = "<group>"; };
+		3F3166F32B1BA0190074538D /* MaskAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskAnimationController.h; sourceTree = "<group>"; };
+		3F3166F42B1BA0190074538D /* MaskSecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskSecViewController.m; sourceTree = "<group>"; };
+		3F3166F52B1BA0190074538D /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -669,6 +678,19 @@
 			path = Float;
 			sourceTree = "<group>";
 		};
+		3F3166EF2B1BA00A0074538D /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166F32B1BA0190074538D /* MaskAnimationController.h */,
+				3F3166F12B1BA0180074538D /* MaskAnimationController.m */,
+				3F3166F22B1BA0180074538D /* MaskSecViewController.h */,
+				3F3166F42B1BA0190074538D /* MaskSecViewController.m */,
+				3F3166F52B1BA0190074538D /* MaskViewController.h */,
+				3F3166F02B1BA0180074538D /* MaskViewController.m */,
+			);
+			path = Mask;
+			sourceTree = "<group>";
+		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,6 +709,7 @@
 		68C0EB4C2B17546E005E1C28 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166EF2B1BA00A0074538D /* Mask */,
 				3F3166D02B1B9B800074538D /* FloatWindow */,
 				3F3166BA2B1B96F30074538D /* AblumAsset */,
 				3F31669A2B1B87FC0074538D /* AlbumFlip */,
@@ -887,6 +910,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3166F72B1BA0190074538D /* MaskAnimationController.m in Sources */,
 				68C0EB852B185271005E1C28 /* DemoHeaderViews.m in Sources */,
 				3F31663A2B1A19580074538D /* AnimateTableViewController.m in Sources */,
 				68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */,
@@ -914,7 +938,9 @@
 				3F3166EE2B1B9B920074538D /* FloatButton.m in Sources */,
 				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
 				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
+				3F3166F82B1BA0190074538D /* MaskSecViewController.m in Sources */,
 				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
+				3F3166F62B1BA0190074538D /* MaskViewController.m in Sources */,
 				3F3166B52B1B8EFE0074538D /* FullScreenTransitionItem.m in Sources */,
 				3F3166832B1B1FFF0074538D /* QuartzGradientView.swift in Sources */,
 				3F31668F2B1B1FFF0074538D /* QuartzGradientViewController.swift in Sources */,
