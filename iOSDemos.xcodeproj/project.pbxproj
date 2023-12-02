@@ -45,6 +45,33 @@
 		3F31665E2B1B15190074538D /* ActivitySummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166592B1B15180074538D /* ActivitySummaryViewController.m */; };
 		3F31665F2B1B15190074538D /* CircleGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31665B2B1B15180074538D /* CircleGraphView.m */; };
 		3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31665C2B1B15180074538D /* CustomRingViewController.m */; };
+		3F31667C2B1B1FFF0074538D /* QuartzLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166642B1B1FFE0074538D /* QuartzLineView.swift */; };
+		3F31667D2B1B1FFF0074538D /* QuartzTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166652B1B1FFE0074538D /* QuartzTextView.swift */; };
+		3F31667E2B1B1FFF0074538D /* QuartzBlendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166662B1B1FFF0074538D /* QuartzBlendingView.swift */; };
+		3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166672B1B1FFF0074538D /* QuartzMaskingView.swift */; };
+		3F3166802B1B1FFF0074538D /* QuartzPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166682B1B1FFF0074538D /* QuartzPatternView.swift */; };
+		3F3166812B1B1FFF0074538D /* QuartzCapJointWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166692B1B1FFF0074538D /* QuartzCapJointWidthViewController.swift */; };
+		3F3166822B1B1FFF0074538D /* QuartzBezierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31666A2B1B1FFF0074538D /* QuartzBezierView.swift */; };
+		3F3166832B1B1FFF0074538D /* QuartzGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31666B2B1B1FFF0074538D /* QuartzGradientView.swift */; };
+		3F3166842B1B1FFF0074538D /* QuartzPolyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31666C2B1B1FFF0074538D /* QuartzPolyViewController.swift */; };
+		3F3166852B1B1FFF0074538D /* Quartz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F31666D2B1B1FFF0074538D /* Quartz.storyboard */; };
+		3F3166862B1B1FFF0074538D /* QuartzEllipseArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31666E2B1B1FFF0074538D /* QuartzEllipseArcView.swift */; };
+		3F3166872B1B1FFF0074538D /* QuartzBlendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31666F2B1B1FFF0074538D /* QuartzBlendingViewController.swift */; };
+		3F3166882B1B1FFF0074538D /* QuartzDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166702B1B1FFF0074538D /* QuartzDashViewController.swift */; };
+		3F3166892B1B1FFF0074538D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166712B1B1FFF0074538D /* DetailViewController.swift */; };
+		3F31668A2B1B1FFF0074538D /* QuartzImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166722B1B1FFF0074538D /* QuartzImageView.swift */; };
+		3F31668B2B1B1FFF0074538D /* QuartzPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166732B1B1FFF0074538D /* QuartzPDFView.swift */; };
+		3F31668C2B1B1FFF0074538D /* QuartzRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166742B1B1FFF0074538D /* QuartzRectView.swift */; };
+		3F31668D2B1B1FFF0074538D /* QuartzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166752B1B1FFF0074538D /* QuartzView.swift */; };
+		3F31668E2B1B1FFF0074538D /* QuartzCapJointWidthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166762B1B1FFF0074538D /* QuartzCapJointWidthView.swift */; };
+		3F31668F2B1B1FFF0074538D /* QuartzGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166772B1B1FFF0074538D /* QuartzGradientViewController.swift */; };
+		3F3166902B1B1FFF0074538D /* QuartzPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166782B1B1FFF0074538D /* QuartzPolygonView.swift */; };
+		3F3166912B1B1FFF0074538D /* QuartzDashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166792B1B1FFF0074538D /* QuartzDashView.swift */; };
+		3F3166922B1B1FFF0074538D /* QuartzClippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31667A2B1B1FFF0074538D /* QuartzClippingView.swift */; };
+		3F3166932B1B1FFF0074538D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31667B2B1B1FFF0074538D /* MasterViewController.swift */; };
+		3F3166972B1B202D0074538D /* Quartz.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166942B1B202D0074538D /* Quartz.pdf */; };
+		3F3166982B1B202D0074538D /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166952B1B202D0074538D /* Ship.png */; };
+		3F3166992B1B202D0074538D /* Demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166962B1B202D0074538D /* Demo.png */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -123,6 +150,33 @@
 		3F31665B2B1B15180074538D /* CircleGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGraphView.m; sourceTree = "<group>"; };
 		3F31665C2B1B15180074538D /* CustomRingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRingViewController.m; sourceTree = "<group>"; };
 		3F3166612B1B166A0074538D /* iOSDemos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSDemos.entitlements; sourceTree = "<group>"; };
+		3F3166642B1B1FFE0074538D /* QuartzLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzLineView.swift; sourceTree = "<group>"; };
+		3F3166652B1B1FFE0074538D /* QuartzTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzTextView.swift; sourceTree = "<group>"; };
+		3F3166662B1B1FFF0074538D /* QuartzBlendingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzBlendingView.swift; sourceTree = "<group>"; };
+		3F3166672B1B1FFF0074538D /* QuartzMaskingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzMaskingView.swift; sourceTree = "<group>"; };
+		3F3166682B1B1FFF0074538D /* QuartzPatternView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzPatternView.swift; sourceTree = "<group>"; };
+		3F3166692B1B1FFF0074538D /* QuartzCapJointWidthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzCapJointWidthViewController.swift; sourceTree = "<group>"; };
+		3F31666A2B1B1FFF0074538D /* QuartzBezierView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzBezierView.swift; sourceTree = "<group>"; };
+		3F31666B2B1B1FFF0074538D /* QuartzGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzGradientView.swift; sourceTree = "<group>"; };
+		3F31666C2B1B1FFF0074538D /* QuartzPolyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzPolyViewController.swift; sourceTree = "<group>"; };
+		3F31666D2B1B1FFF0074538D /* Quartz.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Quartz.storyboard; sourceTree = "<group>"; };
+		3F31666E2B1B1FFF0074538D /* QuartzEllipseArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzEllipseArcView.swift; sourceTree = "<group>"; };
+		3F31666F2B1B1FFF0074538D /* QuartzBlendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzBlendingViewController.swift; sourceTree = "<group>"; };
+		3F3166702B1B1FFF0074538D /* QuartzDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzDashViewController.swift; sourceTree = "<group>"; };
+		3F3166712B1B1FFF0074538D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3F3166722B1B1FFF0074538D /* QuartzImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzImageView.swift; sourceTree = "<group>"; };
+		3F3166732B1B1FFF0074538D /* QuartzPDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzPDFView.swift; sourceTree = "<group>"; };
+		3F3166742B1B1FFF0074538D /* QuartzRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzRectView.swift; sourceTree = "<group>"; };
+		3F3166752B1B1FFF0074538D /* QuartzView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzView.swift; sourceTree = "<group>"; };
+		3F3166762B1B1FFF0074538D /* QuartzCapJointWidthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzCapJointWidthView.swift; sourceTree = "<group>"; };
+		3F3166772B1B1FFF0074538D /* QuartzGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzGradientViewController.swift; sourceTree = "<group>"; };
+		3F3166782B1B1FFF0074538D /* QuartzPolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzPolygonView.swift; sourceTree = "<group>"; };
+		3F3166792B1B1FFF0074538D /* QuartzDashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzDashView.swift; sourceTree = "<group>"; };
+		3F31667A2B1B1FFF0074538D /* QuartzClippingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuartzClippingView.swift; sourceTree = "<group>"; };
+		3F31667B2B1B1FFF0074538D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		3F3166942B1B202D0074538D /* Quartz.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Quartz.pdf; sourceTree = "<group>"; };
+		3F3166952B1B202D0074538D /* Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ship.png; sourceTree = "<group>"; };
+		3F3166962B1B202D0074538D /* Demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Demo.png; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -203,13 +257,14 @@
 			children = (
 				3F3166612B1B166A0074538D /* iOSDemos.entitlements */,
 				3F3166472B1A24440074538D /* Resource */,
-				3F3166402B1A23660074538D /* Web */,
 				3F31663F2B1A1C3E0074538D /* Supporting Files */,
+				3F3166402B1A23660074538D /* Web */,
 				68B9126F2B1738220049E0FA /* MMUIKit */,
 				3F31662B2B18DCFF0074538D /* CoreAnimation */,
-				68C0EB892B186068005E1C28 /* Other */,
+				3F3166622B1B1F510074538D /* CoreGraphics */,
 				68C0EB712B184B09005E1C28 /* UIComponents */,
 				68C0EB4C2B17546E005E1C28 /* Transition */,
+				68C0EB892B186068005E1C28 /* Other */,
 				3F3165E82B14D39D0074538D /* ViewController.h */,
 				3F3165E92B14D39D0074538D /* ViewController.m */,
 				3F3165EE2B14D39E0074538D /* Assets.xcassets */,
@@ -338,6 +393,9 @@
 			isa = PBXGroup;
 			children = (
 				3F3166482B1A24440074538D /* index.html */,
+				3F3166962B1B202D0074538D /* Demo.png */,
+				3F3166942B1B202D0074538D /* Quartz.pdf */,
+				3F3166952B1B202D0074538D /* Ship.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -357,6 +415,45 @@
 				3F3166532B1B14D10074538D /* HealthViewController.m */,
 			);
 			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		3F3166622B1B1F510074538D /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166632B1B1FED0074538D /* QuartzDemo */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		3F3166632B1B1FED0074538D /* QuartzDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166712B1B1FFF0074538D /* DetailViewController.swift */,
+				3F31666D2B1B1FFF0074538D /* Quartz.storyboard */,
+				3F31667B2B1B1FFF0074538D /* MasterViewController.swift */,
+				3F31666A2B1B1FFF0074538D /* QuartzBezierView.swift */,
+				3F3166662B1B1FFF0074538D /* QuartzBlendingView.swift */,
+				3F31666F2B1B1FFF0074538D /* QuartzBlendingViewController.swift */,
+				3F3166762B1B1FFF0074538D /* QuartzCapJointWidthView.swift */,
+				3F3166692B1B1FFF0074538D /* QuartzCapJointWidthViewController.swift */,
+				3F31667A2B1B1FFF0074538D /* QuartzClippingView.swift */,
+				3F3166792B1B1FFF0074538D /* QuartzDashView.swift */,
+				3F3166702B1B1FFF0074538D /* QuartzDashViewController.swift */,
+				3F31666E2B1B1FFF0074538D /* QuartzEllipseArcView.swift */,
+				3F31666B2B1B1FFF0074538D /* QuartzGradientView.swift */,
+				3F3166772B1B1FFF0074538D /* QuartzGradientViewController.swift */,
+				3F3166722B1B1FFF0074538D /* QuartzImageView.swift */,
+				3F3166642B1B1FFE0074538D /* QuartzLineView.swift */,
+				3F3166672B1B1FFF0074538D /* QuartzMaskingView.swift */,
+				3F3166682B1B1FFF0074538D /* QuartzPatternView.swift */,
+				3F3166732B1B1FFF0074538D /* QuartzPDFView.swift */,
+				3F3166782B1B1FFF0074538D /* QuartzPolygonView.swift */,
+				3F31666C2B1B1FFF0074538D /* QuartzPolyViewController.swift */,
+				3F3166742B1B1FFF0074538D /* QuartzRectView.swift */,
+				3F3166652B1B1FFE0074538D /* QuartzTextView.swift */,
+				3F3166752B1B1FFF0074538D /* QuartzView.swift */,
+			);
+			path = QuartzDemo;
 			sourceTree = "<group>";
 		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
@@ -513,9 +610,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3166992B1B202D0074538D /* Demo.png in Resources */,
 				3F3166492B1A24440074538D /* index.html in Resources */,
 				3F3165F22B14D39E0074538D /* LaunchScreen.storyboard in Resources */,
+				3F3166972B1B202D0074538D /* Quartz.pdf in Resources */,
+				3F3166982B1B202D0074538D /* Ship.png in Resources */,
 				3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */,
+				3F3166852B1B1FFF0074538D /* Quartz.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,45 +675,68 @@
 				3F3166192B18D4CB0074538D /* CalendarEventCell.swift in Sources */,
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
 				3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */,
+				3F3166912B1B1FFF0074538D /* QuartzDashView.swift in Sources */,
 				3F3166002B18D4C30074538D /* ImageCollectionViewCell.swift in Sources */,
 				3F3166462B1A24130074538D /* NativeRenderContainerView.m in Sources */,
 				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
+				3F3166932B1B1FFF0074538D /* MasterViewController.swift in Sources */,
+				3F31667E2B1B1FFF0074538D /* QuartzBlendingView.swift in Sources */,
+				3F31668E2B1B1FFF0074538D /* QuartzCapJointWidthView.swift in Sources */,
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
+				3F3166882B1B1FFF0074538D /* QuartzDashViewController.swift in Sources */,
 				3F3165FF2B18D4C30074538D /* BaseViewController.swift in Sources */,
 				3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
+				3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */,
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
 				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
 				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
 				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
+				3F3166832B1B1FFF0074538D /* QuartzGradientView.swift in Sources */,
+				3F31668F2B1B1FFF0074538D /* QuartzGradientViewController.swift in Sources */,
+				3F31668C2B1B1FFF0074538D /* QuartzRectView.swift in Sources */,
 				68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */,
 				3F3166202B18D4CB0074538D /* WaterfallLayout.swift in Sources */,
 				68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */,
 				3F31661E2B18D4CB0074538D /* LineCircleCell.swift in Sources */,
 				3F3166542B1B14D10074538D /* HealthViewController.m in Sources */,
 				3F31665F2B1B15190074538D /* CircleGraphView.m in Sources */,
+				3F3166892B1B1FFF0074538D /* DetailViewController.swift in Sources */,
+				3F31667C2B1B1FFF0074538D /* QuartzLineView.swift in Sources */,
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
 				3F31661F2B18D4CB0074538D /* WaterfallCell.swift in Sources */,
+				3F31667D2B1B1FFF0074538D /* QuartzTextView.swift in Sources */,
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
 				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
 				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
+				3F3166902B1B1FFF0074538D /* QuartzPolygonView.swift in Sources */,
+				3F3166872B1B1FFF0074538D /* QuartzBlendingViewController.swift in Sources */,
 				3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
 				3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */,
 				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
+				3F3166862B1B1FFF0074538D /* QuartzEllipseArcView.swift in Sources */,
 				3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
+				3F3166822B1B1FFF0074538D /* QuartzBezierView.swift in Sources */,
 				3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */,
 				3F3166182B18D4CB0074538D /* CalendarDataSource.swift in Sources */,
 				3F31665E2B1B15190074538D /* ActivitySummaryViewController.m in Sources */,
 				3F31661D2B18D4CB0074538D /* LineLayout.swift in Sources */,
 				3F3166432B1A238E0074538D /* NativeRenderWebViewController.m in Sources */,
 				68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */,
+				3F31668B2B1B1FFF0074538D /* QuartzPDFView.swift in Sources */,
 				3F31661C2B18D4CB0074538D /* CircleLayout.swift in Sources */,
+				3F3166922B1B1FFF0074538D /* QuartzClippingView.swift in Sources */,
+				3F31668D2B1B1FFF0074538D /* QuartzView.swift in Sources */,
+				3F31668A2B1B1FFF0074538D /* QuartzImageView.swift in Sources */,
 				3F3166222B18D4CB0074538D /* PubuLayout.swift in Sources */,
+				3F3166812B1B1FFF0074538D /* QuartzCapJointWidthViewController.swift in Sources */,
+				3F3166802B1B1FFF0074538D /* QuartzPatternView.swift in Sources */,
 				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
+				3F3166842B1B1FFF0074538D /* QuartzPolyViewController.swift in Sources */,
 				3F3166332B18DD4A0074538D /* ShakeViewController.m in Sources */,
 				3F31661A2B18D4CB0074538D /* CalendarViewController.swift in Sources */,
 				3F3166212B18D4CB0074538D /* WaterfallViewController.swift in Sources */,

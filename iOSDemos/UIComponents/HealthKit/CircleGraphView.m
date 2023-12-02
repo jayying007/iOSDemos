@@ -39,7 +39,6 @@
     }
 
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 
     CGContextSetLineWidth(context, self.arcWidth);
     CGContextSetLineCap(context, kCGLineCapRound);

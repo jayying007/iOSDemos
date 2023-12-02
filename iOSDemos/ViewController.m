@@ -47,10 +47,14 @@
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
-        sectionInfo.title = @"转场";
+        sectionInfo.title = @"Core Graphics";
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"BCMagicTransition";
-            rowInfo.className = @"FirstViewController";
+            rowInfo.title = @"苹果官方QuartzDemo";
+            rowInfo.handler = ^{
+                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Quartz" bundle:nil];
+                MasterViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"Master"];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
@@ -64,6 +68,13 @@
             rowInfo.title = @"Animated Pen";
             rowInfo.detail = @"神笔马良";
             rowInfo.className = @"AnimatePanViewController";
+        }];
+    }];
+    [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
+        sectionInfo.title = @"转场";
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"BCMagicTransition";
+            rowInfo.className = @"FirstViewController";
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
