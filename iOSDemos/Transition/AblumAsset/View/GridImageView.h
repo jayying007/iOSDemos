@@ -1,0 +1,17 @@
+//
+//  GridImageView.h
+//  Album_StyleC
+//
+//  Created by janezhuang on 2022/11/14.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface GridImageView : UIView
+- (instancetype)initWithImages:(NSArray *)images;
+- (NSArray *)getImagesRect;
+@end
+
+NS_ASSUME_NONNULL_END
