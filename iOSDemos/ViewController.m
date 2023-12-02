@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"iOS Demos";
 
     _tableViewInfo = [[UITableViewInfo alloc] init];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
@@ -74,6 +75,10 @@
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"其他";
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"HealthKit";
+            rowInfo.className = @"HealthViewController";
+        }];
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"打开ViewHierarchy3D";
             rowInfo.handler = ^{

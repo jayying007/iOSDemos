@@ -40,6 +40,11 @@
 		3F3166432B1A238E0074538D /* NativeRenderWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166422B1A238E0074538D /* NativeRenderWebViewController.m */; };
 		3F3166462B1A24130074538D /* NativeRenderContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166452B1A24130074538D /* NativeRenderContainerView.m */; };
 		3F3166492B1A24440074538D /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166482B1A24440074538D /* index.html */; };
+		3F3166542B1B14D10074538D /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166532B1B14D10074538D /* HealthViewController.m */; };
+		3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166552B1B15180074538D /* StepCountViewController.m */; };
+		3F31665E2B1B15190074538D /* ActivitySummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166592B1B15180074538D /* ActivitySummaryViewController.m */; };
+		3F31665F2B1B15190074538D /* CircleGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31665B2B1B15180074538D /* CircleGraphView.m */; };
+		3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31665C2B1B15180074538D /* CustomRingViewController.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -107,6 +112,17 @@
 		3F3166442B1A24130074538D /* NativeRenderContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeRenderContainerView.h; sourceTree = "<group>"; };
 		3F3166452B1A24130074538D /* NativeRenderContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeRenderContainerView.m; sourceTree = "<group>"; };
 		3F3166482B1A24440074538D /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		3F3166522B1B14D10074538D /* HealthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
+		3F3166532B1B14D10074538D /* HealthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthViewController.m; sourceTree = "<group>"; };
+		3F3166552B1B15180074538D /* StepCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepCountViewController.m; sourceTree = "<group>"; };
+		3F3166562B1B15180074538D /* ActivitySummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitySummaryViewController.h; sourceTree = "<group>"; };
+		3F3166572B1B15180074538D /* CustomRingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRingViewController.h; sourceTree = "<group>"; };
+		3F3166582B1B15180074538D /* CircleGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGraphView.h; sourceTree = "<group>"; };
+		3F3166592B1B15180074538D /* ActivitySummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitySummaryViewController.m; sourceTree = "<group>"; };
+		3F31665A2B1B15180074538D /* StepCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCountViewController.h; sourceTree = "<group>"; };
+		3F31665B2B1B15180074538D /* CircleGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGraphView.m; sourceTree = "<group>"; };
+		3F31665C2B1B15180074538D /* CustomRingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRingViewController.m; sourceTree = "<group>"; };
+		3F3166612B1B166A0074538D /* iOSDemos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSDemos.entitlements; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -185,6 +201,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166612B1B166A0074538D /* iOSDemos.entitlements */,
 				3F3166472B1A24440074538D /* Resource */,
 				3F3166402B1A23660074538D /* Web */,
 				3F31663F2B1A1C3E0074538D /* Supporting Files */,
@@ -325,6 +342,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		3F3166512B1B14B80074538D /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166562B1B15180074538D /* ActivitySummaryViewController.h */,
+				3F3166592B1B15180074538D /* ActivitySummaryViewController.m */,
+				3F3166582B1B15180074538D /* CircleGraphView.h */,
+				3F31665B2B1B15180074538D /* CircleGraphView.m */,
+				3F3166572B1B15180074538D /* CustomRingViewController.h */,
+				3F31665C2B1B15180074538D /* CustomRingViewController.m */,
+				3F31665A2B1B15180074538D /* StepCountViewController.h */,
+				3F3166552B1B15180074538D /* StepCountViewController.m */,
+				3F3166522B1B14D10074538D /* HealthViewController.h */,
+				3F3166532B1B14D10074538D /* HealthViewController.m */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +400,7 @@
 		68C0EB712B184B09005E1C28 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166512B1B14B80074538D /* HealthKit */,
 				3F3166372B1A19160074538D /* UITableView */,
 				3F3165FB2B18D4890074538D /* UICollectionView */,
 				68C0EB762B184DAD005E1C28 /* ContainerView */,
@@ -547,12 +582,15 @@
 				3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
+				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
 				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
 				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
 				68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */,
 				3F3166202B18D4CB0074538D /* WaterfallLayout.swift in Sources */,
 				68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */,
 				3F31661E2B18D4CB0074538D /* LineCircleCell.swift in Sources */,
+				3F3166542B1B14D10074538D /* HealthViewController.m in Sources */,
+				3F31665F2B1B15190074538D /* CircleGraphView.m in Sources */,
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
 				3F31661F2B18D4CB0074538D /* WaterfallCell.swift in Sources */,
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
@@ -561,12 +599,14 @@
 				3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
+				3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */,
 				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
 				3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */,
 				3F3166182B18D4CB0074538D /* CalendarDataSource.swift in Sources */,
+				3F31665E2B1B15190074538D /* ActivitySummaryViewController.m in Sources */,
 				3F31661D2B18D4CB0074538D /* LineLayout.swift in Sources */,
 				3F3166432B1A238E0074538D /* NativeRenderWebViewController.m in Sources */,
 				68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */,
@@ -717,6 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSDemos/iOSDemos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86JSFRSCH9;
@@ -750,6 +791,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOSDemos/iOSDemos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 86JSFRSCH9;
