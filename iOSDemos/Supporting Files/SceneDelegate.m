@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "MMUINavigationController.h"
 
 @interface SceneDelegate ()
 
@@ -20,7 +21,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     _window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     ViewController *vc = [ViewController new];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    MMUINavigationController *nav = [[MMUINavigationController alloc] initWithRootViewController:vc];
     _window.rootViewController = nav;
     [_window makeKeyAndVisible];
 }

@@ -72,6 +72,11 @@
 		3F3166972B1B202D0074538D /* Quartz.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166942B1B202D0074538D /* Quartz.pdf */; };
 		3F3166982B1B202D0074538D /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166952B1B202D0074538D /* Ship.png */; };
 		3F3166992B1B202D0074538D /* Demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166962B1B202D0074538D /* Demo.png */; };
+		3F3166A52B1B881E0074538D /* FlipPushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31669E2B1B881E0074538D /* FlipPushAnimationController.m */; };
+		3F3166A62B1B881E0074538D /* TransitionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31669F2B1B881E0074538D /* TransitionMgr.m */; };
+		3F3166A72B1B881E0074538D /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A12B1B881E0074538D /* GalleryViewController.m */; };
+		3F3166A82B1B881E0074538D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A22B1B881E0074538D /* AlbumViewController.m */; };
+		3F3166AB2B1B8A4F0074538D /* MMUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -177,6 +182,16 @@
 		3F3166942B1B202D0074538D /* Quartz.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Quartz.pdf; sourceTree = "<group>"; };
 		3F3166952B1B202D0074538D /* Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ship.png; sourceTree = "<group>"; };
 		3F3166962B1B202D0074538D /* Demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Demo.png; sourceTree = "<group>"; };
+		3F31669C2B1B881E0074538D /* FlipPushAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipPushAnimationController.h; sourceTree = "<group>"; };
+		3F31669D2B1B881E0074538D /* TransitionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionMgr.h; sourceTree = "<group>"; };
+		3F31669E2B1B881E0074538D /* FlipPushAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipPushAnimationController.m; sourceTree = "<group>"; };
+		3F31669F2B1B881E0074538D /* TransitionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionMgr.m; sourceTree = "<group>"; };
+		3F3166A12B1B881E0074538D /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		3F3166A22B1B881E0074538D /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		3F3166A32B1B881E0074538D /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		3F3166A42B1B881E0074538D /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUINavigationController.m; sourceTree = "<group>"; };
+		3F3166AA2B1B8A4F0074538D /* MMUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUINavigationController.h; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -456,6 +471,37 @@
 			path = QuartzDemo;
 			sourceTree = "<group>";
 		};
+		3F31669A2B1B87FC0074538D /* AlbumFlip */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166A02B1B881E0074538D /* Controller */,
+				3F31669B2B1B881E0074538D /* Transition */,
+			);
+			path = AlbumFlip;
+			sourceTree = "<group>";
+		};
+		3F31669B2B1B881E0074538D /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				3F31669C2B1B881E0074538D /* FlipPushAnimationController.h */,
+				3F31669E2B1B881E0074538D /* FlipPushAnimationController.m */,
+				3F31669D2B1B881E0074538D /* TransitionMgr.h */,
+				3F31669F2B1B881E0074538D /* TransitionMgr.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		3F3166A02B1B881E0074538D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F3166A32B1B881E0074538D /* GalleryViewController.h */,
+				3F3166A12B1B881E0074538D /* GalleryViewController.m */,
+				3F3166A42B1B881E0074538D /* AlbumViewController.h */,
+				3F3166A22B1B881E0074538D /* AlbumViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +509,8 @@
 				68B912712B17384F0049E0FA /* UITableViewInfo.m */,
 				68C0EB5D2B1757D4005E1C28 /* MMUIViewController.h */,
 				68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */,
+				3F3166AA2B1B8A4F0074538D /* MMUINavigationController.h */,
+				3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */,
 				68C0EB602B175850005E1C28 /* UIView+Frame.h */,
 				68C0EB612B175850005E1C28 /* UIView+Frame.m */,
 			);
@@ -472,6 +520,7 @@
 		68C0EB4C2B17546E005E1C28 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				3F31669A2B1B87FC0074538D /* AlbumFlip */,
 				68C0EB4D2B175500005E1C28 /* BCMagicTransition */,
 			);
 			path = Transition;
@@ -678,6 +727,8 @@
 				3F3166912B1B1FFF0074538D /* QuartzDashView.swift in Sources */,
 				3F3166002B18D4C30074538D /* ImageCollectionViewCell.swift in Sources */,
 				3F3166462B1A24130074538D /* NativeRenderContainerView.m in Sources */,
+				3F3166AB2B1B8A4F0074538D /* MMUINavigationController.m in Sources */,
+				3F3166A82B1B881E0074538D /* AlbumViewController.m in Sources */,
 				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
 				3F3166932B1B1FFF0074538D /* MasterViewController.swift in Sources */,
 				3F31667E2B1B1FFF0074538D /* QuartzBlendingView.swift in Sources */,
@@ -689,6 +740,7 @@
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */,
 				3F3165EA2B14D39D0074538D /* ViewController.m in Sources */,
+				3F3166A52B1B881E0074538D /* FlipPushAnimationController.m in Sources */,
 				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
 				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
 				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
@@ -697,6 +749,7 @@
 				3F31668C2B1B1FFF0074538D /* QuartzRectView.swift in Sources */,
 				68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */,
 				3F3166202B18D4CB0074538D /* WaterfallLayout.swift in Sources */,
+				3F3166A72B1B881E0074538D /* GalleryViewController.m in Sources */,
 				68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */,
 				3F31661E2B18D4CB0074538D /* LineCircleCell.swift in Sources */,
 				3F3166542B1B14D10074538D /* HealthViewController.m in Sources */,
@@ -715,6 +768,7 @@
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
 				3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */,
+				3F3166A62B1B881E0074538D /* TransitionMgr.m in Sources */,
 				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3166862B1B1FFF0074538D /* QuartzEllipseArcView.swift in Sources */,

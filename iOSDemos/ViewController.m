@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "UITableViewInfo.h"
 #import "YYViewHierarchy3D.h"
+#import "GalleryViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -75,6 +76,16 @@
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"BCMagicTransition";
             rowInfo.className = @"FirstViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"相册翻转";
+            rowInfo.handler = ^{
+                UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+                flowLayout.itemSize = CGSizeMake(150, 150);
+                flowLayout.minimumLineSpacing = 40;
+                GalleryViewController *vc = [[GalleryViewController alloc] initWithCollectionViewLayout:flowLayout];
+                [self.navigationController pushViewController:vc animated:YES];
+            };
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
