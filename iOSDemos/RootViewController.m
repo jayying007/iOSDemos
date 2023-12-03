@@ -9,6 +9,9 @@
 #import "UITableViewInfo.h"
 #import "YYViewHierarchy3D.h"
 #import "GalleryViewController.h"
+#import "DrawerViewController.h"
+#import "UIDrawerController.h"
+#import "ListViewController.h"
 
 @interface RootViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -47,6 +50,20 @@
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"Animate UITableView";
             rowInfo.className = @"AnimateTableViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"容器ViewController";
+            rowInfo.detail = @"右滑可拉出一个列表";
+            rowInfo.handler = ^{
+                strongify(self);
+                DrawerViewController *vc = [[DrawerViewController alloc] init];
+                UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
+                UIDrawerController *drawerController = [[UIDrawerController alloc] initWithRootViewController:navController];
+                drawerController.leftViewController = [[ListViewController alloc] init];
+
+                drawerController.modalPresentationStyle = UIModalPresentationFullScreen;
+                [self presentViewController:drawerController animated:YES completion:nil];
+            };
         }];
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
