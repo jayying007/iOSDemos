@@ -34,6 +34,7 @@
                                                  toViewController:(UIViewController *)toVC {
     if (operation == UINavigationControllerOperationPop) {
         self.popAnimation = [[PopAnimation alloc] init];
+        self.popAnimation.fromVC = toVC;
         return self.popAnimation;
     }
     return nil;

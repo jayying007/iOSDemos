@@ -6,8 +6,7 @@
 //
 
 #import "ImgFullScreenViewController.h"
-#import "MMUINavigationController.h"
-#import "AssetTransitioning.h"
+#import "FullScreenTransitioning.h"
 
 @interface ImgFullScreenViewController () <FullScreenTransitioning>
 @property (nonatomic) NSString *imageName;
@@ -32,6 +31,8 @@
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:imageView];
 }
+
+#pragma mark - FullScreenTransitioning
 
 - (NSArray<FullScreenTransitionItem *> *)itemsForTransition:(id<UIViewControllerContextTransitioning>)context {
     FullScreenTransitionItem *item = [[FullScreenTransitionItem alloc] init];

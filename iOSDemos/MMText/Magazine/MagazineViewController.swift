@@ -9,13 +9,14 @@ import UIKit
 
 class MagazineViewController: MMUIViewController {
 
-    override func loadView() {
-        self.view = CTView(frame: self.navigationController!.view.bounds)
-    }
+    private var ctView: CTView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.ctView = CTView(frame: self.view.bounds)
+        self.ctView?.contentInsetAdjustmentBehavior = .never
+        self.view.addSubview(self.ctView!)
         // 1
         guard let file = Bundle.main.path(forResource: "zombies", ofType: "txt") else { return }
 
@@ -24,7 +25,7 @@ class MagazineViewController: MMUIViewController {
             // 2
             let parser = MarkupParser()
             parser.parseMarkup(text)
-            (view as? CTView)?.buildFrames(withAttrString: parser.attrString, andImages: parser.images)
+            self.ctView?.buildFrames(withAttrString: parser.attrString, andImages: parser.images)
 
         } catch _ {
         }

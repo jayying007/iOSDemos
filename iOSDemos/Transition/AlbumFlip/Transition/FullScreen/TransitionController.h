@@ -6,9 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMUIViewControllerTransitioning.h"
 
 @interface TransitionController
-: NSObject <UINavigationControllerDelegate, UIViewControllerAnimatedTransitioning, UIViewControllerInteractiveTransitioning>
+: NSObject <UINavigationControllerDelegate, MMUIViewControllerAnimatedTransitioning, UIViewControllerInteractiveTransitioning>
 - (instancetype)initWithNavController:(UINavigationController *)navController;
 
 @property (nonatomic) UINavigationControllerOperation operation;

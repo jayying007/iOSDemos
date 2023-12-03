@@ -7,6 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FloatViewController : UIViewController
+@interface FloatViewController : MMUIViewController
 
 @end

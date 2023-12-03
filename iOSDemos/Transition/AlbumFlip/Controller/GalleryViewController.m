@@ -7,7 +7,6 @@
 
 #import "GalleryViewController.h"
 #import "AlbumViewController.h"
-#import "TransitionMgr.h"
 #import "FlipPushAnimationController.h"
 #import "MMUINavigationController.h"
 
@@ -31,6 +30,15 @@ static NSString *const reuseIdentifier = @"Cell";
     self.coverNames = @[ @"other", @"main", @"boss" ];
 }
 
+#pragma mark -
+
+- (FlipPushAnimationController *)pushAnimator {
+    if (_pushAnimator == nil) {
+        _pushAnimator = [[FlipPushAnimationController alloc] init];
+    }
+    return _pushAnimator;
+}
+
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
@@ -46,7 +54,8 @@ static NSString *const reuseIdentifier = @"Cell";
     UIImage *image = [UIImage imageNamed:self.coverNames[indexPath.item]];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = cell.bounds;
-    imageView.contentMode = UIViewContentModeScaleToFill;
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    imageView.backgroundColor = UIColor.systemBackgroundColor;
     [cell.contentView addSubview:imageView];
     cell.contentView.layer.borderWidth = 2;
     cell.contentView.layer.borderColor = UIColor.lightGrayColor.CGColor;
@@ -69,9 +78,9 @@ static NSString *const reuseIdentifier = @"Cell";
     [self.navigationController pushViewController:vc animated:YES];
 
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-    CGRect rect = [cell convertRect:cell.bounds toView:WINDOW];
-    Service(TransitionMgr).coverView = [cell snapshotViewAfterScreenUpdates:NO];
-    Service(TransitionMgr).originFrame = rect;
+    CGRect rect = [cell convertRect:cell.bounds toView:cell.window];
+    self.pushAnimator.coverView = [cell snapshotViewAfterScreenUpdates:NO];
+    self.pushAnimator.originFrame = rect;
 }
 
 #pragma mark - MMUINavigationControllerDelegate
@@ -80,8 +89,7 @@ static NSString *const reuseIdentifier = @"Cell";
                                     animationControllerForOperation:(UINavigationControllerOperation)operation
                                                  fromViewController:(UIViewController *)fromVC
                                                    toViewController:(UIViewController *)toVC {
-    if (fromVC == self && operation == UINavigationControllerOperationPush) {
-        self.pushAnimator = [[FlipPushAnimationController alloc] init];
+    if (operation == UINavigationControllerOperationPush) {
         return self.pushAnimator;
     }
     return nil;

@@ -6,11 +6,9 @@
 //
 
 #import "FlipPushAnimationController.h"
-#import "TransitionMgr.h"
-#import "UIView+Frame.h"
 
 @interface FlipPushAnimationController ()
-@property (nonatomic) NSMutableArray *originFrame;
+@property (nonatomic) NSMutableArray *originFrames;
 @end
 
 @implementation FlipPushAnimationController
@@ -28,9 +26,9 @@
     [toView layoutIfNeeded];
     [containerView addSubview:toView];
 
-    UIView *coverView = [Service(TransitionMgr).coverView snapshotViewAfterScreenUpdates:YES];
+    UIView *coverView = [self.coverView snapshotViewAfterScreenUpdates:YES];
     coverView.layer.anchorPoint = CGPointMake(0, 0.5);
-    coverView.frame = Service(TransitionMgr).originFrame;
+    coverView.frame = self.originFrame;
     [containerView addSubview:coverView];
 
     [self setupVisibleCellsBeforePushToVC:(UICollectionViewController *)toVC];
@@ -49,13 +47,13 @@
 }
 
 - (void)setupVisibleCellsBeforePushToVC:(UICollectionViewController *)toVC {
-    CGRect areaRect = Service(TransitionMgr).originFrame;
+    CGRect areaRect = self.originFrame;
     CGFloat widthScale = areaRect.size.width / toVC.collectionView.width;
     CGFloat heightScale = areaRect.size.height / toVC.collectionView.height;
 
-    self.originFrame = [NSMutableArray array];
+    self.originFrames = [NSMutableArray array];
     for (UICollectionViewCell *cell in toVC.collectionView.visibleCells) {
-        [self.originFrame addObject:[NSValue valueWithCGPoint:cell.origin]];
+        [self.originFrames addObject:[NSValue valueWithCGPoint:cell.origin]];
         cell.transform = CGAffineTransformMakeScale(widthScale, heightScale);
         cell.origin = CGPointMake(cell.x * widthScale + areaRect.origin.x, cell.y * heightScale + areaRect.origin.y - 91);
     }
@@ -72,7 +70,7 @@
         [UIView addKeyframeWithRelativeStartTime:0.5
                                 relativeDuration:0.5
                                       animations:^{
-                                          CGPoint point = [self.originFrame[i] CGPointValue];
+                                          CGPoint point = [self.originFrames[i] CGPointValue];
                                           cell.origin = point;
                                       }];
         i++;

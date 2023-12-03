@@ -7,7 +7,7 @@
 
 #import "AlbumViewController.h"
 #import "ImgFullScreenViewController.h"
-#import "AssetTransitioning.h"
+#import "FullScreenTransitioning.h"
 #import "TransitionController.h"
 #import "MMUINavigationController.h"
 
@@ -36,6 +36,7 @@ static NSString *const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    self.collectionView.alwaysBounceVertical = YES;
 }
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -95,22 +96,19 @@ static NSString *const reuseIdentifier = @"Cell";
                                                    toViewController:(UIViewController *)toVC {
     if (_transitionController == nil) {
         _transitionController = [[TransitionController alloc] initWithNavController:navigationController];
+        _transitionController.fromVC = self;
     }
     _transitionController.operation = operation;
 
     return _transitionController;
 }
 
-- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
-                         interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
-    if (_transitionController == nil) {
-        _transitionController = [[TransitionController alloc] initWithNavController:navigationController];
-    }
-
+- (id<UIViewControllerInteractiveTransitioning>)mmNavigationController:(UINavigationController *)navigationController
+                           interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
     return _transitionController;
 }
 
-#pragma mark - AssetTransitioning
+#pragma mark - FullScreenTransitioning
 
 - (NSArray<FullScreenTransitionItem *> *)itemsForTransition:(id<UIViewControllerContextTransitioning>)context {
     UICollectionViewCell *cell = [self collectionView:self.collectionView cellForItemAtIndexPath:self.selectedIndexPath];
@@ -119,7 +117,7 @@ static NSString *const reuseIdentifier = @"Cell";
     item.indexPath = self.selectedIndexPath;
     item.image = [UIImage imageNamed:self.imageNames[self.selectedIndexPath.row]];
 
-    item.initialFrame = [cell convertRect:cell.bounds toView:WINDOW];
+    item.initialFrame = [cell convertRect:cell.bounds toView:self.collectionView.window];
     item.initialFrame = CGRectMake(item.initialFrame.origin.x,
                                    item.initialFrame.origin.y + self.collectionView.adjustedContentInset.top,
                                    item.initialFrame.size.width,
@@ -130,7 +128,7 @@ static NSString *const reuseIdentifier = @"Cell";
 
 - (CGRect)targetFrameForItem:(FullScreenTransitionItem *)item {
     UICollectionViewCell *cell = [self collectionView:self.collectionView cellForItemAtIndexPath:item.indexPath];
-    CGRect rect = [cell convertRect:cell.bounds toView:WINDOW];
+    CGRect rect = [cell convertRect:cell.bounds toView:self.collectionView.window];
 
     return (CGRect){ .size = rect.size,
                      .origin = {

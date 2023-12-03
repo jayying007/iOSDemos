@@ -18,6 +18,11 @@ typedef void (^RowClickHandler)(void);
 @property (nonatomic) NSString *className;
 @property (nonatomic) RowClickHandler handler;
 
+- (UITableViewRowInfo * (^)(NSString *))c_title;
+- (UITableViewRowInfo * (^)(NSString *))c_detail;
+- (UITableViewRowInfo * (^)(NSString *))c_className;
+- (UITableViewRowInfo * (^)(RowClickHandler))c_handler;
+
 @end
 
 @interface UITableViewSectionInfo : NSObject
@@ -26,6 +31,8 @@ typedef void (^RowClickHandler)(void);
 @property (nonatomic) NSMutableArray *rows;
 
 - (void)addRowInfo:(void (^)(UITableViewRowInfo *rowInfo))rowBuilder;
+
+- (UITableViewRowInfo *)addRow;
 
 @end
 

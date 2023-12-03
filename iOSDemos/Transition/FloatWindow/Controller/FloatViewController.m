@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"浮窗Demo";
-    self.view.backgroundColor = UIColor.whiteColor;
 
     self.texts = @[
         @"冷咖啡离开了杯垫",
@@ -71,6 +70,12 @@
                                                                  animationControllerForOperation:operation
                                                                               fromViewController:fromVC
                                                                                 toViewController:toVC];
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)mmNavigationController:(UINavigationController *)navigationController
+                           interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+    return [(id<UINavigationControllerDelegate>)Service(FloatTransitionMgr) navigationController:navigationController
+                                                     interactionControllerForAnimationController:animationController];
 }
 
 @end

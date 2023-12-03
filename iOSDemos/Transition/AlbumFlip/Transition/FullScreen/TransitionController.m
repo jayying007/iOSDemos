@@ -17,6 +17,9 @@
 @end
 
 @implementation TransitionController
+
+@synthesize fromVC;
+
 - (instancetype)initWithNavController:(UINavigationController *)navController {
     self = [super init];
     if (self) {

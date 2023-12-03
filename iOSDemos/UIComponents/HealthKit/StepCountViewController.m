@@ -55,10 +55,10 @@
     HKQuantityType *stepType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierStepCount];
     HKAuthorizationStatus stepAuthStatus = [self.healthStore authorizationStatusForType:stepType];
     //若用户之前没有授权过（不管是同意或拒绝），则status = NotDetermined
-    //    if (stepAuthStatus == HKAuthorizationStatusNotDetermined) {
-    //    } else {
-    //        callback();
-    //    }
+    if (stepAuthStatus == HKAuthorizationStatusNotDetermined) {
+    } else {
+        callback();
+    }
     [self.healthStore requestAuthorizationToShareTypes:[NSSet setWithObject:stepType]
                                              readTypes:[NSSet setWithObject:stepType]
                                             completion:^(BOOL success, NSError *_Nullable error) {

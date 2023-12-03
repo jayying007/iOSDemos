@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMUIViewControllerTransitioning.h"
 
-@interface PopAnimation : NSObject <UIViewControllerAnimatedTransitioning>
+@interface PopAnimation : NSObject <MMUIViewControllerAnimatedTransitioning>
 
 @end

@@ -73,7 +73,6 @@
 		3F3166982B1B202D0074538D /* Ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166952B1B202D0074538D /* Ship.png */; };
 		3F3166992B1B202D0074538D /* Demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3166962B1B202D0074538D /* Demo.png */; };
 		3F3166A52B1B881E0074538D /* FlipPushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31669E2B1B881E0074538D /* FlipPushAnimationController.m */; };
-		3F3166A62B1B881E0074538D /* TransitionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31669F2B1B881E0074538D /* TransitionMgr.m */; };
 		3F3166A72B1B881E0074538D /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A12B1B881E0074538D /* GalleryViewController.m */; };
 		3F3166A82B1B881E0074538D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A22B1B881E0074538D /* AlbumViewController.m */; };
 		3F3166AB2B1B8A4F0074538D /* MMUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */; };
@@ -99,7 +98,7 @@
 		3F3166F62B1BA0190074538D /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166F02B1BA0180074538D /* MaskViewController.m */; };
 		3F3166F72B1BA0190074538D /* MaskAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166F12B1BA0180074538D /* MaskAnimationController.m */; };
 		3F3166F82B1BA0190074538D /* MaskSecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166F42B1BA0190074538D /* MaskSecViewController.m */; };
-		3F3166FE2B1C2DB70074538D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166FA2B1C2DB70074538D /* ListViewController.m */; };
+		3F3166FE2B1C2DB70074538D /* DrawerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166FA2B1C2DB70074538D /* DrawerListViewController.m */; };
 		3F3166FF2B1C2DB70074538D /* UIDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166FD2B1C2DB70074538D /* UIDrawerController.m */; };
 		3F3167022B1C2DE80074538D /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167012B1C2DE80074538D /* DrawerViewController.m */; };
 		3F3167182B1C30F80074538D /* CoreTextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167072B1C30F80074538D /* CoreTextUtils.m */; };
@@ -143,6 +142,7 @@
 		3F3167882B1C37C40074538D /* MarkupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167842B1C37C40074538D /* MarkupParser.swift */; };
 		3F3167892B1C37C40074538D /* CTSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167852B1C37C40074538D /* CTSettings.swift */; };
 		3F31678E2B1C38A80074538D /* MagazineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31678D2B1C38A80074538D /* MagazineViewController.swift */; };
+		3F3169AA2B1C70650074538D /* UiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3169A92B1C70650074538D /* UiUtil.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -249,9 +249,7 @@
 		3F3166952B1B202D0074538D /* Ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ship.png; sourceTree = "<group>"; };
 		3F3166962B1B202D0074538D /* Demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Demo.png; sourceTree = "<group>"; };
 		3F31669C2B1B881E0074538D /* FlipPushAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipPushAnimationController.h; sourceTree = "<group>"; };
-		3F31669D2B1B881E0074538D /* TransitionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionMgr.h; sourceTree = "<group>"; };
 		3F31669E2B1B881E0074538D /* FlipPushAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipPushAnimationController.m; sourceTree = "<group>"; };
-		3F31669F2B1B881E0074538D /* TransitionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionMgr.m; sourceTree = "<group>"; };
 		3F3166A12B1B881E0074538D /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		3F3166A22B1B881E0074538D /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
 		3F3166A32B1B881E0074538D /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
@@ -263,7 +261,7 @@
 		3F3166AF2B1B8EFE0074538D /* FullScreenTransitionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenTransitionItem.m; sourceTree = "<group>"; };
 		3F3166B02B1B8EFE0074538D /* FullScreenTransitionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenTransitionItem.h; sourceTree = "<group>"; };
 		3F3166B12B1B8EFE0074538D /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
-		3F3166B22B1B8EFE0074538D /* AssetTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetTransitioning.h; sourceTree = "<group>"; };
+		3F3166B22B1B8EFE0074538D /* FullScreenTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenTransitioning.h; sourceTree = "<group>"; };
 		3F3166B32B1B8EFE0074538D /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
 		3F3166B72B1B8F0D0074538D /* ImgFullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgFullScreenViewController.m; sourceTree = "<group>"; };
 		3F3166B82B1B8F0D0074538D /* ImgFullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgFullScreenViewController.h; sourceTree = "<group>"; };
@@ -303,8 +301,8 @@
 		3F3166F32B1BA0190074538D /* MaskAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskAnimationController.h; sourceTree = "<group>"; };
 		3F3166F42B1BA0190074538D /* MaskSecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskSecViewController.m; sourceTree = "<group>"; };
 		3F3166F52B1BA0190074538D /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
-		3F3166FA2B1C2DB70074538D /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		3F3166FB2B1C2DB70074538D /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		3F3166FA2B1C2DB70074538D /* DrawerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerListViewController.m; sourceTree = "<group>"; };
+		3F3166FB2B1C2DB70074538D /* DrawerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerListViewController.h; sourceTree = "<group>"; };
 		3F3166FC2B1C2DB70074538D /* UIDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDrawerController.h; sourceTree = "<group>"; };
 		3F3166FD2B1C2DB70074538D /* UIDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDrawerController.m; sourceTree = "<group>"; };
 		3F3167002B1C2DE80074538D /* DrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
@@ -384,6 +382,9 @@
 		3F3167842B1C37C40074538D /* MarkupParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkupParser.swift; sourceTree = "<group>"; };
 		3F3167852B1C37C40074538D /* CTSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTSettings.swift; sourceTree = "<group>"; };
 		3F31678D2B1C38A80074538D /* MagazineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineViewController.swift; sourceTree = "<group>"; };
+		3F3169A72B1C65940074538D /* MMUIViewControllerTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMUIViewControllerTransitioning.h; sourceTree = "<group>"; };
+		3F3169A82B1C70650074538D /* UiUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiUtil.h; sourceTree = "<group>"; };
+		3F3169A92B1C70650074538D /* UiUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiUtil.m; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -462,22 +463,22 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				68B9126F2B1738220049E0FA /* MMUIKit */,
+				68C0EB712B184B09005E1C28 /* UIComponents */,
 				3F3167032B1C30E40074538D /* MMText */,
-				3F3166612B1B166A0074538D /* iOSDemos.entitlements */,
+				3F3166622B1B1F510074538D /* CoreGraphics */,
+				3F31662B2B18DCFF0074538D /* CoreAnimation */,
+				68C0EB4C2B17546E005E1C28 /* Transition */,
+				3F3166402B1A23660074538D /* Web */,
+				68C0EB892B186068005E1C28 /* Other */,
 				3F3166472B1A24440074538D /* Resource */,
 				3F31663F2B1A1C3E0074538D /* Supporting Files */,
-				3F3166402B1A23660074538D /* Web */,
-				68B9126F2B1738220049E0FA /* MMUIKit */,
-				3F31662B2B18DCFF0074538D /* CoreAnimation */,
-				3F3166622B1B1F510074538D /* CoreGraphics */,
-				68C0EB712B184B09005E1C28 /* UIComponents */,
-				68C0EB4C2B17546E005E1C28 /* Transition */,
-				68C0EB892B186068005E1C28 /* Other */,
+				3F31663E2B1A1C210074538D /* PrefixHeader.pch */,
+				3F31662A2B18D8000074538D /* iOSDemos-Bridging-Header.h */,
 				3F3165E82B14D39D0074538D /* RootViewController.h */,
 				3F3165E92B14D39D0074538D /* RootViewController.m */,
+				3F3166612B1B166A0074538D /* iOSDemos.entitlements */,
 				3F3165EE2B14D39E0074538D /* Assets.xcassets */,
-				3F31662A2B18D8000074538D /* iOSDemos-Bridging-Header.h */,
-				3F31663E2B1A1C210074538D /* PrefixHeader.pch */,
 			);
 			path = iOSDemos;
 			sourceTree = "<group>";
@@ -681,8 +682,6 @@
 				3F3166AC2B1B8EF00074538D /* FullScreen */,
 				3F31669C2B1B881E0074538D /* FlipPushAnimationController.h */,
 				3F31669E2B1B881E0074538D /* FlipPushAnimationController.m */,
-				3F31669D2B1B881E0074538D /* TransitionMgr.h */,
-				3F31669F2B1B881E0074538D /* TransitionMgr.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -705,7 +704,7 @@
 			children = (
 				3F3166AD2B1B8EFD0074538D /* AssetTransitionDriver.h */,
 				3F3166AE2B1B8EFD0074538D /* AssetTransitionDriver.m */,
-				3F3166B22B1B8EFE0074538D /* AssetTransitioning.h */,
+				3F3166B22B1B8EFE0074538D /* FullScreenTransitioning.h */,
 				3F3166B02B1B8EFE0074538D /* FullScreenTransitionItem.h */,
 				3F3166AF2B1B8EFE0074538D /* FullScreenTransitionItem.m */,
 				3F3166B32B1B8EFE0074538D /* TransitionController.h */,
@@ -822,8 +821,8 @@
 		3F3166F92B1C2DA30074538D /* Drawer */ = {
 			isa = PBXGroup;
 			children = (
-				3F3166FB2B1C2DB70074538D /* ListViewController.h */,
-				3F3166FA2B1C2DB70074538D /* ListViewController.m */,
+				3F3166FB2B1C2DB70074538D /* DrawerListViewController.h */,
+				3F3166FA2B1C2DB70074538D /* DrawerListViewController.m */,
 				3F3166FC2B1C2DB70074538D /* UIDrawerController.h */,
 				3F3166FD2B1C2DB70074538D /* UIDrawerController.m */,
 				3F3167002B1C2DE80074538D /* DrawerViewController.h */,
@@ -1071,10 +1070,13 @@
 				68B912712B17384F0049E0FA /* UITableViewInfo.m */,
 				68C0EB5D2B1757D4005E1C28 /* MMUIViewController.h */,
 				68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */,
+				3F3169A72B1C65940074538D /* MMUIViewControllerTransitioning.h */,
 				3F3166AA2B1B8A4F0074538D /* MMUINavigationController.h */,
 				3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */,
 				68C0EB602B175850005E1C28 /* UIView+Frame.h */,
 				68C0EB612B175850005E1C28 /* UIView+Frame.m */,
+				3F3169A82B1C70650074538D /* UiUtil.h */,
+				3F3169A92B1C70650074538D /* UiUtil.m */,
 			);
 			path = MMUIKit;
 			sourceTree = "<group>";
@@ -1082,11 +1084,11 @@
 		68C0EB4C2B17546E005E1C28 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				3F3166EF2B1BA00A0074538D /* Mask */,
-				3F3166D02B1B9B800074538D /* FloatWindow */,
-				3F3166BA2B1B96F30074538D /* AblumAsset */,
-				3F31669A2B1B87FC0074538D /* AlbumFlip */,
 				68C0EB4D2B175500005E1C28 /* BCMagicTransition */,
+				3F31669A2B1B87FC0074538D /* AlbumFlip */,
+				3F3166BA2B1B96F30074538D /* AblumAsset */,
+				3F3166D02B1B9B800074538D /* FloatWindow */,
+				3F3166EF2B1BA00A0074538D /* Mask */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -1315,6 +1317,7 @@
 				3F3167272B1C32680074538D /* TextMaskViewController.m in Sources */,
 				3F3167862B1C37C40074538D /* CTColumnView.swift in Sources */,
 				3F31675E2B1C34530074538D /* MMTextAttachment.m in Sources */,
+				3F3169AA2B1C70650074538D /* UiUtil.m in Sources */,
 				3F31667E2B1B1FFF0074538D /* QuartzBlendingView.swift in Sources */,
 				3F31668E2B1B1FFF0074538D /* QuartzCapJointWidthView.swift in Sources */,
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
@@ -1351,7 +1354,7 @@
 				68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */,
 				3F31661E2B18D4CB0074538D /* LineCircleCell.swift in Sources */,
 				3F3166542B1B14D10074538D /* HealthViewController.m in Sources */,
-				3F3166FE2B1C2DB70074538D /* ListViewController.m in Sources */,
+				3F3166FE2B1C2DB70074538D /* DrawerListViewController.m in Sources */,
 				3F31665F2B1B15190074538D /* CircleGraphView.m in Sources */,
 				3F3166892B1B1FFF0074538D /* DetailViewController.swift in Sources */,
 				3F31667C2B1B1FFF0074538D /* QuartzLineView.swift in Sources */,
@@ -1377,7 +1380,6 @@
 				3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */,
 				3F3167622B1C34530074538D /* MMImageAttachmentView.m in Sources */,
 				3F3166E72B1B9B920074538D /* FloatViewController.m in Sources */,
-				3F3166A62B1B881E0074538D /* TransitionMgr.m in Sources */,
 				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3166862B1B1FFF0074538D /* QuartzEllipseArcView.swift in Sources */,

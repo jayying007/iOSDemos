@@ -9,6 +9,8 @@
 #import "FullScreenTransitionItem.h"
 
 @protocol FullScreenTransitioning <NSObject>
+
 - (NSArray<FullScreenTransitionItem *> *)itemsForTransition:(id<UIViewControllerContextTransitioning>)context;
 - (CGRect)targetFrameForItem:(FullScreenTransitionItem *)item;
+
 @end

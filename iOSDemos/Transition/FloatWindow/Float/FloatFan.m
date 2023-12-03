@@ -39,7 +39,7 @@
                                                           NSValue *value = note.userInfo[@"touchPoint"];
                                                           CGPoint touchPoint = [value CGPointValue];
                                                           CGFloat distance =
-                                                          sqrt(pow(WINDOW.width - touchPoint.x, 2) + pow(WINDOW.height - touchPoint.y, 2));
+                                                          sqrt(pow(self.window.width - touchPoint.x, 2) + pow(self.window.height - touchPoint.y, 2));
                                                           [self updateDistance:distance];
                                                       }];
     }

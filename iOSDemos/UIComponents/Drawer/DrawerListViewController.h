@@ -7,6 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UIViewController
+@interface DrawerListViewController : UIViewController
 
 @end

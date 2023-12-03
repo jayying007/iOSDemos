@@ -114,7 +114,7 @@
 - (void)animateDismiss:(id<UIViewControllerContextTransitioning>)transitionContext {
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     UIView *containerView = [transitionContext containerView];
-    UIViewController<AssetTransitioning> *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    //    UIViewController<AssetTransitioning> *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIViewController<AssetTransitioning, UICollectionViewDataSource> *fromVC =
     [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];

@@ -11,7 +11,7 @@
 #import "GalleryViewController.h"
 #import "DrawerViewController.h"
 #import "UIDrawerController.h"
-#import "ListViewController.h"
+#import "DrawerListViewController.h"
 #import "CircleTextViewController.h"
 #import "ExcludePathViewController.h"
 #import "ColorTextViewController.h"
@@ -33,80 +33,44 @@
     _tableViewInfo = [[UITableViewInfo alloc] init];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"UI组件";
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"UIStackView";
-            rowInfo.className = @"UIStackViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"UIToolbar";
-            rowInfo.detail = @"可以上下拖动的Toolbar容器";
-            rowInfo.className = @"UIToolbarViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"UICollectionView";
-            rowInfo.handler = ^{
-                strongify(self);
-                CollectionEntryViewController *vc = [[CollectionEntryViewController alloc] init];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"Animate UITableView";
-            rowInfo.className = @"AnimateTableViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"容器ViewController";
-            rowInfo.detail = @"右滑可拉出一个列表";
-            rowInfo.handler = ^{
-                strongify(self);
-                DrawerViewController *vc = [[DrawerViewController alloc] init];
-                UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
-                UIDrawerController *drawerController = [[UIDrawerController alloc] initWithRootViewController:navController];
-                drawerController.leftViewController = [[ListViewController alloc] init];
+        sectionInfo.addRow.c_title(@"UIStackView").c_className(@"UIStackViewController");
+        sectionInfo.addRow.c_title(@"UIToolbar").c_detail(@"可以上下拖动的Toolbar容器").c_className(@"UIToolbarViewController");
+        sectionInfo.addRow.c_title(@"UICollectionView").c_handler(^{
+            strongify(self);
+            CollectionEntryViewController *vc = [[CollectionEntryViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        });
+        sectionInfo.addRow.c_title(@"Animate UITableView").c_className(@"AnimateTableViewController");
+        sectionInfo.addRow.c_title(@"容器ViewController").c_detail(@"右滑可拉出一个列表").c_handler(^{
+            strongify(self);
+            DrawerViewController *vc = [[DrawerViewController alloc] init];
+            UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
+            UIDrawerController *drawerController = [[UIDrawerController alloc] initWithRootViewController:navController];
+            drawerController.leftViewController = [[DrawerListViewController alloc] init];
 
-                drawerController.modalPresentationStyle = UIModalPresentationFullScreen;
-                [self presentViewController:drawerController animated:YES completion:nil];
-            };
-        }];
+            drawerController.modalPresentationStyle = UIModalPresentationFullScreen;
+            [self presentViewController:drawerController animated:YES completion:nil];
+        });
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"文本相关";
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"TQCoreText排版";
-            rowInfo.className = @"TQCoreTextViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"文本实现遮罩";
-            rowInfo.className = @"TextMaskViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"文本列布局";
-            rowInfo.className = @"ColumnarLayoutViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"自己实现UITextView";
-            rowInfo.className = @"CustomTextInputViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"富文本编辑器";
-            rowInfo.detail = @"MMTextView";
-            rowInfo.className = @"MMTextViewViewController";
-        }];
+        sectionInfo.addRow.c_title(@"TQCoreText排版").c_className(@"TQCoreTextViewController");
+        sectionInfo.addRow.c_title(@"文本实现遮罩").c_className(@"TextMaskViewController");
+        sectionInfo.addRow.c_title(@"文本列布局").c_className(@"ColumnarLayoutViewController");
+        sectionInfo.addRow.c_title(@"自己实现UITextView").c_className(@"CustomTextInputViewController");
+        sectionInfo.addRow.c_title(@"富文本编辑器").c_detail(@"MMTextView").c_className(@"MMTextViewViewController");
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"TextKit Demo";
             rowInfo.handler = ^{
                 strongify(self);
-                UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"CircleText" image:[UIImage systemImageNamed:@"link"] tag:0];
                 CircleTextViewController *vc1 = [[CircleTextViewController alloc] init];
-                vc1.tabBarItem = item1;
+                vc1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"CircleText" image:[UIImage systemImageNamed:@"link"] tag:0];
 
-                UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"ExcludePath" image:[UIImage systemImageNamed:@"link"] tag:0];
                 ExcludePathViewController *vc2 = [[ExcludePathViewController alloc] init];
-                vc2.tabBarItem = item2;
+                vc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ExcludePath" image:[UIImage systemImageNamed:@"link"] tag:0];
 
-                UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"ColorText" image:[UIImage systemImageNamed:@"link"] tag:0];
                 ColorTextViewController *vc3 = [[ColorTextViewController alloc] init];
-                vc3.tabBarItem = item3;
+                vc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ColorText" image:[UIImage systemImageNamed:@"link"] tag:0];
 
                 UITabBarController *tabBarController = [[UITabBarController alloc] init];
                 [tabBarController setViewControllers:@[ vc1, vc2, vc3 ]];
@@ -115,18 +79,12 @@
                 [self.navigationController pushViewController:tabBarController animated:YES];
             };
         }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"文字变换动效";
-            rowInfo.className = @"AnimateTextViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"🧟‍♂️杂志";
-            rowInfo.handler = ^{
-                strongify(self);
-                MagazineViewController *vc = [[MagazineViewController alloc] init];
-                [self.navigationController pushViewController:vc animated:YES];
-            };
-        }];
+        sectionInfo.addRow.c_title(@"文字变换动效").c_className(@"AnimateTextViewController");
+        sectionInfo.addRow.c_title(@"🧟‍♂️杂志").c_handler(^{
+            strongify(self);
+            MagazineViewController *vc = [[MagazineViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        });
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"Core Graphics";
@@ -142,16 +100,8 @@
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"Core Animation";
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"Shake Animation";
-            rowInfo.detail = @"会震动的密码框";
-            rowInfo.className = @"ShakeViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"Animated Pen";
-            rowInfo.detail = @"神笔马良";
-            rowInfo.className = @"AnimatePanViewController";
-        }];
+        sectionInfo.addRow.c_title(@"Shake Animation").c_detail(@"会震动的密码框").c_className(@"ShakeViewController");
+        sectionInfo.addRow.c_title(@"Animated Pen").c_detail(@"神笔马良").c_className(@"AnimatePanViewController");
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"转场";
@@ -170,32 +120,17 @@
                 [self.navigationController pushViewController:vc animated:YES];
             };
         }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"相册合集";
-            rowInfo.className = @"AssetViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"浮窗";
-            rowInfo.className = @"FloatViewController";
-        }];
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"Mask遮罩";
-            rowInfo.className = @"MaskViewController";
-        }];
+        sectionInfo.addRow.c_title(@"相册合集").c_className(@"AssetViewController");
+        sectionInfo.addRow.c_title(@"浮窗").c_className(@"FloatViewController");
+        sectionInfo.addRow.c_title(@"Mask遮罩").c_className(@"MaskViewController");
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"前端";
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"WebView 同层渲染";
-            rowInfo.className = @"NativeRenderWebViewController";
-        }];
+        sectionInfo.addRow.c_title(@"WebView 同层渲染").c_className(@"NativeRenderWebViewController");
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"其他";
-        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
-            rowInfo.title = @"HealthKit";
-            rowInfo.className = @"HealthViewController";
-        }];
+        sectionInfo.addRow.c_title(@"HealthKit").c_className(@"HealthViewController");
         [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
             rowInfo.title = @"打开ViewHierarchy3D";
             rowInfo.handler = ^{
@@ -237,7 +172,6 @@
     cell.textLabel.text = rowInfo.title;
     cell.detailTextLabel.text = rowInfo.detail;
     cell.detailTextLabel.textColor = UIColor.lightGrayColor;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
     return cell;
@@ -252,6 +186,7 @@
     } else if (rowInfo.handler) {
         rowInfo.handler();
     }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

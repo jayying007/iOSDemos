@@ -47,7 +47,7 @@
 - (id)init {
     CGRect frame = CGRectMake(40, 120, 40, 40);
     self = [super initWithFrame:frame];
-    self.windowScene = [UIApplication sharedApplication].connectedScenes.anyObject;
+    self.windowScene = [UiUtil mainScene];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         self.windowLevel = UIWindowLevelStatusBar + 100.0f;
@@ -138,7 +138,7 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         self.frame = [UIScreen mainScreen].bounds;
-        self.windowScene = [UIApplication sharedApplication].connectedScenes.anyObject;
+        self.windowScene = [UiUtil mainScene];
         self.windowLevel = UIWindowLevelStatusBar + 99.0f;
         UIPanGestureRecognizer *gPan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
         UIPinchGestureRecognizer *gPinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinch:)];
@@ -200,6 +200,7 @@
     trans = CATransform3DConcat(CATransform3DMakeRotation(DEGREES_TO_RADIANS(0), 0, 0, 1), trans);
     trans = CATransform3DConcat(trans, t);
 
+    weakify(self);
     isAnimatimg = YES;
     [UIView animateWithDuration:time
     animations:^() {
@@ -208,7 +209,8 @@
         }
     }
     completion:^(BOOL finished) {
-        isAnimatimg = NO;
+        strongify(self);
+        self->isAnimatimg = NO;
     }];
 }
 
@@ -318,6 +320,7 @@
 }
 
 - (void)startHide {
+    weakify(self);
     isAnimatimg = YES;
     [UIView animateWithDuration:0.3
     animations:^() {
@@ -331,11 +334,12 @@
             self.hidden = YES;
         }
         completion:^(BOOL finished) {
+            strongify(self);
             for (ViewImageHolder *holder in self.holders) {
                 [holder.view removeFromSuperview];
             }
             self.holders = nil;
-            isAnimatimg = NO;
+            self->isAnimatimg = NO;
         }];
     }];
 }

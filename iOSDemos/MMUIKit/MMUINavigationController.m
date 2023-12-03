@@ -9,6 +9,7 @@
 #import "TransitionController.h"
 #import "FloatTransitionMgr.h"
 #import "PopAnimation.h"
+#import "MMUIViewControllerTransitioning.h"
 
 @interface MMUINavigationController () <UINavigationControllerDelegate>
 
@@ -44,14 +45,14 @@
                                                  toViewController:(UIViewController *)toVC {
     SEL transitionSelector = @selector(mmNavigationController:animationControllerForOperation:fromViewController:toViewController:);
 
-    if ([fromVC respondsToSelector:transitionSelector] && operation == UINavigationControllerOperationPush) {
+    if (operation == UINavigationControllerOperationPush && [fromVC respondsToSelector:transitionSelector]) {
         return [(id<MMUINavigationControllerDelegate>)fromVC mmNavigationController:navigationController
                                                     animationControllerForOperation:operation
                                                                  fromViewController:fromVC
                                                                    toViewController:toVC];
     }
 
-    if ([toVC respondsToSelector:transitionSelector] && operation == UINavigationControllerOperationPop) {
+    if (operation == UINavigationControllerOperationPop && [toVC respondsToSelector:transitionSelector]) {
         return [(id<MMUINavigationControllerDelegate>)toVC mmNavigationController:navigationController
                                                   animationControllerForOperation:operation
                                                                fromViewController:fromVC
@@ -63,13 +64,15 @@
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                          interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
-    if ([animationController isKindOfClass:TransitionController.class]) {
-        return animationController;
+    if ([animationController conformsToProtocol:@protocol(MMUIViewControllerAnimatedTransitioning)]) {
+        let fromVC = [(id<MMUIViewControllerAnimatedTransitioning>)animationController fromVC];
+        SEL transitionSelector = @selector(mmNavigationController:interactionControllerForAnimationController:);
+        if ([fromVC respondsToSelector:transitionSelector]) {
+            return [(id<MMUINavigationControllerDelegate>)fromVC mmNavigationController:navigationController
+                                            interactionControllerForAnimationController:animationController];
+        }
     }
-    if ([animationController isKindOfClass:PopAnimation.class]) {
-        return [(id<UINavigationControllerDelegate>)Service(FloatTransitionMgr) navigationController:navigationController
-                                                         interactionControllerForAnimationController:animationController];
-    }
+
     return nil;
 }
 

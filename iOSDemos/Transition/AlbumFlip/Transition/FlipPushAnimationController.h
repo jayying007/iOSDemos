@@ -9,4 +9,7 @@
 
 @interface FlipPushAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
 
+@property (nonatomic) UIView *coverView;
+@property (nonatomic) CGRect originFrame;
+
 @end

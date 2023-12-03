@@ -9,6 +9,34 @@
 
 @implementation UITableViewRowInfo
 
+- (UITableViewRowInfo * (^)(NSString *))c_title {
+    return ^UITableViewRowInfo *(NSString *title) {
+        self.title = title;
+        return self;
+    };
+}
+
+- (UITableViewRowInfo * (^)(NSString *))c_detail {
+    return ^UITableViewRowInfo *(NSString *detail) {
+        self.detail = detail;
+        return self;
+    };
+}
+
+- (UITableViewRowInfo * (^)(NSString *))c_className {
+    return ^UITableViewRowInfo *(NSString *className) {
+        self.className = className;
+        return self;
+    };
+}
+
+- (UITableViewRowInfo * (^)(RowClickHandler))c_handler {
+    return ^UITableViewRowInfo *(RowClickHandler handler) {
+        self.handler = handler;
+        return self;
+    };
+}
+
 @end
 
 @implementation UITableViewSectionInfo
@@ -25,6 +53,12 @@
     UITableViewRowInfo *rowInfo = [[UITableViewRowInfo alloc] init];
     rowBuilder(rowInfo);
     [_rows addObject:rowInfo];
+}
+
+- (UITableViewRowInfo *)addRow {
+    UITableViewRowInfo *rowInfo = [[UITableViewRowInfo alloc] init];
+    [self.rows addObject:rowInfo];
+    return rowInfo;
 }
 
 @end

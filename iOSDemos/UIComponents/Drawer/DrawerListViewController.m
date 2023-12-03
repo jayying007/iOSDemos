@@ -5,13 +5,13 @@
 //  Created by janezhuang on 2022/5/21.
 //
 
-#import "ListViewController.h"
+#import "DrawerListViewController.h"
 
-@interface ListViewController () <UITableViewDataSource>
+@interface DrawerListViewController () <UITableViewDataSource>
 @property (nonatomic) UITableView *tableView;
 @end
 
-@implementation ListViewController
+@implementation DrawerListViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
 

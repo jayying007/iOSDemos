@@ -8,6 +8,9 @@
 #import "PopAnimation.h"
 
 @implementation PopAnimation
+
+@synthesize fromVC;
+
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
     return 0.5;
 }

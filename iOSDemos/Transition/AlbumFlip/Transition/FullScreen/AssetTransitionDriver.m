@@ -6,7 +6,7 @@
 //
 
 #import "AssetTransitionDriver.h"
-#import "AssetTransitioning.h"
+#import "FullScreenTransitioning.h"
 
 #define CGVectorZero CGVectorMake(0, 0)
 
@@ -85,7 +85,9 @@
                                                                         animations:^{
                                                                             visualEffectView.effect = targetEffect;
                                                                         }];
+        weakify(self);
         [self.transitionAnimator addCompletion:^(UIViewAnimatingPosition finalPosition) {
+            strongify(self);
             for (FullScreenTransitionItem *item in self.items) {
                 [item.imageView removeFromSuperview];
             }
