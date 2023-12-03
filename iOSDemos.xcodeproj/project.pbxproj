@@ -102,6 +102,47 @@
 		3F3166FE2B1C2DB70074538D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166FA2B1C2DB70074538D /* ListViewController.m */; };
 		3F3166FF2B1C2DB70074538D /* UIDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3166FD2B1C2DB70074538D /* UIDrawerController.m */; };
 		3F3167022B1C2DE80074538D /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167012B1C2DE80074538D /* DrawerViewController.m */; };
+		3F3167182B1C30F80074538D /* CoreTextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167072B1C30F80074538D /* CoreTextUtils.m */; };
+		3F3167192B1C30F80074538D /* CTFrameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31670A2B1C30F80074538D /* CTFrameParser.m */; };
+		3F31671A2B1C30F80074538D /* CoreTextImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31670E2B1C30F80074538D /* CoreTextImageData.m */; };
+		3F31671B2B1C30F80074538D /* CTFrameParserConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167122B1C30F80074538D /* CTFrameParserConfig.m */; };
+		3F31671C2B1C30F80074538D /* CoreTextData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167132B1C30F80074538D /* CoreTextData.m */; };
+		3F31671D2B1C30F80074538D /* CoreTextLinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167142B1C30F80074538D /* CoreTextLinkData.m */; };
+		3F31671E2B1C30F80074538D /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167162B1C30F80074538D /* CTDisplayView.m */; };
+		3F3167212B1C310D0074538D /* TQCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167202B1C310D0074538D /* TQCoreTextViewController.m */; };
+		3F3167232B1C31430074538D /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F3167222B1C31420074538D /* content.json */; };
+		3F3167272B1C32680074538D /* TextMaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167262B1C32680074538D /* TextMaskViewController.m */; };
+		3F31672E2B1C32D50074538D /* ColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31672A2B1C32D50074538D /* ColumnView.m */; };
+		3F31672F2B1C32D50074538D /* ColumnViewV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31672C2B1C32D50074538D /* ColumnViewV2.m */; };
+		3F3167322B1C32E80074538D /* ColumnarLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167312B1C32E80074538D /* ColumnarLayoutViewController.m */; };
+		3F3167402B1C33660074538D /* IndexedRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167352B1C33650074538D /* IndexedRange.m */; };
+		3F3167412B1C33660074538D /* IndexedPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167362B1C33650074538D /* IndexedPosition.m */; };
+		3F3167422B1C33660074538D /* EditableCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31673B2B1C33650074538D /* EditableCoreTextView.m */; };
+		3F3167432B1C33660074538D /* CaretView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31673D2B1C33660074538D /* CaretView.m */; };
+		3F3167442B1C33660074538D /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31673F2B1C33660074538D /* CoreTextView.m */; };
+		3F3167472B1C336F0074538D /* CustomTextInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167462B1C336F0074538D /* CustomTextInputViewController.m */; };
+		3F31674B2B1C34270074538D /* MMTextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31674A2B1C34270074538D /* MMTextViewViewController.m */; };
+		3F31675D2B1C34530074538D /* MMLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31674E2B1C34530074538D /* MMLayoutManager.m */; };
+		3F31675E2B1C34530074538D /* MMTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167502B1C34530074538D /* MMTextAttachment.m */; };
+		3F31675F2B1C34530074538D /* MMAttachmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167512B1C34530074538D /* MMAttachmentData.m */; };
+		3F3167602B1C34530074538D /* MMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167552B1C34530074538D /* MMTextView.m */; };
+		3F3167612B1C34530074538D /* MMAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167582B1C34530074538D /* MMAttachmentView.m */; };
+		3F3167622B1C34530074538D /* MMImageAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31675A2B1C34530074538D /* MMImageAttachmentView.m */; };
+		3F3167632B1C34530074538D /* MMFileAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31675B2B1C34530074538D /* MMFileAttachmentView.m */; };
+		3F3167702B1C35F20074538D /* ColoringTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167662B1C35F20074538D /* ColoringTextStorage.m */; };
+		3F3167712B1C35F20074538D /* ExcludePathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167672B1C35F20074538D /* ExcludePathViewController.m */; };
+		3F3167722B1C35F20074538D /* CircleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167682B1C35F20074538D /* CircleTextViewController.m */; };
+		3F3167732B1C35F20074538D /* CircleTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167692B1C35F20074538D /* CircleTextContainer.m */; };
+		3F3167742B1C35F20074538D /* ColorTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31676D2B1C35F20074538D /* ColorTextViewController.m */; };
+		3F31677A2B1C36CA0074538D /* MMTextLayerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167762B1C36C90074538D /* MMTextLayerAnimation.m */; };
+		3F31677B2B1C36CA0074538D /* MMTextAnimationLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167792B1C36CA0074538D /* MMTextAnimationLabel.m */; };
+		3F31677E2B1C36D20074538D /* AnimateTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F31677D2B1C36D20074538D /* AnimateTextViewController.m */; };
+		3F3167812B1C37B00074538D /* zombies.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3F3167802B1C37B00074538D /* zombies.txt */; };
+		3F3167862B1C37C40074538D /* CTColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167822B1C37C40074538D /* CTColumnView.swift */; };
+		3F3167872B1C37C40074538D /* CTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167832B1C37C40074538D /* CTView.swift */; };
+		3F3167882B1C37C40074538D /* MarkupParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167842B1C37C40074538D /* MarkupParser.swift */; };
+		3F3167892B1C37C40074538D /* CTSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167852B1C37C40074538D /* CTSettings.swift */; };
+		3F31678E2B1C38A80074538D /* MagazineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31678D2B1C38A80074538D /* MagazineViewController.swift */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -268,6 +309,81 @@
 		3F3166FD2B1C2DB70074538D /* UIDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDrawerController.m; sourceTree = "<group>"; };
 		3F3167002B1C2DE80074538D /* DrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
 		3F3167012B1C2DE80074538D /* DrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		3F3167072B1C30F80074538D /* CoreTextUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextUtils.m; sourceTree = "<group>"; };
+		3F3167082B1C30F80074538D /* CoreTextUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextUtils.h; sourceTree = "<group>"; };
+		3F31670A2B1C30F80074538D /* CTFrameParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParser.m; sourceTree = "<group>"; };
+		3F31670B2B1C30F80074538D /* CTFrameParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParser.h; sourceTree = "<group>"; };
+		3F31670D2B1C30F80074538D /* CTFrameParserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTFrameParserConfig.h; sourceTree = "<group>"; };
+		3F31670E2B1C30F80074538D /* CoreTextImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextImageData.m; sourceTree = "<group>"; };
+		3F31670F2B1C30F80074538D /* CoreTextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextData.h; sourceTree = "<group>"; };
+		3F3167102B1C30F80074538D /* CoreTextLinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextLinkData.h; sourceTree = "<group>"; };
+		3F3167112B1C30F80074538D /* CoreTextImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextImageData.h; sourceTree = "<group>"; };
+		3F3167122B1C30F80074538D /* CTFrameParserConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTFrameParserConfig.m; sourceTree = "<group>"; };
+		3F3167132B1C30F80074538D /* CoreTextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextData.m; sourceTree = "<group>"; };
+		3F3167142B1C30F80074538D /* CoreTextLinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextLinkData.m; sourceTree = "<group>"; };
+		3F3167162B1C30F80074538D /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		3F3167172B1C30F80074538D /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
+		3F31671F2B1C310D0074538D /* TQCoreTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TQCoreTextViewController.h; sourceTree = "<group>"; };
+		3F3167202B1C310D0074538D /* TQCoreTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TQCoreTextViewController.m; sourceTree = "<group>"; };
+		3F3167222B1C31420074538D /* content.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
+		3F3167252B1C32680074538D /* TextMaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextMaskViewController.h; sourceTree = "<group>"; };
+		3F3167262B1C32680074538D /* TextMaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextMaskViewController.m; sourceTree = "<group>"; };
+		3F31672A2B1C32D50074538D /* ColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnView.m; sourceTree = "<group>"; };
+		3F31672B2B1C32D50074538D /* ColumnViewV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnViewV2.h; sourceTree = "<group>"; };
+		3F31672C2B1C32D50074538D /* ColumnViewV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnViewV2.m; sourceTree = "<group>"; };
+		3F31672D2B1C32D50074538D /* ColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnView.h; sourceTree = "<group>"; };
+		3F3167302B1C32E80074538D /* ColumnarLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColumnarLayoutViewController.h; sourceTree = "<group>"; };
+		3F3167312B1C32E80074538D /* ColumnarLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColumnarLayoutViewController.m; sourceTree = "<group>"; };
+		3F3167352B1C33650074538D /* IndexedRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexedRange.m; sourceTree = "<group>"; };
+		3F3167362B1C33650074538D /* IndexedPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexedPosition.m; sourceTree = "<group>"; };
+		3F3167372B1C33650074538D /* IndexedRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexedRange.h; sourceTree = "<group>"; };
+		3F3167382B1C33650074538D /* IndexedPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexedPosition.h; sourceTree = "<group>"; };
+		3F31673A2B1C33650074538D /* CaretView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaretView.h; sourceTree = "<group>"; };
+		3F31673B2B1C33650074538D /* EditableCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableCoreTextView.m; sourceTree = "<group>"; };
+		3F31673C2B1C33650074538D /* CoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
+		3F31673D2B1C33660074538D /* CaretView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaretView.m; sourceTree = "<group>"; };
+		3F31673E2B1C33660074538D /* EditableCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableCoreTextView.h; sourceTree = "<group>"; };
+		3F31673F2B1C33660074538D /* CoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextView.m; sourceTree = "<group>"; };
+		3F3167452B1C336F0074538D /* CustomTextInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextInputViewController.h; sourceTree = "<group>"; };
+		3F3167462B1C336F0074538D /* CustomTextInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextInputViewController.m; sourceTree = "<group>"; };
+		3F3167492B1C34270074538D /* MMTextViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTextViewViewController.h; sourceTree = "<group>"; };
+		3F31674A2B1C34270074538D /* MMTextViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTextViewViewController.m; sourceTree = "<group>"; };
+		3F31674D2B1C34530074538D /* MMLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLayoutManager.h; sourceTree = "<group>"; };
+		3F31674E2B1C34530074538D /* MMLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLayoutManager.m; sourceTree = "<group>"; };
+		3F3167502B1C34530074538D /* MMTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextAttachment.m; sourceTree = "<group>"; };
+		3F3167512B1C34530074538D /* MMAttachmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAttachmentData.m; sourceTree = "<group>"; };
+		3F3167522B1C34530074538D /* MMTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextAttachment.h; sourceTree = "<group>"; };
+		3F3167532B1C34530074538D /* MMAttachmentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAttachmentData.h; sourceTree = "<group>"; };
+		3F3167552B1C34530074538D /* MMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextView.m; sourceTree = "<group>"; };
+		3F3167562B1C34530074538D /* MMFileAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFileAttachmentView.h; sourceTree = "<group>"; };
+		3F3167572B1C34530074538D /* MMImageAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMImageAttachmentView.h; sourceTree = "<group>"; };
+		3F3167582B1C34530074538D /* MMAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAttachmentView.m; sourceTree = "<group>"; };
+		3F3167592B1C34530074538D /* MMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextView.h; sourceTree = "<group>"; };
+		3F31675A2B1C34530074538D /* MMImageAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMImageAttachmentView.m; sourceTree = "<group>"; };
+		3F31675B2B1C34530074538D /* MMFileAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFileAttachmentView.m; sourceTree = "<group>"; };
+		3F31675C2B1C34530074538D /* MMAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAttachmentView.h; sourceTree = "<group>"; };
+		3F3167662B1C35F20074538D /* ColoringTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoringTextStorage.m; sourceTree = "<group>"; };
+		3F3167672B1C35F20074538D /* ExcludePathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcludePathViewController.m; sourceTree = "<group>"; };
+		3F3167682B1C35F20074538D /* CircleTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTextViewController.m; sourceTree = "<group>"; };
+		3F3167692B1C35F20074538D /* CircleTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTextContainer.m; sourceTree = "<group>"; };
+		3F31676A2B1C35F20074538D /* ColoringTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoringTextStorage.h; sourceTree = "<group>"; };
+		3F31676B2B1C35F20074538D /* CircleTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTextViewController.h; sourceTree = "<group>"; };
+		3F31676C2B1C35F20074538D /* CircleTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTextContainer.h; sourceTree = "<group>"; };
+		3F31676D2B1C35F20074538D /* ColorTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTextViewController.m; sourceTree = "<group>"; };
+		3F31676E2B1C35F20074538D /* ExcludePathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcludePathViewController.h; sourceTree = "<group>"; };
+		3F31676F2B1C35F20074538D /* ColorTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTextViewController.h; sourceTree = "<group>"; };
+		3F3167762B1C36C90074538D /* MMTextLayerAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextLayerAnimation.m; sourceTree = "<group>"; };
+		3F3167772B1C36C90074538D /* MMTextLayerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextLayerAnimation.h; sourceTree = "<group>"; };
+		3F3167782B1C36CA0074538D /* MMTextAnimationLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextAnimationLabel.h; sourceTree = "<group>"; };
+		3F3167792B1C36CA0074538D /* MMTextAnimationLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextAnimationLabel.m; sourceTree = "<group>"; };
+		3F31677C2B1C36D20074538D /* AnimateTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateTextViewController.h; sourceTree = "<group>"; };
+		3F31677D2B1C36D20074538D /* AnimateTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateTextViewController.m; sourceTree = "<group>"; };
+		3F3167802B1C37B00074538D /* zombies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zombies.txt; sourceTree = "<group>"; };
+		3F3167822B1C37C40074538D /* CTColumnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTColumnView.swift; sourceTree = "<group>"; };
+		3F3167832B1C37C40074538D /* CTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTView.swift; sourceTree = "<group>"; };
+		3F3167842B1C37C40074538D /* MarkupParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkupParser.swift; sourceTree = "<group>"; };
+		3F3167852B1C37C40074538D /* CTSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTSettings.swift; sourceTree = "<group>"; };
+		3F31678D2B1C38A80074538D /* MagazineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineViewController.swift; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -346,6 +462,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				3F3167032B1C30E40074538D /* MMText */,
 				3F3166612B1B166A0074538D /* iOSDemos.entitlements */,
 				3F3166472B1A24440074538D /* Resource */,
 				3F31663F2B1A1C3E0074538D /* Supporting Files */,
@@ -483,6 +600,8 @@
 		3F3166472B1A24440074538D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3F3167802B1C37B00074538D /* zombies.txt */,
+				3F3167222B1C31420074538D /* content.json */,
 				3F3166482B1A24440074538D /* index.html */,
 				3F3166962B1B202D0074538D /* Demo.png */,
 				3F3166942B1B202D0074538D /* Quartz.pdf */,
@@ -713,6 +832,238 @@
 			path = Drawer;
 			sourceTree = "<group>";
 		};
+		3F3167032B1C30E40074538D /* MMText */ = {
+			isa = PBXGroup;
+			children = (
+				3F31677F2B1C37700074538D /* Magazine */,
+				3F3167752B1C369A0074538D /* AnimateText */,
+				3F3167652B1C35DA0074538D /* TextKitLayout */,
+				3F3167482B1C34120074538D /* MMTextView */,
+				3F3167332B1C335A0074538D /* CustomTextInput */,
+				3F3167282B1C32CB0074538D /* ColumnarLayout */,
+				3F3167242B1C32500074538D /* TextMask */,
+				3F3167042B1C30EC0074538D /* TQCoreText */,
+			);
+			path = MMText;
+			sourceTree = "<group>";
+		};
+		3F3167042B1C30EC0074538D /* TQCoreText */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167052B1C30F80074538D /* CoreText */,
+				3F31671F2B1C310D0074538D /* TQCoreTextViewController.h */,
+				3F3167202B1C310D0074538D /* TQCoreTextViewController.m */,
+			);
+			path = TQCoreText;
+			sourceTree = "<group>";
+		};
+		3F3167052B1C30F80074538D /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167062B1C30F80074538D /* Util */,
+				3F3167092B1C30F80074538D /* Controller */,
+				3F31670C2B1C30F80074538D /* Model */,
+				3F3167152B1C30F80074538D /* View */,
+			);
+			path = CoreText;
+			sourceTree = "<group>";
+		};
+		3F3167062B1C30F80074538D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167072B1C30F80074538D /* CoreTextUtils.m */,
+				3F3167082B1C30F80074538D /* CoreTextUtils.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3F3167092B1C30F80074538D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F31670A2B1C30F80074538D /* CTFrameParser.m */,
+				3F31670B2B1C30F80074538D /* CTFrameParser.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F31670C2B1C30F80074538D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F31670D2B1C30F80074538D /* CTFrameParserConfig.h */,
+				3F31670E2B1C30F80074538D /* CoreTextImageData.m */,
+				3F31670F2B1C30F80074538D /* CoreTextData.h */,
+				3F3167102B1C30F80074538D /* CoreTextLinkData.h */,
+				3F3167112B1C30F80074538D /* CoreTextImageData.h */,
+				3F3167122B1C30F80074538D /* CTFrameParserConfig.m */,
+				3F3167132B1C30F80074538D /* CoreTextData.m */,
+				3F3167142B1C30F80074538D /* CoreTextLinkData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F3167152B1C30F80074538D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167162B1C30F80074538D /* CTDisplayView.m */,
+				3F3167172B1C30F80074538D /* CTDisplayView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F3167242B1C32500074538D /* TextMask */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167252B1C32680074538D /* TextMaskViewController.h */,
+				3F3167262B1C32680074538D /* TextMaskViewController.m */,
+			);
+			path = TextMask;
+			sourceTree = "<group>";
+		};
+		3F3167282B1C32CB0074538D /* ColumnarLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167292B1C32D50074538D /* View */,
+				3F3167302B1C32E80074538D /* ColumnarLayoutViewController.h */,
+				3F3167312B1C32E80074538D /* ColumnarLayoutViewController.m */,
+			);
+			path = ColumnarLayout;
+			sourceTree = "<group>";
+		};
+		3F3167292B1C32D50074538D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F31672A2B1C32D50074538D /* ColumnView.m */,
+				3F31672B2B1C32D50074538D /* ColumnViewV2.h */,
+				3F31672C2B1C32D50074538D /* ColumnViewV2.m */,
+				3F31672D2B1C32D50074538D /* ColumnView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F3167332B1C335A0074538D /* CustomTextInput */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167342B1C33650074538D /* Model */,
+				3F3167392B1C33650074538D /* View */,
+				3F3167452B1C336F0074538D /* CustomTextInputViewController.h */,
+				3F3167462B1C336F0074538D /* CustomTextInputViewController.m */,
+			);
+			path = CustomTextInput;
+			sourceTree = "<group>";
+		};
+		3F3167342B1C33650074538D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167352B1C33650074538D /* IndexedRange.m */,
+				3F3167362B1C33650074538D /* IndexedPosition.m */,
+				3F3167372B1C33650074538D /* IndexedRange.h */,
+				3F3167382B1C33650074538D /* IndexedPosition.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F3167392B1C33650074538D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F31673A2B1C33650074538D /* CaretView.h */,
+				3F31673B2B1C33650074538D /* EditableCoreTextView.m */,
+				3F31673C2B1C33650074538D /* CoreTextView.h */,
+				3F31673D2B1C33660074538D /* CaretView.m */,
+				3F31673E2B1C33660074538D /* EditableCoreTextView.h */,
+				3F31673F2B1C33660074538D /* CoreTextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F3167482B1C34120074538D /* MMTextView */ = {
+			isa = PBXGroup;
+			children = (
+				3F31674C2B1C34530074538D /* Controller */,
+				3F31674F2B1C34530074538D /* Model */,
+				3F3167542B1C34530074538D /* View */,
+				3F3167492B1C34270074538D /* MMTextViewViewController.h */,
+				3F31674A2B1C34270074538D /* MMTextViewViewController.m */,
+			);
+			path = MMTextView;
+			sourceTree = "<group>";
+		};
+		3F31674C2B1C34530074538D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3F31674D2B1C34530074538D /* MMLayoutManager.h */,
+				3F31674E2B1C34530074538D /* MMLayoutManager.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3F31674F2B1C34530074538D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167502B1C34530074538D /* MMTextAttachment.m */,
+				3F3167512B1C34530074538D /* MMAttachmentData.m */,
+				3F3167522B1C34530074538D /* MMTextAttachment.h */,
+				3F3167532B1C34530074538D /* MMAttachmentData.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F3167542B1C34530074538D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167552B1C34530074538D /* MMTextView.m */,
+				3F3167562B1C34530074538D /* MMFileAttachmentView.h */,
+				3F3167572B1C34530074538D /* MMImageAttachmentView.h */,
+				3F3167582B1C34530074538D /* MMAttachmentView.m */,
+				3F3167592B1C34530074538D /* MMTextView.h */,
+				3F31675A2B1C34530074538D /* MMImageAttachmentView.m */,
+				3F31675B2B1C34530074538D /* MMFileAttachmentView.m */,
+				3F31675C2B1C34530074538D /* MMAttachmentView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F3167652B1C35DA0074538D /* TextKitLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3F31676C2B1C35F20074538D /* CircleTextContainer.h */,
+				3F3167692B1C35F20074538D /* CircleTextContainer.m */,
+				3F31676B2B1C35F20074538D /* CircleTextViewController.h */,
+				3F3167682B1C35F20074538D /* CircleTextViewController.m */,
+				3F31676A2B1C35F20074538D /* ColoringTextStorage.h */,
+				3F3167662B1C35F20074538D /* ColoringTextStorage.m */,
+				3F31676F2B1C35F20074538D /* ColorTextViewController.h */,
+				3F31676D2B1C35F20074538D /* ColorTextViewController.m */,
+				3F31676E2B1C35F20074538D /* ExcludePathViewController.h */,
+				3F3167672B1C35F20074538D /* ExcludePathViewController.m */,
+			);
+			path = TextKitLayout;
+			sourceTree = "<group>";
+		};
+		3F3167752B1C369A0074538D /* AnimateText */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167782B1C36CA0074538D /* MMTextAnimationLabel.h */,
+				3F3167792B1C36CA0074538D /* MMTextAnimationLabel.m */,
+				3F3167772B1C36C90074538D /* MMTextLayerAnimation.h */,
+				3F3167762B1C36C90074538D /* MMTextLayerAnimation.m */,
+				3F31677C2B1C36D20074538D /* AnimateTextViewController.h */,
+				3F31677D2B1C36D20074538D /* AnimateTextViewController.m */,
+			);
+			path = AnimateText;
+			sourceTree = "<group>";
+		};
+		3F31677F2B1C37700074538D /* Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				3F3167822B1C37C40074538D /* CTColumnView.swift */,
+				3F3167852B1C37C40074538D /* CTSettings.swift */,
+				3F3167832B1C37C40074538D /* CTView.swift */,
+				3F3167842B1C37C40074538D /* MarkupParser.swift */,
+				3F31678D2B1C38A80074538D /* MagazineViewController.swift */,
+			);
+			path = Magazine;
+			sourceTree = "<group>";
+		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -881,6 +1232,8 @@
 				3F3166982B1B202D0074538D /* Ship.png in Resources */,
 				3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */,
 				3F3166852B1B1FFF0074538D /* Quartz.storyboard in Resources */,
+				3F3167812B1C37B00074538D /* zombies.txt in Resources */,
+				3F3167232B1C31430074538D /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,20 +1287,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3166F72B1BA0190074538D /* MaskAnimationController.m in Sources */,
+				3F3167182B1C30F80074538D /* CoreTextUtils.m in Sources */,
 				68C0EB852B185271005E1C28 /* DemoHeaderViews.m in Sources */,
 				3F31663A2B1A19580074538D /* AnimateTableViewController.m in Sources */,
+				3F3167432B1C33660074538D /* CaretView.m in Sources */,
 				68C0EB812B184DAD005E1C28 /* ContainerView.m in Sources */,
+				3F31671C2B1C30F80074538D /* CoreTextData.m in Sources */,
+				3F3167322B1C32E80074538D /* ColumnarLayoutViewController.m in Sources */,
+				3F3167402B1C33660074538D /* IndexedRange.m in Sources */,
+				3F3167422B1C33660074538D /* EditableCoreTextView.m in Sources */,
+				3F3167192B1C30F80074538D /* CTFrameParser.m in Sources */,
+				3F3167702B1C35F20074538D /* ColoringTextStorage.m in Sources */,
+				3F31672E2B1C32D50074538D /* ColumnView.m in Sources */,
 				3F3166192B18D4CB0074538D /* CalendarEventCell.swift in Sources */,
 				3F3166CA2B1B972C0074538D /* AssetCollectionViewCell.m in Sources */,
 				68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */,
 				3F3166362B18DEE50074538D /* AnimatePanViewController.m in Sources */,
 				3F3166912B1B1FFF0074538D /* QuartzDashView.swift in Sources */,
+				3F3167632B1C34530074538D /* MMFileAttachmentView.m in Sources */,
 				3F3166002B18D4C30074538D /* ImageCollectionViewCell.swift in Sources */,
 				3F3166462B1A24130074538D /* NativeRenderContainerView.m in Sources */,
 				3F3166AB2B1B8A4F0074538D /* MMUINavigationController.m in Sources */,
 				3F3166A82B1B881E0074538D /* AlbumViewController.m in Sources */,
 				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
 				3F3166932B1B1FFF0074538D /* MasterViewController.swift in Sources */,
+				3F31671A2B1C30F80074538D /* CoreTextImageData.m in Sources */,
+				3F3167272B1C32680074538D /* TextMaskViewController.m in Sources */,
+				3F3167862B1C37C40074538D /* CTColumnView.swift in Sources */,
+				3F31675E2B1C34530074538D /* MMTextAttachment.m in Sources */,
 				3F31667E2B1B1FFF0074538D /* QuartzBlendingView.swift in Sources */,
 				3F31668E2B1B1FFF0074538D /* QuartzCapJointWidthView.swift in Sources */,
 				68C0EB532B17554B005E1C28 /* UIViewController+BCMagicTransition.m in Sources */,
@@ -957,13 +1324,18 @@
 				3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F3167022B1C2DE80074538D /* DrawerViewController.m in Sources */,
+				3F31672F2B1C32D50074538D /* ColumnViewV2.m in Sources */,
+				3F3167892B1C37C40074538D /* CTSettings.swift in Sources */,
 				3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */,
 				3F3165EA2B14D39D0074538D /* RootViewController.m in Sources */,
 				3F3166A52B1B881E0074538D /* FlipPushAnimationController.m in Sources */,
+				3F3167212B1C310D0074538D /* TQCoreTextViewController.m in Sources */,
 				3F3166EE2B1B9B920074538D /* FloatButton.m in Sources */,
 				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
 				3F31661B2B18D4CB0074538D /* LineCircleViewController.swift in Sources */,
+				3F3167882B1C37C40074538D /* MarkupParser.swift in Sources */,
 				3F3166F82B1BA0190074538D /* MaskSecViewController.m in Sources */,
+				3F3167712B1C35F20074538D /* ExcludePathViewController.m in Sources */,
 				3F3166162B18D4CB0074538D /* CalendarHeaderView.swift in Sources */,
 				3F3166F62B1BA0190074538D /* MaskViewController.m in Sources */,
 				3F3166B52B1B8EFE0074538D /* FullScreenTransitionItem.m in Sources */,
@@ -971,6 +1343,7 @@
 				3F31668F2B1B1FFF0074538D /* QuartzGradientViewController.swift in Sources */,
 				3F3166CE2B1B972C0074538D /* AssetViewController.m in Sources */,
 				3F3166B42B1B8EFE0074538D /* AssetTransitionDriver.m in Sources */,
+				3F3167442B1C33660074538D /* CoreTextView.m in Sources */,
 				3F31668C2B1B1FFF0074538D /* QuartzRectView.swift in Sources */,
 				68C0EB8C2B186074005E1C28 /* YYViewHierarchy3D.m in Sources */,
 				3F3166202B18D4CB0074538D /* WaterfallLayout.swift in Sources */,
@@ -982,51 +1355,70 @@
 				3F31665F2B1B15190074538D /* CircleGraphView.m in Sources */,
 				3F3166892B1B1FFF0074538D /* DetailViewController.swift in Sources */,
 				3F31667C2B1B1FFF0074538D /* QuartzLineView.swift in Sources */,
+				3F31671B2B1C30F80074538D /* CTFrameParserConfig.m in Sources */,
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
 				3F31661F2B18D4CB0074538D /* WaterfallCell.swift in Sources */,
 				3F31667D2B1B1FFF0074538D /* QuartzTextView.swift in Sources */,
 				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
 				3F3166E82B1B9B920074538D /* PopAnimation.m in Sources */,
+				3F3167412B1C33660074538D /* IndexedPosition.m in Sources */,
+				3F31671D2B1C30F80074538D /* CoreTextLinkData.m in Sources */,
 				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
 				3F3166ED2B1B9B920074538D /* FloatFan.m in Sources */,
 				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
 				3F3166902B1B1FFF0074538D /* QuartzPolygonView.swift in Sources */,
+				3F3167612B1C34530074538D /* MMAttachmentView.m in Sources */,
 				3F3166872B1B1FFF0074538D /* QuartzBlendingViewController.swift in Sources */,
+				3F31675D2B1C34530074538D /* MMLayoutManager.m in Sources */,
 				3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
 				3F3166EB2B1B9B920074538D /* FloatWindowMgr.m in Sources */,
 				3F3166242B18D4CB0074538D /* CustomViewController.swift in Sources */,
 				3F3166602B1B15190074538D /* CustomRingViewController.m in Sources */,
+				3F3167622B1C34530074538D /* MMImageAttachmentView.m in Sources */,
 				3F3166E72B1B9B920074538D /* FloatViewController.m in Sources */,
 				3F3166A62B1B881E0074538D /* TransitionMgr.m in Sources */,
 				3F31662E2B18DD110074538D /* UIView+Animation.m in Sources */,
 				3F3165F52B14D39E0074538D /* main.m in Sources */,
 				3F3166862B1B1FFF0074538D /* QuartzEllipseArcView.swift in Sources */,
+				3F3167472B1C336F0074538D /* CustomTextInputViewController.m in Sources */,
 				3F3166292B18D62B0074538D /* CollectionEntryViewController.swift in Sources */,
 				3F3166E62B1B9B920074538D /* FloatDetailViewController.m in Sources */,
 				3F3166B92B1B8F0D0074538D /* ImgFullScreenViewController.m in Sources */,
+				3F31677B2B1C36CA0074538D /* MMTextAnimationLabel.m in Sources */,
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
 				3F3166822B1B1FFF0074538D /* QuartzBezierView.swift in Sources */,
+				3F31677E2B1C36D20074538D /* AnimateTextViewController.m in Sources */,
 				3F3166CC2B1B972C0074538D /* AssetTransitionItem.m in Sources */,
 				3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */,
+				3F31675F2B1C34530074538D /* MMAttachmentData.m in Sources */,
 				3F3166CF2B1B972C0074538D /* AssetAlbumViewController.m in Sources */,
 				3F3166182B18D4CB0074538D /* CalendarDataSource.swift in Sources */,
+				3F3167722B1C35F20074538D /* CircleTextViewController.m in Sources */,
 				3F31665E2B1B15190074538D /* ActivitySummaryViewController.m in Sources */,
 				3F31661D2B18D4CB0074538D /* LineLayout.swift in Sources */,
 				3F3166432B1A238E0074538D /* NativeRenderWebViewController.m in Sources */,
 				68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */,
 				3F31668B2B1B1FFF0074538D /* QuartzPDFView.swift in Sources */,
+				3F3167742B1C35F20074538D /* ColorTextViewController.m in Sources */,
+				3F3167732B1C35F20074538D /* CircleTextContainer.m in Sources */,
+				3F3167872B1C37C40074538D /* CTView.swift in Sources */,
 				3F31661C2B18D4CB0074538D /* CircleLayout.swift in Sources */,
 				3F3166922B1B1FFF0074538D /* QuartzClippingView.swift in Sources */,
 				3F31668D2B1B1FFF0074538D /* QuartzView.swift in Sources */,
 				3F31668A2B1B1FFF0074538D /* QuartzImageView.swift in Sources */,
 				3F3166222B18D4CB0074538D /* PubuLayout.swift in Sources */,
 				3F3166812B1B1FFF0074538D /* QuartzCapJointWidthViewController.swift in Sources */,
+				3F31674B2B1C34270074538D /* MMTextViewViewController.m in Sources */,
+				3F31677A2B1C36CA0074538D /* MMTextLayerAnimation.m in Sources */,
 				3F3166CD2B1B972C0074538D /* AssetAnimationController.m in Sources */,
+				3F31671E2B1C30F80074538D /* CTDisplayView.m in Sources */,
 				3F3166802B1B1FFF0074538D /* QuartzPatternView.swift in Sources */,
 				3F3166B62B1B8EFE0074538D /* TransitionController.m in Sources */,
 				68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */,
+				3F3167602B1C34530074538D /* MMTextView.m in Sources */,
 				3F3166842B1B1FFF0074538D /* QuartzPolyViewController.swift in Sources */,
+				3F31678E2B1C38A80074538D /* MagazineViewController.swift in Sources */,
 				3F3166CB2B1B972C0074538D /* GridImageView.m in Sources */,
 				3F3166332B18DD4A0074538D /* ShakeViewController.m in Sources */,
 				3F31661A2B18D4CB0074538D /* CalendarViewController.swift in Sources */,

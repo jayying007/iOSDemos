@@ -8,5 +8,6 @@ target 'iOSDemos' do
   # Pods for iOSDemos
   pod 'SnapKit'
   pod 'MJRefresh'
+  pod 'YYModel'
 
 end

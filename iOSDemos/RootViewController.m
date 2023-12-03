@@ -12,6 +12,9 @@
 #import "DrawerViewController.h"
 #import "UIDrawerController.h"
 #import "ListViewController.h"
+#import "CircleTextViewController.h"
+#import "ExcludePathViewController.h"
+#import "ColorTextViewController.h"
 
 @interface RootViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -63,6 +66,65 @@
 
                 drawerController.modalPresentationStyle = UIModalPresentationFullScreen;
                 [self presentViewController:drawerController animated:YES completion:nil];
+            };
+        }];
+    }];
+    [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
+        sectionInfo.title = @"文本相关";
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"TQCoreText排版";
+            rowInfo.className = @"TQCoreTextViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"文本实现遮罩";
+            rowInfo.className = @"TextMaskViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"文本列布局";
+            rowInfo.className = @"ColumnarLayoutViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"自己实现UITextView";
+            rowInfo.className = @"CustomTextInputViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"富文本编辑器";
+            rowInfo.detail = @"MMTextView";
+            rowInfo.className = @"MMTextViewViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"TextKit Demo";
+            rowInfo.handler = ^{
+                strongify(self);
+                UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"CircleText" image:[UIImage systemImageNamed:@"link"] tag:0];
+                CircleTextViewController *vc1 = [[CircleTextViewController alloc] init];
+                vc1.tabBarItem = item1;
+
+                UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"ExcludePath" image:[UIImage systemImageNamed:@"link"] tag:0];
+                ExcludePathViewController *vc2 = [[ExcludePathViewController alloc] init];
+                vc2.tabBarItem = item2;
+
+                UITabBarItem *item3 = [[UITabBarItem alloc] initWithTitle:@"ColorText" image:[UIImage systemImageNamed:@"link"] tag:0];
+                ColorTextViewController *vc3 = [[ColorTextViewController alloc] init];
+                vc3.tabBarItem = item3;
+
+                UITabBarController *tabBarController = [[UITabBarController alloc] init];
+                [tabBarController setViewControllers:@[ vc1, vc2, vc3 ]];
+                [tabBarController setSelectedIndex:0];
+
+                [self.navigationController pushViewController:tabBarController animated:YES];
+            };
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"文字变换动效";
+            rowInfo.className = @"AnimateTextViewController";
+        }];
+        [sectionInfo addRowInfo:^(UITableViewRowInfo *rowInfo) {
+            rowInfo.title = @"🧟‍♂️杂志";
+            rowInfo.handler = ^{
+                strongify(self);
+                MagazineViewController *vc = [[MagazineViewController alloc] init];
+                [self.navigationController pushViewController:vc animated:YES];
             };
         }];
     }];
