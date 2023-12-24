@@ -98,6 +98,7 @@
                 [self.navigationController pushViewController:vc animated:YES];
             };
         }];
+        sectionInfo.addRow.c_title(@"反方向的钟").c_className(@"ClockFaceViewController");
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"Core Animation";

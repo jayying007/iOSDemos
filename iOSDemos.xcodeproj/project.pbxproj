@@ -146,6 +146,8 @@
 		3F81557C2B38652100972628 /* AnimateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F81557B2B38652100972628 /* AnimateImageView.m */; };
 		3F81557F2B3865B900972628 /* AnimateImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F81557E2B3865B900972628 /* AnimateImageViewController.m */; };
 		3F8155812B38665700972628 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F8155802B38665700972628 /* 1.gif */; };
+		3F8155842B3869C100972628 /* ClockFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8155832B3869C100972628 /* ClockFace.m */; };
+		3F8155872B3869E200972628 /* ClockFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8155862B3869E200972628 /* ClockFaceViewController.m */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -393,6 +395,10 @@
 		3F81557D2B3865B900972628 /* AnimateImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateImageViewController.h; sourceTree = "<group>"; };
 		3F81557E2B3865B900972628 /* AnimateImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateImageViewController.m; sourceTree = "<group>"; };
 		3F8155802B38665700972628 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		3F8155822B3869C100972628 /* ClockFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockFace.h; sourceTree = "<group>"; };
+		3F8155832B3869C100972628 /* ClockFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockFace.m; sourceTree = "<group>"; };
+		3F8155852B3869E200972628 /* ClockFaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockFaceViewController.h; sourceTree = "<group>"; };
+		3F8155862B3869E200972628 /* ClockFaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockFaceViewController.m; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -641,6 +647,10 @@
 			isa = PBXGroup;
 			children = (
 				3F3166632B1B1FED0074538D /* QuartzDemo */,
+				3F8155822B3869C100972628 /* ClockFace.h */,
+				3F8155832B3869C100972628 /* ClockFace.m */,
+				3F8155852B3869E200972628 /* ClockFaceViewController.h */,
+				3F8155862B3869E200972628 /* ClockFaceViewController.m */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1346,6 +1356,7 @@
 				3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */,
 				3F3165EA2B14D39D0074538D /* RootViewController.m in Sources */,
 				3F3166A52B1B881E0074538D /* FlipPushAnimationController.m in Sources */,
+				3F8155842B3869C100972628 /* ClockFace.m in Sources */,
 				3F3167212B1C310D0074538D /* TQCoreTextViewController.m in Sources */,
 				3F3166EE2B1B9B920074538D /* FloatButton.m in Sources */,
 				3F31665D2B1B15190074538D /* StepCountViewController.m in Sources */,
@@ -1387,6 +1398,7 @@
 				3F3166902B1B1FFF0074538D /* QuartzPolygonView.swift in Sources */,
 				3F3167612B1C34530074538D /* MMAttachmentView.m in Sources */,
 				3F3166872B1B1FFF0074538D /* QuartzBlendingViewController.swift in Sources */,
+				3F8155872B3869E200972628 /* ClockFaceViewController.m in Sources */,
 				3F31675D2B1C34530074538D /* MMLayoutManager.m in Sources */,
 				3F31663D2B1A19A60074538D /* AnimateTableViewCell.m in Sources */,
 				3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */,
