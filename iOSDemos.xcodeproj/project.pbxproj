@@ -143,6 +143,9 @@
 		3F3167892B1C37C40074538D /* CTSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3167852B1C37C40074538D /* CTSettings.swift */; };
 		3F31678E2B1C38A80074538D /* MagazineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31678D2B1C38A80074538D /* MagazineViewController.swift */; };
 		3F3169AA2B1C70650074538D /* UiUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3169A92B1C70650074538D /* UiUtil.m */; };
+		3F81557C2B38652100972628 /* AnimateImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F81557B2B38652100972628 /* AnimateImageView.m */; };
+		3F81557F2B3865B900972628 /* AnimateImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F81557E2B3865B900972628 /* AnimateImageViewController.m */; };
+		3F8155812B38665700972628 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F8155802B38665700972628 /* 1.gif */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -385,6 +388,11 @@
 		3F3169A72B1C65940074538D /* MMUIViewControllerTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMUIViewControllerTransitioning.h; sourceTree = "<group>"; };
 		3F3169A82B1C70650074538D /* UiUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiUtil.h; sourceTree = "<group>"; };
 		3F3169A92B1C70650074538D /* UiUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiUtil.m; sourceTree = "<group>"; };
+		3F81557A2B38652100972628 /* AnimateImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateImageView.h; sourceTree = "<group>"; };
+		3F81557B2B38652100972628 /* AnimateImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateImageView.m; sourceTree = "<group>"; };
+		3F81557D2B3865B900972628 /* AnimateImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateImageViewController.h; sourceTree = "<group>"; };
+		3F81557E2B3865B900972628 /* AnimateImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateImageViewController.m; sourceTree = "<group>"; };
+		3F8155802B38665700972628 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -601,6 +609,7 @@
 		3F3166472B1A24440074538D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3F8155802B38665700972628 /* 1.gif */,
 				3F3167802B1C37B00074538D /* zombies.txt */,
 				3F3167222B1C31420074538D /* content.json */,
 				3F3166482B1A24440074538D /* index.html */,
@@ -1114,12 +1123,15 @@
 			isa = PBXGroup;
 			children = (
 				3F3166F92B1C2DA30074538D /* Drawer */,
-				3F3166512B1B14B80074538D /* HealthKit */,
 				3F3166372B1A19160074538D /* UITableView */,
 				3F3165FB2B18D4890074538D /* UICollectionView */,
 				68C0EB762B184DAD005E1C28 /* ContainerView */,
 				68B912732B173AED0049E0FA /* UIStackViewController.h */,
 				68B912742B173AED0049E0FA /* UIStackViewController.m */,
+				3F81557A2B38652100972628 /* AnimateImageView.h */,
+				3F81557B2B38652100972628 /* AnimateImageView.m */,
+				3F81557D2B3865B900972628 /* AnimateImageViewController.h */,
+				3F81557E2B3865B900972628 /* AnimateImageViewController.m */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -1154,6 +1166,7 @@
 		68C0EB892B186068005E1C28 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3F3166512B1B14B80074538D /* HealthKit */,
 				68C0EB8A2B186074005E1C28 /* YYViewHierarchy3D.h */,
 				68C0EB8B2B186074005E1C28 /* YYViewHierarchy3D.m */,
 			);
@@ -1235,6 +1248,7 @@
 				3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */,
 				3F3166852B1B1FFF0074538D /* Quartz.storyboard in Resources */,
 				3F3167812B1C37B00074538D /* zombies.txt in Resources */,
+				3F8155812B38665700972628 /* 1.gif in Resources */,
 				3F3167232B1C31430074538D /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1343,6 +1357,7 @@
 				3F3166F62B1BA0190074538D /* MaskViewController.m in Sources */,
 				3F3166B52B1B8EFE0074538D /* FullScreenTransitionItem.m in Sources */,
 				3F3166832B1B1FFF0074538D /* QuartzGradientView.swift in Sources */,
+				3F81557C2B38652100972628 /* AnimateImageView.m in Sources */,
 				3F31668F2B1B1FFF0074538D /* QuartzGradientViewController.swift in Sources */,
 				3F3166CE2B1B972C0074538D /* AssetViewController.m in Sources */,
 				3F3166B42B1B8EFE0074538D /* AssetTransitionDriver.m in Sources */,
@@ -1391,6 +1406,7 @@
 				3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */,
 				3F3166822B1B1FFF0074538D /* QuartzBezierView.swift in Sources */,
 				3F31677E2B1C36D20074538D /* AnimateTextViewController.m in Sources */,
+				3F81557F2B3865B900972628 /* AnimateImageViewController.m in Sources */,
 				3F3166CC2B1B972C0074538D /* AssetTransitionItem.m in Sources */,
 				3F3166152B18D4CB0074538D /* CalendarEvent.swift in Sources */,
 				3F31675F2B1C34530074538D /* MMAttachmentData.m in Sources */,

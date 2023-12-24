@@ -51,6 +51,7 @@
             drawerController.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:drawerController animated:YES completion:nil];
         });
+        sectionInfo.addRow.c_title(@"动图").c_className(@"AnimateImageViewController");
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"文本相关";
