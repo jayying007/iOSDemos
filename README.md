@@ -60,3 +60,24 @@
 
 来自：https://www.kodeco.com/578-core-text-tutorial-for-ios-making-a-magazine-app的作品
 其实跟上面ColumnarLayout有点像，就是多设置了pageEnabled
+
+## 转场
+相册A：
+主要是学习两重动画的实现，其中对于下一个VC cell的计算，做简单处理了
+
+![](Resource/transition1.gif)
+
+相册B：
+类似苹果相册，用了在iOS10中引入的UIViewPropertyAnimator
+
+![](Resource/transition2.gif)
+
+浮窗：
+很简单的实现
+
+![](Resource/transition3.gif)
+
+遮罩：
+以原始View的位置为遮罩，逐渐拉开新的View。 注意不是由缩小到恢复正常哦。
+
+![](Resource/transition4.gif)
