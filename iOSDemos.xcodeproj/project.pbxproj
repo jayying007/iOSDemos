@@ -148,6 +148,11 @@
 		3F8155812B38665700972628 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F8155802B38665700972628 /* 1.gif */; };
 		3F8155842B3869C100972628 /* ClockFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8155832B3869C100972628 /* ClockFace.m */; };
 		3F8155872B3869E200972628 /* ClockFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8155862B3869E200972628 /* ClockFaceViewController.m */; };
+		3FB47F032C4245C6004A9E81 /* APLSimpleStockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB47F022C4245C6004A9E81 /* APLSimpleStockView.m */; };
+		3FB47F062C4245D7004A9E81 /* APLSimpleStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB47F052C4245D7004A9E81 /* APLSimpleStockViewController.m */; };
+		3FB47F092C4246D0004A9E81 /* APLDailyTradeInfoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB47F082C4246D0004A9E81 /* APLDailyTradeInfoSource.m */; };
+		3FB47F0C2C42473F004A9E81 /* APLDailyTradeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB47F0B2C42473F004A9E81 /* APLDailyTradeInfo.m */; };
+		3FB47F0E2C424B9F004A9E81 /* Beach.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB47F0D2C424B9F004A9E81 /* Beach.png */; };
 		68B912722B17384F0049E0FA /* UITableViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912712B17384F0049E0FA /* UITableViewInfo.m */; };
 		68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B912742B173AED0049E0FA /* UIStackViewController.m */; };
 		68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB4F2B175529005E1C28 /* BCMagicTransition.m */; };
@@ -399,6 +404,15 @@
 		3F8155832B3869C100972628 /* ClockFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockFace.m; sourceTree = "<group>"; };
 		3F8155852B3869E200972628 /* ClockFaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockFaceViewController.h; sourceTree = "<group>"; };
 		3F8155862B3869E200972628 /* ClockFaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockFaceViewController.m; sourceTree = "<group>"; };
+		3FB47F012C4245C6004A9E81 /* APLSimpleStockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLSimpleStockView.h; sourceTree = "<group>"; };
+		3FB47F022C4245C6004A9E81 /* APLSimpleStockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLSimpleStockView.m; sourceTree = "<group>"; };
+		3FB47F042C4245D7004A9E81 /* APLSimpleStockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLSimpleStockViewController.h; sourceTree = "<group>"; };
+		3FB47F052C4245D7004A9E81 /* APLSimpleStockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLSimpleStockViewController.m; sourceTree = "<group>"; };
+		3FB47F072C4246D0004A9E81 /* APLDailyTradeInfoSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLDailyTradeInfoSource.h; sourceTree = "<group>"; };
+		3FB47F082C4246D0004A9E81 /* APLDailyTradeInfoSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLDailyTradeInfoSource.m; sourceTree = "<group>"; };
+		3FB47F0A2C42473F004A9E81 /* APLDailyTradeInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APLDailyTradeInfo.h; sourceTree = "<group>"; };
+		3FB47F0B2C42473F004A9E81 /* APLDailyTradeInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APLDailyTradeInfo.m; sourceTree = "<group>"; };
+		3FB47F0D2C424B9F004A9E81 /* Beach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beach.png; sourceTree = "<group>"; };
 		68B912702B17384F0049E0FA /* UITableViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITableViewInfo.h; sourceTree = "<group>"; };
 		68B912712B17384F0049E0FA /* UITableViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewInfo.m; sourceTree = "<group>"; };
 		68B912732B173AED0049E0FA /* UIStackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIStackViewController.h; sourceTree = "<group>"; };
@@ -615,6 +629,7 @@
 		3F3166472B1A24440074538D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3FB47F0D2C424B9F004A9E81 /* Beach.png */,
 				3F8155802B38665700972628 /* 1.gif */,
 				3F3167802B1C37B00074538D /* zombies.txt */,
 				3F3167222B1C31420074538D /* content.json */,
@@ -646,6 +661,7 @@
 		3F3166622B1B1F510074538D /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				3FB47F002C424574004A9E81 /* SimpleStocks */,
 				3F3166632B1B1FED0074538D /* QuartzDemo */,
 				3F8155822B3869C100972628 /* ClockFace.h */,
 				3F8155832B3869C100972628 /* ClockFace.m */,
@@ -1082,6 +1098,21 @@
 			path = Magazine;
 			sourceTree = "<group>";
 		};
+		3FB47F002C424574004A9E81 /* SimpleStocks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB47F012C4245C6004A9E81 /* APLSimpleStockView.h */,
+				3FB47F022C4245C6004A9E81 /* APLSimpleStockView.m */,
+				3FB47F042C4245D7004A9E81 /* APLSimpleStockViewController.h */,
+				3FB47F052C4245D7004A9E81 /* APLSimpleStockViewController.m */,
+				3FB47F072C4246D0004A9E81 /* APLDailyTradeInfoSource.h */,
+				3FB47F082C4246D0004A9E81 /* APLDailyTradeInfoSource.m */,
+				3FB47F0A2C42473F004A9E81 /* APLDailyTradeInfo.h */,
+				3FB47F0B2C42473F004A9E81 /* APLDailyTradeInfo.m */,
+			);
+			path = SimpleStocks;
+			sourceTree = "<group>";
+		};
 		68B9126F2B1738220049E0FA /* MMUIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1258,6 +1289,7 @@
 				3F3165EF2B14D39E0074538D /* Assets.xcassets in Resources */,
 				3F3166852B1B1FFF0074538D /* Quartz.storyboard in Resources */,
 				3F3167812B1C37B00074538D /* zombies.txt in Resources */,
+				3FB47F0E2C424B9F004A9E81 /* Beach.png in Resources */,
 				3F8155812B38665700972628 /* 1.gif in Resources */,
 				3F3167232B1C31430074538D /* content.json in Resources */,
 			);
@@ -1335,6 +1367,7 @@
 				3F3166462B1A24130074538D /* NativeRenderContainerView.m in Sources */,
 				3F3166AB2B1B8A4F0074538D /* MMUINavigationController.m in Sources */,
 				3F3166A82B1B881E0074538D /* AlbumViewController.m in Sources */,
+				3FB47F062C4245D7004A9E81 /* APLSimpleStockViewController.m in Sources */,
 				68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */,
 				3F3166932B1B1FFF0074538D /* MasterViewController.swift in Sources */,
 				3F31671A2B1C30F80074538D /* CoreTextImageData.m in Sources */,
@@ -1351,6 +1384,7 @@
 				3F3166232B18D4CB0074538D /* ColorViewCell.swift in Sources */,
 				68C0EB562B17557C005E1C28 /* FirstViewController.m in Sources */,
 				3F3167022B1C2DE80074538D /* DrawerViewController.m in Sources */,
+				3FB47F092C4246D0004A9E81 /* APLDailyTradeInfoSource.m in Sources */,
 				3F31672F2B1C32D50074538D /* ColumnViewV2.m in Sources */,
 				3F3167892B1C37C40074538D /* CTSettings.swift in Sources */,
 				3F31667F2B1B1FFF0074538D /* QuartzMaskingView.swift in Sources */,
@@ -1393,6 +1427,8 @@
 				3F3167412B1C33660074538D /* IndexedPosition.m in Sources */,
 				3F31671D2B1C30F80074538D /* CoreTextLinkData.m in Sources */,
 				68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */,
+				3FB47F032C4245C6004A9E81 /* APLSimpleStockView.m in Sources */,
+				3FB47F0C2C42473F004A9E81 /* APLDailyTradeInfo.m in Sources */,
 				3F3166ED2B1B9B920074538D /* FloatFan.m in Sources */,
 				68C0EB502B175529005E1C28 /* BCMagicTransition.m in Sources */,
 				3F3166902B1B1FFF0074538D /* QuartzPolygonView.swift in Sources */,

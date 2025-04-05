@@ -99,6 +99,7 @@
             };
         }];
         sectionInfo.addRow.c_title(@"反方向的钟").c_className(@"ClockFaceViewController");
+        sectionInfo.addRow.c_title(@"股票面板").c_className(@"APLSimpleStockViewController");
     }];
     [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
         sectionInfo.title = @"Core Animation";
