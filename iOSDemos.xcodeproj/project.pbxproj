@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F27E1BA2DA1728500170623 /* DevelopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F27E1B42DA1722200170623 /* DevelopKit.framework */; };
+		3F27E1BB2DA1728500170623 /* DevelopKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F27E1B42DA1722200170623 /* DevelopKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3F3165E42B14D39D0074538D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165E32B14D39D0074538D /* AppDelegate.m */; };
 		3F3165E72B14D39D0074538D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165E62B14D39D0074538D /* SceneDelegate.m */; };
 		3F3165EA2B14D39D0074538D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3165E92B14D39D0074538D /* RootViewController.m */; };
@@ -161,7 +163,6 @@
 		68C0EB592B175599005E1C28 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB582B175599005E1C28 /* SecondViewController.m */; };
 		68C0EB5C2B1755B4005E1C28 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB5B2B1755B4005E1C28 /* ThirdViewController.m */; };
 		68C0EB5F2B1757D4005E1C28 /* MMUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */; };
-		68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB612B175850005E1C28 /* UIView+Frame.m */; };
 		68C0EB742B184B3A005E1C28 /* UIToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB732B184B3A005E1C28 /* UIToolbarViewController.m */; };
 		68C0EB7F2B184DAD005E1C28 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB772B184DAD005E1C28 /* ContainerViewController.m */; };
 		68C0EB802B184DAD005E1C28 /* ContainerScrollDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C0EB792B184DAD005E1C28 /* ContainerScrollDelegate.m */; };
@@ -171,8 +172,33 @@
 		F648529920B271FD08AC40AF /* Pods_iOSDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EBE63870D2A9FCED416B2D /* Pods_iOSDemos.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3F27E1B32DA1722200170623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F27E1AF2DA1722100170623 /* DevelopKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F27E1A42DA1722100170623;
+			remoteInfo = DevelopKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F27E1BC2DA1728500170623 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F27E1BB2DA1728500170623 /* DevelopKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3DD61D8495355E69B8365EEB /* Pods-iOSDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSDemos.release.xcconfig"; path = "Target Support Files/Pods-iOSDemos/Pods-iOSDemos.release.xcconfig"; sourceTree = "<group>"; };
+		3F27E1AF2DA1722100170623 /* DevelopKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DevelopKit.xcodeproj; path = DevelopKit/DevelopKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3F3165DF2B14D39D0074538D /* iOSDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3165E22B14D39D0074538D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F3165E32B14D39D0074538D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -429,8 +455,6 @@
 		68C0EB5B2B1755B4005E1C28 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		68C0EB5D2B1757D4005E1C28 /* MMUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMUIViewController.h; sourceTree = "<group>"; };
 		68C0EB5E2B1757D4005E1C28 /* MMUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMUIViewController.m; sourceTree = "<group>"; };
-		68C0EB602B175850005E1C28 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		68C0EB612B175850005E1C28 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		68C0EB722B184B3A005E1C28 /* UIToolbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIToolbarViewController.h; sourceTree = "<group>"; };
 		68C0EB732B184B3A005E1C28 /* UIToolbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIToolbarViewController.m; sourceTree = "<group>"; };
 		68C0EB772B184DAD005E1C28 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
@@ -455,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F648529920B271FD08AC40AF /* Pods_iOSDemos.framework in Frameworks */,
+				3F27E1BA2DA1728500170623 /* DevelopKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +493,14 @@
 				3DD61D8495355E69B8365EEB /* Pods-iOSDemos.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F27E1B02DA1722100170623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F27E1B42DA1722200170623 /* DevelopKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		3F3165D62B14D39D0074538D = {
@@ -491,6 +524,7 @@
 		3F3165E12B14D39D0074538D /* iOSDemos */ = {
 			isa = PBXGroup;
 			children = (
+				3F27E1AF2DA1722100170623 /* DevelopKit.xcodeproj */,
 				68B9126F2B1738220049E0FA /* MMUIKit */,
 				68C0EB712B184B09005E1C28 /* UIComponents */,
 				3F3167032B1C30E40074538D /* MMText */,
@@ -1123,8 +1157,6 @@
 				3F3169A72B1C65940074538D /* MMUIViewControllerTransitioning.h */,
 				3F3166AA2B1B8A4F0074538D /* MMUINavigationController.h */,
 				3F3166A92B1B8A4F0074538D /* MMUINavigationController.m */,
-				68C0EB602B175850005E1C28 /* UIView+Frame.h */,
-				68C0EB612B175850005E1C28 /* UIView+Frame.m */,
 				3F3169A82B1C70650074538D /* UiUtil.h */,
 				3F3169A92B1C70650074538D /* UiUtil.m */,
 			);
@@ -1234,6 +1266,7 @@
 				3F3165DC2B14D39D0074538D /* Frameworks */,
 				3F3165DD2B14D39D0074538D /* Resources */,
 				050A87184BBCC3E9CFE46C5A /* [CP] Embed Pods Frameworks */,
+				3F27E1BC2DA1728500170623 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1269,12 +1302,28 @@
 			mainGroup = 3F3165D62B14D39D0074538D;
 			productRefGroup = 3F3165E02B14D39D0074538D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F27E1B02DA1722100170623 /* Products */;
+					ProjectRef = 3F27E1AF2DA1722100170623 /* DevelopKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3F3165DE2B14D39D0074538D /* iOSDemos */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3F27E1B42DA1722200170623 /* DevelopKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DevelopKit.framework;
+			remoteRef = 3F27E1B32DA1722200170623 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3F3165DD2B14D39D0074538D /* Resources */ = {
@@ -1422,7 +1471,6 @@
 				68B912752B173AED0049E0FA /* UIStackViewController.m in Sources */,
 				3F31661F2B18D4CB0074538D /* WaterfallCell.swift in Sources */,
 				3F31667D2B1B1FFF0074538D /* QuartzTextView.swift in Sources */,
-				68C0EB622B175850005E1C28 /* UIView+Frame.m in Sources */,
 				3F3166E82B1B9B920074538D /* PopAnimation.m in Sources */,
 				3F3167412B1C33660074538D /* IndexedPosition.m in Sources */,
 				3F31671D2B1C30F80074538D /* CoreTextLinkData.m in Sources */,

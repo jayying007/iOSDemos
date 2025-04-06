@@ -6,7 +6,6 @@
 //
 
 #import "AssetAlbumViewController.h"
-#import "UIView+Frame.h"
 #import "AssetCollectionViewCell.h"
 #import "AssetAnimationController.h"
 

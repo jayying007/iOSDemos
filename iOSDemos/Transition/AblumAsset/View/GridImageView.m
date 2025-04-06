@@ -7,7 +7,6 @@
 //
 
 #import "GridImageView.h"
-#import "UIView+Frame.h"
 
 @interface GridImageView ()
 @property (nonatomic) NSMutableArray *imageViews;

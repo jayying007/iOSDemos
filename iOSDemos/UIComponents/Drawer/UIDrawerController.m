@@ -6,7 +6,6 @@
 //
 
 #import "UIDrawerController.h"
-#import "UIView+Frame.h"
 
 @implementation UIViewController (UIDrawerController)
 - (UIDrawerController *)drawerController {

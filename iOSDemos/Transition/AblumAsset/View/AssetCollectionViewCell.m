@@ -6,7 +6,6 @@
 //
 
 #import "AssetCollectionViewCell.h"
-#import "UIView+Frame.h"
 
 @interface AssetCollectionViewCell ()
 
