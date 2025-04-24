@@ -16,10 +16,15 @@
 #import "ContainerDefines.h"
 #import "iOSDemos-Swift.h"
 
+#import <AVFAudio/AVFAudio.h>
+#import <AudioToolbox/AudioToolbox.h>
+
 #define Service(CLASS) [CLASS sharedInstance]
 
 #define weakify(VAR) __weak typeof(VAR) _weak_ = VAR;
 #define strongify(VAR) __strong typeof(VAR) VAR = _weak_;
+
+#define AudioInfo(format, ...) NSLog(format, ##__VA_ARGS__)
 
 #if defined(__cplusplus)
 #define let auto const

@@ -14,6 +14,8 @@
 		3F27E1A92DA1722100170623 /* Exceptions for "DevelopKit" folder in "DevelopKit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
+				AudioKit/AudioUtil.h,
+				Foundation/FileUtil.h,
 				"UIKit/UIView+Frame.h",
 			);
 			target = 3F27E1A32DA1722100170623 /* DevelopKit */;

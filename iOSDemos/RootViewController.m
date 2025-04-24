@@ -141,6 +141,10 @@
             };
         }];
     }];
+    [_tableViewInfo addSectionInfo:^(UITableViewSectionInfo *sectionInfo) {
+        sectionInfo.title = @"音视频";
+        sectionInfo.addRow.c_title(@"Audio").c_className(@"AudioViewController");
+    }];
 
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleInsetGrouped];
     _tableView.dataSource = self;

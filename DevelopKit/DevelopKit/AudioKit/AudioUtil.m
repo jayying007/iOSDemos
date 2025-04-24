@@ -63,4 +63,63 @@
     NSLog(@"wrote %ld samples", sampleCount);
 }
 
++ (AudioFileTypeID)fileTypeForUrl:(NSURL *)url {
+    if ([url isFileURL]) {
+        if ([url.pathExtension isEqualToString:@"mp3"]) {
+            return kAudioFileMP3Type;
+        }
+        if ([url.pathExtension isEqualToString:@"m4a"]) {
+            return kAudioFileM4AType;
+        }
+    }
+    return 0;
+}
+
++ (AudioFileTypeID)fileTypeForString:(NSString *)string {
+    if ([string isEqualToString:@"mp3"]) {
+        return kAudioFileMP3Type;
+    }
+    if ([string isEqualToString:@"wav"]) {
+        return kAudioFileWAVEType;
+    }
+    if ([string isEqualToString:@"aac"]) {
+        return kAudioFileAAC_ADTSType;
+    }
+    return 0;
+}
+
++ (NSString *)enumValueToString:(SInt32)value {
+    static char str[16];
+
+    *(UInt32 *)(str + 1) = CFSwapInt32HostToBig(value);
+    if (isprint(str[1]) && isprint(str[2]) && isprint(str[3]) && isprint(str[4])) {
+        str[0] = str[5] = '\'';
+        str[6] = '\0';
+    } else if (value > -200000 && value < 200000) {
+        // no, format it as an integer
+        sprintf(str, "%d", (int)value);
+    } else {
+        sprintf(str, "0x%x", (int)value);
+    }
+
+    return [NSString stringWithUTF8String:str];
+}
+
++ (void)printFileInfo:(NSURL *)url {
+    //读取文件
+    AudioFileID audioFile;
+    AudioFileOpenURL((__bridge CFURLRef)url, kAudioFileReadPermission, 0, &audioFile);
+
+    //获取大小
+    UInt32 dictionarySize = 0;
+    AudioFileGetPropertyInfo(audioFile, kAudioFilePropertyInfoDictionary, &dictionarySize, 0);
+
+    NSDictionary *dictionary;
+    AudioFileGetProperty(audioFile, kAudioFilePropertyInfoDictionary, &dictionarySize, &dictionary); // 为啥是&dictionary
+
+    AudioFileClose(audioFile);
+    NSLog(@"=====Meta Data=====");
+    NSLog(@"%@", dictionary);
+}
+
 @end
